@@ -1,0 +1,26 @@
+[
+  {
+    "id": "corretagem-imoveis",
+    "titulo": "Gestão de corretagem (corretor de imóveis)",
+    "descricao": "Cadastro completo de contatos por fase do funil; sub-status dentro de \"não fechado\" para separar \"quase fechou, retomar depois\" de \"não passou no crédito, checar mais pra frente\"; e correspondência automática — quando um imóvel novo entra com um perfil (valor, localização, características), o sistema já indica os principais clientes da carteira que combinam com aquele perfil.",
+    "contexto": "Seção 18/19 do spec — semente inicial do Banco de Ideias.",
+    "vertical": "Imobiliária / Corretor",
+    "status": "ideia"
+  },
+  {
+    "id": "gestao-celulas",
+    "titulo": "Gestão de células (igreja)",
+    "descricao": "Controle de grupos/células, membros por célula, encontros e frequência.",
+    "contexto": "Seção 18 do spec — semente inicial do Banco de Ideias.",
+    "vertical": "Igreja",
+    "status": "ideia"
+  },
+  {
+    "id": "boas-vindas-visitantes",
+    "titulo": "Boas-vindas (igreja)",
+    "descricao": "Acompanhamento de visitantes/novos membros desde o primeiro contato até a integração.",
+    "contexto": "Seção 18 do spec — semente inicial do Banco de Ideias.",
+    "vertical": "Igreja",
+    "status": "ideia"
+  }
+]

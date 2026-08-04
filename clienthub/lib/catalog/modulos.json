@@ -1,0 +1,114 @@
+[
+  {
+    "id": "visao-geral",
+    "nome": "Visão Geral",
+    "path": "",
+    "icone": "◱",
+    "sempre": true,
+    "versao": "1.0.0",
+    "origem": "nativo",
+    "descricao": "Status do negócio e força do contexto do Claude.",
+    "dependencias": [],
+    "status": "pronto"
+  },
+  {
+    "id": "claude",
+    "nome": "Claude Code",
+    "path": "claude",
+    "icone": "✳",
+    "sempre": true,
+    "versao": "0.3.0",
+    "origem": "nativo",
+    "descricao": "O B-O-S rodando dentro da pasta do cliente: navegador de arquivos + chat com o Claude.",
+    "dependencias": [
+      "conta-claude"
+    ],
+    "status": "parcial"
+  },
+  {
+    "id": "site",
+    "nome": "Meu Site",
+    "path": "site",
+    "icone": "◈",
+    "sempre": false,
+    "versao": "1.0.0",
+    "origem": "nativo",
+    "descricao": "Preview do site, rascunhos gerados via criar-site/frontend-design e aprovação pelo operador.",
+    "dependencias": [],
+    "status": "pronto"
+  },
+  {
+    "id": "instagram",
+    "nome": "Instagram",
+    "path": "instagram",
+    "icone": "◉",
+    "sempre": false,
+    "versao": "0.5.0",
+    "origem": "nativo",
+    "descricao": "Gerador de conteúdo (carrossel) com aprovação do operador; métricas do perfil ficam para depois.",
+    "dependencias": [
+      "token-meta-graph-api"
+    ],
+    "status": "parcial"
+  },
+  {
+    "id": "financeiro",
+    "nome": "Financeiro",
+    "path": "financeiro",
+    "icone": "◇",
+    "sempre": false,
+    "versao": "0.5.0",
+    "origem": "nativo",
+    "descricao": "Entradas, saídas, contas a pagar/receber, assinaturas e fluxo de caixa, com assistente financeiro que lê os dados reais do workspace.",
+    "dependencias": [],
+    "fonte": {
+      "repo": "https://github.com/actualbudget/actual",
+      "licenca": "MIT",
+      "adotado": false,
+      "nota": "Construído NATIVO usando o Actual Budget (MIT) só como referência de modelo de dados (contas/lançamentos/categorias) — nenhum código do projeto foi copiado. Assistente inspirado em fiscal-sh/fscl (open source), também reimplementado do zero sobre a mesma infra de chat do CentralPlus."
+    },
+    "status": "parcial"
+  },
+  {
+    "id": "crm",
+    "nome": "CRM",
+    "path": "crm",
+    "icone": "◎",
+    "sempre": false,
+    "versao": "0.5.0",
+    "origem": "nativo",
+    "descricao": "Funil de vendas visual + leads, negócios, tarefas, anotações e ligações, com preset por vertical. WhatsApp integrado fica pra quando houver conexão real.",
+    "dependencias": [],
+    "fonte": {
+      "repo": "https://github.com/frappe/crm",
+      "licenca": "AGPL-3.0",
+      "adotado": false,
+      "nota": "Construído NATIVO usando o Frappe CRM (pasta crm-develop) só como referência de modelo de dados — a licença AGPL-3.0 impede embutir o código num SaaS comercial (regra de ouro da seção 2.5). Krayin (MIT) segue como candidato se um dia for necessário fork de verdade."
+    },
+    "status": "parcial"
+  },
+  {
+    "id": "mkt-online",
+    "nome": "MKT Online",
+    "path": "mkt-online",
+    "icone": "❖",
+    "sempre": false,
+    "versao": "0.1.0",
+    "origem": "nativo",
+    "descricao": "Google Meu Negócio, Google Ads e Meta Ads gerados pela IA, prontos pra importar/preencher — autoatendimento do cliente.",
+    "dependencias": [],
+    "status": "parcial"
+  },
+  {
+    "id": "config",
+    "nome": "Configurações",
+    "path": "config",
+    "icone": "⚙",
+    "sempre": true,
+    "versao": "1.0.0",
+    "origem": "nativo",
+    "descricao": "Módulos ativos, identidade e acesso do cliente.",
+    "dependencias": [],
+    "status": "parcial"
+  }
+]
