@@ -1,0 +1,51 @@
+{
+  "preset": "geral",
+  "fases": [
+    {
+      "nome": "Novo lead",
+      "cor": "#6366f1",
+      "tipo": "normal",
+      "id": "6cce2a4c2c93",
+      "automacaoWhatsapp": {
+        "ativo": false,
+        "atrasoDias": 1,
+        "mensagem": ""
+      }
+    },
+    {
+      "nome": "Proposta enviada",
+      "cor": "#ca8a04",
+      "tipo": "normal",
+      "id": "6d32fd33edb5"
+    },
+    {
+      "nome": "Negociação",
+      "cor": "#c026d3",
+      "tipo": "normal",
+      "id": "2cbc6c84989c"
+    },
+    {
+      "nome": "Ganho",
+      "cor": "#16a34a",
+      "tipo": "ganho",
+      "id": "7b5b133cf174"
+    },
+    {
+      "nome": "Perdido",
+      "cor": "#dc2626",
+      "tipo": "perdido",
+      "id": "30e6430b1eea"
+    },
+    {
+      "id": "36a9dc3139ee",
+      "nome": "Contato feito",
+      "cor": "#0891b2",
+      "tipo": "normal"
+    }
+  ],
+  "leads": [],
+  "tarefas": [],
+  "anotacoes": [],
+  "ligacoes": [],
+  "token": "3de55fbb20cf85cb9eada4ba"
+}

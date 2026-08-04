@@ -1,0 +1,49 @@
+{
+  "plataforma": "google",
+  "titulo": "CAMPANHA RCRUZ NOVA",
+  "tipo": "servico",
+  "descricaoNegocio": "Importada da conta real do Google Ads — conteúdo original, não gerado pelo Hub.",
+  "headlines": [
+    "Contabilidade Em Praia Grande",
+    "Contadores Online",
+    "Chame no Whats Agora Mesmo",
+    "RC Contabilidade & Negócios",
+    "Entre Em Contato Conosco",
+    "Contabilidade MEI, SIMPLES",
+    "Contabilidade LTDA - RCruz",
+    "Nota Fiscal em Praia Grande",
+    "Emitir nota Fiscal"
+  ],
+  "descriptions": [
+    "Migração contábil rápida — Escolha o Plano que mais se Adequa a Realidade da sua Empresa.",
+    "Contabilidade transparente com suporte próximo e sem complicações."
+  ],
+  "palavrasChave": [
+    "contador praia grande",
+    "contabilidade praia grande",
+    "contabilidade na praia grande",
+    "contador em praia grande",
+    "contabilidade em praia grande"
+  ],
+  "palavrasNegativas": [],
+  "localizacoes": [
+    "Santos,State of Sao Paulo,Brazil",
+    "Sao Vicente,State of Sao Paulo,Brazil",
+    "Praia Grande,State of Sao Paulo,Brazil"
+  ],
+  "publico": "",
+  "orcamentoSugeridoDia": 50,
+  "tipoOrcamento": "diario",
+  "urlDestino": "https://rcruzassessoria.com.br/contabilidade-em-praia-grande/",
+  "status": "aplicada",
+  "statusGoogleAds": "PAUSED",
+  "aplicacao": {
+    "tentadoEm": "2026-07-31T21:52:17.621Z",
+    "ok": true,
+    "mensagem": "Importada de uma campanha que já existia na conta do Google Ads.",
+    "googleCampaignId": "23798039423",
+    "googleAdGroupId": "196885115758"
+  },
+  "criadoEm": "2026-07-31T21:52:17.621Z",
+  "atualizadoEm": "2026-07-31T21:52:17.621Z"
+}

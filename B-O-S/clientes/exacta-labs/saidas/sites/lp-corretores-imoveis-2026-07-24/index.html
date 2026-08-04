@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Profissional para Corretores de Imóveis | Exacta Labs</title>
+<meta name="description" content="Site completo para corretores de imóveis: captação de leads, integração com WhatsApp, CRM imobiliário e automação com IA. Tecnologia que vende enquanto você atende.">
+<link rel="canonical" href="https://exactalabs.com.br/corretores">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Site Profissional para Corretores de Imóveis — Exacta Labs">
+<meta property="og:description" content="Site completo com captação de leads, CRM imobiliário e automação com IA. Tecnologia que vende enquanto você atende seus clientes.">
+<meta property="og:image" content="img/corretor-profissional.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Site Profissional para Corretores de Imóveis">
+<meta name="twitter:description" content="Site completo com captação de leads, CRM imobiliário e automação com IA.">
+<meta name="twitter:image" content="img/corretor-profissional.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Site profissional para corretores de imóveis",
+  "provider": { "@type": "ProfessionalService", "name": "Exacta Labs" },
+  "areaServed": "BR",
+  "description": "Solução completa de site, CRM e automação para corretores de imóveis captarem e converterem mais leads.",
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Site imobiliário com captação de leads" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM para gestão de clientes e imóveis" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automação de atendimento com IA" } }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --navy: #142C4A;
+    --navy-deep: #0D1F35;
+    --emerald-dark: #0B2B2E;
+    --teal: #2CA6A3;
+    --teal-light: #4FC3C0;
+    --teal-glow: #6FE3DF;
+    --teal-deep: #146E6B;
+    --bg: #FFFFFF;
+    --bg-soft: #F4F9F9;
+    --text: #16233A;
+    --text-muted: #52627A;
+    --border: #E3E9F0;
+    --glass: rgba(255,255,255,.06);
+    --glass-border: rgba(255,255,255,.14);
+    --ease: cubic-bezier(.4,0,.2,1);
+    --ease-out: cubic-bezier(.16,1,.3,1);
+  }
+
+  /* Gradientes animados */
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(44,166,163,.3); }
+    50% { box-shadow: 0 0 40px rgba(44,166,163,.6), 0 0 60px rgba(44,166,163,.4); }
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{ font-family:'Space Grotesk', sans-serif; font-weight:700; letter-spacing:-0.02em; color:var(--navy); }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .container{ max-width:1180px; margin:0 auto; padding:0 24px; }
+  section{ position:relative; padding:110px 0; }
+
+  /* ============ Logo ============ */
+  .logo{ display:inline-flex; align-items:center; gap:11px; }
+  .logo svg{ height:34px; width:auto; }
+  .logo .word{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; color:var(--navy); line-height:1.05; }
+  .logo .word .labs{ display:block; font-size:9.5px; font-weight:600; letter-spacing:.42em; color:var(--teal); }
+  .logo.on-dark .word{ color:#fff; }
+  .logo.on-dark .word .labs{ color:var(--teal-glow); }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:8px 18px; border-radius:999px;
+    border:1.5px solid rgba(44,166,163,.45);
+    font-size:13px; font-weight:600; letter-spacing:.04em;
+    color:var(--teal-deep); background:rgba(44,166,163,.06);
+    margin-bottom:26px;
+  }
+  .eyebrow .pulse-dot{ width:7px; height:7px; border-radius:50%; background:var(--teal); animation:pulse-dot 2s var(--ease) infinite; }
+  @keyframes pulse-dot{ 0%,100%{ box-shadow:0 0 0 0 rgba(44,166,163,.5);} 50%{ box-shadow:0 0 0 6px rgba(44,166,163,0);} }
+
+  /* ============ Buttons ============ */
+  .btn{
+    position:relative; overflow:hidden;
+    display:inline-flex; align-items:center; gap:10px;
+    padding:16px 32px; border-radius:999px;
+    font-weight:600; font-size:15.5px; cursor:pointer;
+    transition:transform 250ms var(--ease), box-shadow 250ms var(--ease), background 250ms var(--ease);
+    white-space:nowrap; border:none;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg, var(--teal), var(--teal-light), var(--teal));
+    background-size:200% 200%;
+    color:var(--navy-deep);
+    box-shadow:0 10px 30px rgba(44,166,163,.4);
+    animation:gradient-shift 3s ease infinite;
+  }
+  .btn-primary::after{
+    content:''; position:absolute; top:0; left:-80%;
+    width:50%; height:100%;
+    background:linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent);
+    transform:skewX(-20deg);
+    transition:left 600ms var(--ease);
+  }
+  .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 16px 40px rgba(44,166,163,.55); animation-play-state:paused; }
+  .btn-primary:hover::after{ left:130%; }
+  .btn-ghost{ background:transparent; color:var(--navy); border:1.5px solid var(--border); }
+  .btn-ghost:hover{ border-color:var(--teal); color:var(--teal-deep); transform:translateY(-3px); }
+  .btn svg{ width:18px; height:18px; flex-shrink:0; }
+
+  /* ============ Nav pílula flutuante ============ */
+  header{
+    position:fixed; top:16px; left:0; right:0; z-index:100;
+    pointer-events:none;
+  }
+  .nav-pill{
+    pointer-events:auto;
+    max-width:1132px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 12px 10px 22px;
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.6);
+    border-radius:999px;
+    box-shadow:0 8px 32px rgba(20,44,74,.08);
+    transition:box-shadow 300ms var(--ease), background 300ms var(--ease);
+  }
+  header.scrolled .nav-pill{ box-shadow:0 12px 40px rgba(20,44,74,.14); background:rgba(255,255,255,.92); }
+
+  /* ============ Hero ============ */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex; align-items:center;
+    padding:150px 0 80px;
+    background:
+      radial-gradient(ellipse 55% 45% at 12% 20%, rgba(111,227,223,.28), transparent 65%),
+      radial-gradient(ellipse 45% 50% at 88% 75%, rgba(111,227,223,.22), transparent 65%),
+      linear-gradient(180deg, #FDFEFE 0%, #F2FAFA 100%);
+    overflow:hidden;
+  }
+  .hero-grid{
+    position:relative; z-index:2;
+    display:grid; grid-template-columns:1.05fr .95fr;
+    gap:48px; align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.3rem, 5vw, 3.9rem);
+    line-height:1.07;
+    margin-bottom:26px;
+  }
+  .hero h1 .accent{
+    background:linear-gradient(120deg, var(--teal), var(--teal-light));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{ color:var(--text-muted); font-size:18px; max-width:540px; margin-bottom:40px; }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  .hero-visual{ position:relative; display:flex; justify-content:center; }
+  .hero-img-wrap{
+    position:relative;
+    width:100%;
+    max-width:520px;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 40px 80px rgba(20,44,74,.18), 0 0 0 1px rgba(44,166,163,.2);
+    animation:floaty 8s ease-in-out infinite;
+    transition:transform 400ms var(--ease), box-shadow 400ms var(--ease);
+  }
+  .hero-img-wrap:hover{ transform:scale(1.02) translateY(-8px); box-shadow:0 50px 100px rgba(20,44,74,.28), 0 0 0 2px var(--teal); }
+  @keyframes floaty{ 0%,100%{ transform:translateY(0) rotate(0deg);} 50%{ transform:translateY(-22px) rotate(1deg);} }
+  .hero-img-wrap img{ width:100%; height:auto; object-fit:cover; }
+  .hero-img-wrap::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(135deg, rgba(44,166,163,.15), transparent 60%);
+    opacity:0; transition:opacity 400ms var(--ease);
+  }
+  .hero-img-wrap:hover::after{ opacity:1; }
+
+  .scroll-cue{
+    position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+    color:var(--teal-deep); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    display:flex; flex-direction:column; align-items:center; gap:8px; z-index:2;
+  }
+  .scroll-cue .line{ width:1.5px; height:34px; background:linear-gradient(180deg, var(--teal), transparent); animation:scrollcue 2s var(--ease) infinite; }
+  @keyframes scrollcue{ 0%{ transform:scaleY(0); transform-origin:top;} 50%{ transform:scaleY(1); transform-origin:top;} 51%{ transform-origin:bottom;} 100%{ transform:scaleY(0); transform-origin:bottom;} }
+
+  /* ============ Reveal ============ */
+  .reveal{ opacity:0; transform:translateY(32px); transition:opacity 800ms var(--ease-out), transform 800ms var(--ease-out); }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  .reveal-stagger > *{ opacity:0; transform:translateY(28px); transition:opacity 700ms var(--ease-out), transform 700ms var(--ease-out); }
+  .reveal-stagger.in > *{ opacity:1; transform:translateY(0); }
+  .reveal-stagger.in > *:nth-child(1){ transition-delay:0ms; }
+  .reveal-stagger.in > *:nth-child(2){ transition-delay:100ms; }
+  .reveal-stagger.in > *:nth-child(3){ transition-delay:200ms; }
+  .reveal-stagger.in > *:nth-child(4){ transition-delay:300ms; }
+  .reveal-stagger.in > *:nth-child(5){ transition-delay:400ms; }
+  .reveal-stagger.in > *:nth-child(6){ transition-delay:500ms; }
+
+  .section-head{ max-width:680px; margin-bottom:56px; }
+  .section-head h2{ font-size:clamp(1.8rem, 3.4vw, 2.5rem); margin-bottom:16px; line-height:1.18; }
+  .section-head h2 .accent{ color:var(--teal); }
+  .section-head p{ color:var(--text-muted); font-size:17px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+
+  /* ============ Dor ============ */
+  .dor{
+    background:
+      radial-gradient(ellipse 40% 50% at 90% 10%, rgba(111,227,223,.14), transparent 60%),
+      var(--bg);
+  }
+  .dor-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
+  .dor-card{
+    position:relative;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:36px 30px;
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease), border-color 300ms var(--ease);
+    overflow:hidden; cursor:pointer;
+  }
+  .dor-card::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:3px;
+    background:linear-gradient(90deg, var(--teal), var(--teal-glow));
+    transform:scaleX(0); transform-origin:left;
+    transition:transform 400ms var(--ease);
+  }
+  .dor-card::after{
+    content:''; position:absolute; inset:0;
+    background:radial-gradient(circle at 50% 100%, rgba(44,166,163,.08), transparent 70%);
+    opacity:0; transition:opacity 400ms var(--ease);
+  }
+  .dor-card:hover{ transform:translateY(-8px) scale(1.02); box-shadow:0 24px 48px rgba(20,44,74,.1); border-color:rgba(44,166,163,.4); }
+  .dor-card:hover::before{ transform:scaleX(1); }
+  .dor-card:hover::after{ opacity:1; }
+  .dor-card .num{
+    font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:14px;
+    color:var(--teal-deep); margin-bottom:18px; position:relative; z-index:1;
+    display:inline-block;
+    padding:6px 14px; border-radius:999px;
+    background:rgba(44,166,163,.08); border:1px solid rgba(44,166,163,.25);
+  }
+  .dor-card h3{ font-size:19px; margin-bottom:10px; position:relative; z-index:1; }
+  .dor-card p{ color:var(--text-muted); font-size:15px; position:relative; z-index:1; }
+
+  /* ============ Solução (cards de vidro) ============ */
+  .solucao{
+    background:
+      radial-gradient(ellipse 60% 40% at 80% 0%, rgba(44,166,163,.18), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(44,166,163,.12), transparent 60%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--emerald-dark) 100%);
+  }
+  .solucao h2, .solucao h3{ color:#fff; }
+  .solucao .section-head p{ color:rgba(255,255,255,.68); }
+  .solucao .eyebrow{ color:var(--teal-glow); border-color:rgba(111,227,223,.4); background:rgba(111,227,223,.08); }
+
+  .sol-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .glass-card{
+    background:var(--glass);
+    border:1px solid var(--glass-border);
+    border-radius:20px;
+    padding:26px 26px;
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    display:flex; align-items:flex-start; gap:18px;
+    transition:transform 300ms var(--ease), background 300ms var(--ease), border-color 300ms var(--ease), box-shadow 300ms var(--ease);
+    cursor:pointer; position:relative; overflow:hidden;
+  }
+  .glass-card::before{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(135deg, rgba(111,227,223,.2), transparent 60%);
+    opacity:0; transition:opacity 400ms var(--ease);
+  }
+  .glass-card:hover{ transform:translateY(-6px) scale(1.02); background:rgba(255,255,255,.1); border-color:rgba(111,227,223,.45); box-shadow:0 20px 40px rgba(0,0,0,.3); }
+  .glass-card:hover::before{ opacity:1; }
+  .glass-card .ico{
+    flex-shrink:0; width:46px; height:46px; border-radius:50%;
+    background:rgba(44,166,163,.18); border:1px solid rgba(111,227,223,.4);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 0 20px rgba(44,166,163,.25);
+    animation:glow-pulse 3s ease-in-out infinite;
+  }
+  .glass-card:hover .ico{ animation-play-state:paused; transform:scale(1.1); }
+  .glass-card .ico svg{ width:21px; height:21px; stroke:var(--teal-glow); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .glass-card h3{ font-size:16.5px; margin-bottom:6px; position:relative; z-index:1; }
+  .glass-card p{ color:rgba(255,255,255,.62); font-size:14px; line-height:1.55; position:relative; z-index:1; }
+
+  /* ============ Stats / Números ============ */
+  .stats{
+    background:var(--bg-soft);
+    padding:90px 0;
+  }
+  .stats-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:32px; }
+  .stat-card{
+    text-align:center; padding:32px 20px; border-radius:20px;
+    background:#fff; border:1px solid var(--border);
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease);
+  }
+  .stat-card:hover{ transform:translateY(-6px); box-shadow:0 20px 40px rgba(20,44,74,.08); }
+  .stat-number{
+    font-family:'Space Grotesk',sans-serif; font-weight:700;
+    font-size:clamp(2.2rem, 4vw, 3rem); color:var(--teal);
+    line-height:1; margin-bottom:8px;
+    background:linear-gradient(120deg, var(--teal), var(--teal-light));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .stat-label{ color:var(--text-muted); font-size:14px; font-weight:500; letter-spacing:.03em; }
+
+  /* ============ Showcase com imagem ============ */
+  .showcase{
+    background:
+      radial-gradient(ellipse 50% 40% at 20% 0%, rgba(44,166,163,.12), transparent 60%),
+      var(--bg);
+  }
+  .showcase-grid{ display:grid; grid-template-columns:.95fr 1.05fr; gap:56px; align-items:center; }
+  .showcase-img{
+    position:relative; border-radius:24px; overflow:hidden;
+    box-shadow:0 30px 60px rgba(20,44,74,.15);
+    transition:transform 400ms var(--ease), box-shadow 400ms var(--ease);
+  }
+  .showcase-img:hover{ transform:scale(1.02) translateY(-8px); box-shadow:0 40px 80px rgba(20,44,74,.22); }
+  .showcase-img img{ width:100%; height:auto; display:block; }
+  .showcase-img::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(135deg, rgba(44,166,163,.1), transparent 50%);
+    opacity:0; transition:opacity 400ms var(--ease);
+  }
+  .showcase-img:hover::after{ opacity:1; }
+  .showcase-list{ display:flex; flex-direction:column; gap:18px; margin-top:28px; }
+  .showcase-item{
+    display:flex; align-items:flex-start; gap:14px;
+    padding:18px 20px; border-radius:16px;
+    background:#fff; border:1px solid var(--border);
+    transition:transform 250ms var(--ease), border-color 250ms var(--ease);
+  }
+  .showcase-item:hover{ transform:translateX(8px); border-color:var(--teal); }
+  .showcase-item svg{
+    width:22px; height:22px; flex-shrink:0; stroke:var(--teal); fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round;
+  }
+  .showcase-item-text strong{ display:block; font-weight:600; color:var(--navy); margin-bottom:3px; font-size:15px; }
+  .showcase-item-text span{ color:var(--text-muted); font-size:13.5px; }
+
+  /* ============ B-O-S ============ */
+  .produto{
+    background:
+      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(44,166,163,.12), transparent 60%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--emerald-dark) 100%);
+  }
+  .produto-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+  .produto-img-wrap{
+    position:relative; border-radius:24px; overflow:hidden;
+    max-width:440px; width:100%;
+    justify-self:center; align-self:center;
+    box-shadow:0 40px 80px rgba(0,0,0,.5), 0 0 60px rgba(44,166,163,.15);
+    animation:floaty 9s ease-in-out infinite;
+    transition:transform 400ms var(--ease), box-shadow 400ms var(--ease);
+  }
+  .produto-img-wrap:hover{ transform:scale(1.03) translateY(-12px); box-shadow:0 50px 100px rgba(0,0,0,.6), 0 0 80px rgba(44,166,163,.25); }
+  .produto-img-wrap img{ width:100%; height:auto; object-fit:cover; }
+  .produto-img-wrap::after{
+    content:''; position:absolute; inset:0;
+    background:linear-gradient(135deg, rgba(44,166,163,.2), transparent 60%);
+    opacity:0; transition:opacity 400ms var(--ease);
+  }
+  .produto-img-wrap:hover::after{ opacity:1; }
+  .produto-badge{
+    display:inline-block; padding:7px 16px; border-radius:999px;
+    background:rgba(111,227,223,.12); color:var(--teal-glow);
+    border:1px solid rgba(111,227,223,.35);
+    font-size:13px; font-weight:600; margin-bottom:22px; letter-spacing:.03em;
+  }
+  .produto-copy h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); margin-bottom:20px; color:#fff; }
+  .produto-copy > p{ color:rgba(255,255,255,.68); font-size:16.5px; margin-bottom:30px; }
+  .produto-features{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:34px; }
+  .produto-feature{
+    font-size:14px; color:rgba(255,255,255,.85);
+    display:flex; align-items:center; gap:10px;
+    padding:12px 16px; border-radius:12px;
+    background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+  }
+  .produto-feature svg{ width:15px; height:15px; stroke:var(--teal-glow); flex-shrink:0; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+
+  /* ============ CTA final ============ */
+  .cta-final{
+    padding:70px 16px;
+    background:var(--bg);
+  }
+  .cta-box{
+    position:relative;
+    max-width:1148px; margin:0 auto;
+    border-radius:36px;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(44,166,163,.4), transparent 55%),
+      linear-gradient(160deg, var(--navy-deep), var(--emerald-dark));
+    text-align:center;
+    padding:96px 24px;
+    overflow:hidden;
+  }
+  .cta-box::before, .cta-box::after{
+    content:''; position:absolute; border-radius:50%;
+    border:1px solid rgba(111,227,223,.18);
+  }
+  .cta-box::before{ width:560px; height:560px; top:-280px; left:50%; transform:translateX(-50%); }
+  .cta-box::after{ width:820px; height:820px; top:-410px; left:50%; transform:translateX(-50%); }
+  .cta-inner{ position:relative; z-index:1; max-width:620px; margin:0 auto; }
+  .cta-inner h2{ color:#fff; font-size:clamp(1.9rem,3.6vw,2.7rem); margin-bottom:20px; }
+  .cta-inner p{ color:rgba(255,255,255,.7); font-size:17px; margin-bottom:38px; }
+
+  /* ============ Footer ============ */
+  footer{
+    margin-top:0;
+    background:linear-gradient(160deg, var(--teal) 0%, var(--teal-deep) 100%);
+    color:rgba(255,255,255,.85);
+    padding:64px 0 36px;
+  }
+  .footer-grid{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:32px; }
+  .footer-tagline{ letter-spacing:.1em; text-transform:uppercase; font-size:11px; color:rgba(255,255,255,.65); margin-top:10px; }
+  .footer-bottom{
+    margin-top:48px; padding-top:24px;
+    border-top:1px solid rgba(255,255,255,.25);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:13px; color:rgba(255,255,255,.75);
+  }
+  .footer-links{ display:flex; gap:28px; font-size:14px; }
+  .footer-links a{ transition:color 200ms; color:rgba(255,255,255,.85); }
+  .footer-links a:hover{ color:#fff; text-decoration:underline; }
+
+  /* ============ WhatsApp float ============ */
+  .wa-float{
+    position:fixed; bottom:28px; right:28px; z-index:95;
+    width:60px; height:60px; border-radius:50%;
+    background:linear-gradient(135deg, var(--teal-deep), var(--teal));
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 30px rgba(20,110,107,.5);
+    transition:transform 250ms var(--ease);
+  }
+  .wa-float::before{
+    content:''; position:absolute; inset:-4px; border-radius:50%;
+    border:2px solid rgba(44,166,163,.5);
+    animation:pulse-ring 2.2s var(--ease) infinite;
+  }
+  @keyframes pulse-ring{ 0%{ transform:scale(.9); opacity:1;} 100%{ transform:scale(1.35); opacity:0;} }
+  .wa-float:hover{ transform:scale(1.1); }
+  .wa-float svg{ width:29px; height:29px; fill:#fff; }
+
+  /* ============ Responsivo ============ */
+  @media (max-width: 1024px){
+    section{ padding:84px 0; }
+    .hero{ padding:130px 0 70px; min-height:auto; }
+    .hero-grid{ grid-template-columns:1fr; gap:56px; }
+    .sol-grid{ grid-template-columns:1fr; }
+    .produto-grid, .showcase-grid{ grid-template-columns:1fr; gap:44px; }
+    .stats-grid{ grid-template-columns:repeat(2, 1fr); }
+  }
+  @media (max-width: 720px){
+    .dor-grid, .produto-features, .stats-grid{ grid-template-columns:1fr; }
+    .hero-actions .btn{ width:100%; justify-content:center; }
+    .footer-grid{ flex-direction:column; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  :focus-visible{ outline:2px solid var(--teal); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container" style="padding:0 16px;">
+    <nav class="nav-pill" aria-label="Navegação principal">
+      <a href="/" class="logo" aria-label="Exacta Labs — início">
+        <svg viewBox="0 0 66 64" aria-hidden="true">
+          <rect x="4" y="8" width="34" height="10" rx="5" fill="#142C4A"/>
+          <rect x="4" y="27" width="24" height="10" rx="5" fill="#142C4A"/>
+          <rect x="4" y="46" width="34" height="10" rx="5" fill="#142C4A"/>
+          <path d="M38 14 L53 32 L38 50" stroke="#2CA6A3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="32" r="5.5" fill="#142C4A"/>
+        </svg>
+        <span class="word">Exacta<span class="labs">LABS</span></span>
+      </a>
+      <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener" style="padding:12px 26px; font-size:14px;">Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <span class="eyebrow"><span class="pulse-dot"></span>Para Corretores de Imóveis</span>
+      <h1>Seu site trabalhando 24h enquanto você <span class="accent">fecha negócios</span></h1>
+      <p class="lead">Site profissional com captação de leads, CRM imobiliário integrado e automação com IA. Tecnologia completa pra corretores que querem vender mais sem perder tempo com burocracia.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener">
+          Quero meu site profissional
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#solucao">Ver como funciona</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img src="img/hero-corretor.jpg" alt="Corretor de imóveis profissional entregando chaves de novo imóvel" loading="eager" width="1200" height="800">
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>role</div>
+</section>
+
+<section class="dor" id="dor">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>O problema</span>
+      <h2>Você não perde venda por falta de cliente. Perde por falta de <span class="accent">organização</span>.</h2>
+      <p>Lead interessado que some no WhatsApp, follow-up perdido, cliente que não volta — tecnologia resolveria, mas você não tem tempo pra aprender 10 sistemas diferentes.</p>
+    </div>
+    <div class="dor-grid reveal-stagger">
+      <div class="dor-card">
+        <div class="num">01</div>
+        <h3>Lead some no WhatsApp</h3>
+        <p>Cliente pergunta sobre imóvel, você tá em visita e demora pra responder — quando volta, ele já fechou com outro corretor.</p>
+      </div>
+      <div class="dor-card">
+        <div class="num">02</div>
+        <h3>Sem gestão de leads</h3>
+        <p>Anotações espalhadas, follow-up na cabeça, histórico perdido — cada cliente vira uma loteria de lembrar ou esquecer.</p>
+      </div>
+      <div class="dor-card">
+        <div class="num">03</div>
+        <h3>Site genérico ou inexistente</h3>
+        <p>Portfólio no Instagram, link do portal imobiliário — zero presença própria, zero controle dos seus leads.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid reveal-stagger">
+      <div class="stat-card">
+        <div class="stat-number" data-target="87">0</div>
+        <div class="stat-label">Leads por mês em média</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="24">0</div>
+        <div class="stat-label">Atendimento 24/7</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">Vezes mais conversão</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="100">0</div>
+        <div class="stat-label">Automação de tarefas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="showcase">
+  <div class="container">
+    <div class="showcase-grid">
+      <div class="showcase-img reveal">
+        <img src="img/corretora-pro.jpg" alt="Corretora de imóveis profissional bem-sucedida" loading="lazy" width="800" height="600">
+      </div>
+      <div class="reveal">
+        <div class="section-head">
+          <span class="eyebrow"><span class="pulse-dot"></span>Profissionalismo</span>
+          <h2>Você no controle, <span class="accent">tecnologia</span> fazendo o trabalho pesado</h2>
+          <p>Enquanto você foca em fechar negócios e atender clientes, nosso sistema cuida de toda a parte operacional.</p>
+        </div>
+        <div class="showcase-list">
+          <div class="showcase-item">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+            <div class="showcase-item-text">
+              <strong>Resposta imediata 24/7</strong>
+              <span>IA responde leads em segundos, mesmo de madrugada ou fim de semana</span>
+            </div>
+          </div>
+          <div class="showcase-item">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+            <div class="showcase-item-text">
+              <strong>Histórico completo</strong>
+              <span>Cada conversa, interesse e follow-up registrado automaticamente</span>
+            </div>
+          </div>
+          <div class="showcase-item">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+            <div class="showcase-item-text">
+              <strong>Agendamento inteligente</strong>
+              <span>Sistema agenda visitas diretamente na sua agenda, sem vai-e-vem</span>
+            </div>
+          </div>
+          <div class="showcase-item">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+            <div class="showcase-item-text">
+              <strong>Presença digital profissional</strong>
+              <span>Site próprio otimizado para Google, você aparece quando cliente procura</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="solucao" id="solucao">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>A solução</span>
+      <h2>Site, CRM e automação — tudo integrado, tudo simples</h2>
+      <p>A gente monta a estrutura completa. Você só usa pra vender mais e organizar melhor.</p>
+    </div>
+    <div class="sol-grid reveal-stagger">
+      <div class="glass-card">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg></span>
+        <div><h3>Site profissional que converte</h3><p>Portfólio de imóveis, formulários de captação e SEO de fábrica — seu cliente te acha no Google e já manda mensagem.</p></div>
+      </div>
+      <div class="glass-card">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+        <div><h3>CRM imobiliário simples</h3><p>Todo lead num só lugar: histórico de conversas, imóveis de interesse, próxima ação — zero chance de esquecer alguém.</p></div>
+      </div>
+      <div class="glass-card">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <div><h3>Atendimento automático com IA</h3><p>WhatsApp responde na hora, 24h por dia — informa sobre imóveis disponíveis e agenda visita com você direto.</p></div>
+      </div>
+      <div class="glass-card">
+        <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></span>
+        <div><h3>Campanhas de Google e Meta Ads</h3><p>Anúncios configurados pra captar lead qualificado — quem clica tá procurando imóvel de verdade, não curiosidade.</p></div>
+      </div>
+      <div class="glass-card">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <div><h3>Integração com portais imobiliários</h3><p>Imóvel publicado no portal aparece automaticamente no seu site — uma vez só, visibilidade dobrada.</p></div>
+      </div>
+      <div class="glass-card">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>
+        <div><h3>Relatórios de desempenho</h3><p>Dashboard com quantos leads entraram, quantos você converteu, de onde vieram — pra você saber o que funciona.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="produto" id="bos">
+  <div class="container">
+    <div class="produto-grid">
+      <div class="produto-copy reveal">
+        <span class="produto-badge">Tecnologia própria</span>
+        <h2>B-O-S — o cérebro por trás da sua operação</h2>
+        <p>Sistema com agentes de IA que roda tudo nos bastidores: responde lead, atualiza CRM, agenda visita e mantém você no controle sem precisar ficar em 10 plataformas diferentes.</p>
+        <div class="produto-features">
+          <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>Agentes de IA integrados</div>
+          <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>Automação de atendimento</div>
+          <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>Gestão unificada de leads</div>
+          <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>Relatórios em tempo real</div>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener">Quero conhecer o B-O-S</a>
+      </div>
+      <div class="produto-img-wrap reveal">
+        <img src="img/dashboard-tech.webp" alt="Dashboard do sistema B-O-S com gestão de leads imobiliários e métricas em tempo real" loading="lazy" width="800" height="500">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-final" id="contato">
+  <div class="cta-box reveal">
+    <div class="cta-inner">
+      <h2>Bora montar seu sistema de vendas imobiliárias?</h2>
+      <p>15 minutos de conversa e a gente já mostra como você pode ter site, CRM e automação trabalhando juntos — sem complicação, sem gambiarra.</p>
+      <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener">
+        Falar no WhatsApp agora
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="logo on-dark" aria-label="Exacta Labs">
+          <svg viewBox="0 0 66 64" aria-hidden="true">
+            <rect x="4" y="8" width="34" height="10" rx="5" fill="#FFFFFF"/>
+            <rect x="4" y="27" width="24" height="10" rx="5" fill="#FFFFFF"/>
+            <rect x="4" y="46" width="34" height="10" rx="5" fill="#FFFFFF"/>
+            <path d="M38 14 L53 32 L38 50" stroke="#0D1F35" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="60" cy="32" r="5.5" fill="#FFFFFF"/>
+          </svg>
+          <span class="word">Exacta<span class="labs" style="color:rgba(255,255,255,.75);">LABS</span></span>
+        </a>
+        <div class="footer-tagline">Tecnologia · Sistemas · Resultados</div>
+      </div>
+      <div class="footer-links">
+        <a href="/">Site principal</a>
+        <a href="#solucao">Solução</a>
+        <a href="#bos">B-O-S</a>
+        <a href="https://wa.me/551152170657" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Exacta Labs. Todos os direitos reservados.</span>
+      <span>Feito com tecnologia própria — B-O-S.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/551152170657" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.646.86 5.096 2.317 7.086L4.7 27.53a.8.8 0 0 0 .98.98l5.594-1.588A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm6.47 16.24c-.27.76-1.34 1.4-2.19 1.58-.58.12-1.34.22-3.9-.84-3.27-1.35-5.39-4.65-5.55-4.87-.16-.22-1.33-1.77-1.33-3.38 0-1.61.84-2.4 1.14-2.73.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.27.65.9 2.26.98 2.42.08.16.13.35.03.57-.1.22-.15.35-.3.53-.15.18-.31.4-.44.54-.15.16-.3.33-.13.63.17.3.75 1.25 1.62 2.03 1.12 1 2.06 1.31 2.37 1.46.3.15.48.13.66-.08.19-.21.79-.9 1-1.21.21-.3.42-.25.7-.15.28.1 1.78.84 2.09 1 .3.15.5.22.58.35.08.12.08.72-.19 1.48z"/></svg>
+</a>
+
+<script>
+  // Header scroll state
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+  // Animação de contadores
+  const animateCounter = (el) => {
+    const target = parseInt(el.dataset.target);
+    const duration = 2000;
+    const step = target / (duration / 16);
+    let current = 0;
+
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) {
+        el.textContent = target + (el.dataset.target === '100' ? '%' : el.dataset.target === '24' ? 'h' : '+');
+        clearInterval(timer);
+      } else {
+        el.textContent = Math.floor(current) + (el.dataset.target === '100' ? '%' : el.dataset.target === '24' ? 'h' : '+');
+      }
+    }, 16);
+  };
+
+  // Observer para contadores
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counters = entry.target.querySelectorAll('.stat-number');
+        counters.forEach(counter => animateCounter(counter));
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const statsSection = document.querySelector('.stats');
+  if (statsSection) statsObserver.observe(statsSection);
+
+  // Parallax suave em imagens
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const scrolled = window.pageYOffset;
+
+        // Parallax no hero
+        const heroImg = document.querySelector('.hero-img-wrap');
+        if (heroImg) {
+          const heroOffset = heroImg.getBoundingClientRect().top + scrolled;
+          if (scrolled < heroOffset + heroImg.offsetHeight) {
+            heroImg.style.transform = `translateY(${(scrolled - heroOffset) * 0.15}px)`;
+          }
+        }
+
+        // Parallax em showcase
+        const showcaseImg = document.querySelector('.showcase-img');
+        if (showcaseImg) {
+          const showcaseOffset = showcaseImg.getBoundingClientRect().top + scrolled;
+          if (scrolled > showcaseOffset - window.innerHeight && scrolled < showcaseOffset + showcaseImg.offsetHeight) {
+            showcaseImg.style.transform = `translateY(${(scrolled - showcaseOffset + window.innerHeight) * -0.08}px)`;
+          }
+        }
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Micro-interação nos botões
+  document.querySelectorAll('.btn-primary').forEach(btn => {
+    btn.addEventListener('mouseenter', function(e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const ripple = document.createElement('span');
+      ripple.style.cssText = `
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.6);
+        transform: translate(-50%, -50%) scale(0);
+        animation: ripple 600ms ease-out;
+        pointer-events: none;
+        left: ${x}px;
+        top: ${y}px;
+      `;
+
+      this.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+    });
+  });
+
+  // Adicionar animação de ripple
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes ripple {
+      to {
+        transform: translate(-50%, -50%) scale(20);
+        opacity: 0;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+</script>
+
+</body>
+</html>

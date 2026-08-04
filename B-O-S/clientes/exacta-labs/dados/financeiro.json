@@ -1,0 +1,126 @@
+{
+  "categorias": [
+    {
+      "nome": "Vendas",
+      "tipo": "entrada",
+      "cor": "#16a34a",
+      "id": "1394f261e60f"
+    },
+    {
+      "nome": "Serviços",
+      "tipo": "entrada",
+      "cor": "#0891b2",
+      "id": "fc4ff4acd785"
+    },
+    {
+      "nome": "Assinaturas",
+      "tipo": "entrada",
+      "cor": "#6366f1",
+      "id": "6f5da6573045"
+    },
+    {
+      "nome": "Outros recebimentos",
+      "tipo": "entrada",
+      "cor": "#65a30d",
+      "id": "28c2bae1fcff"
+    },
+    {
+      "nome": "Fornecedores",
+      "tipo": "saida",
+      "cor": "#dc2626",
+      "id": "954bb842837f"
+    },
+    {
+      "nome": "Folha de pagamento",
+      "tipo": "saida",
+      "cor": "#c026d3",
+      "id": "af4a07435a8e"
+    },
+    {
+      "nome": "Impostos",
+      "tipo": "saida",
+      "cor": "#ca8a04",
+      "id": "4724b5ee62da"
+    },
+    {
+      "nome": "Marketing",
+      "tipo": "saida",
+      "cor": "#0ea5e9",
+      "id": "94b841f89ffd"
+    },
+    {
+      "nome": "Operacional",
+      "tipo": "saida",
+      "cor": "#f97316",
+      "id": "26451d528e08"
+    },
+    {
+      "nome": "Outras despesas",
+      "tipo": "saida",
+      "cor": "#78716c",
+      "id": "366f1fd28383"
+    }
+  ],
+  "carteiras": [
+    {
+      "id": "834595016438",
+      "nome": "nu PJ",
+      "tipo": "corrente",
+      "saldoInicial": 10,
+      "criadoEm": "2026-07-24T13:44:38.975Z"
+    }
+  ],
+  "lancamentos": [
+    {
+      "id": "e2bc5a7ccc8c",
+      "tipo": "saida",
+      "descricao": "Salário - bruno",
+      "categoriaId": "af4a07435a8e",
+      "valor": 180000,
+      "data": "2026-07-05",
+      "criadoEm": "2026-07-24T02:43:08.049Z"
+    },
+    {
+      "id": "1a04ce8f06d5",
+      "tipo": "saida",
+      "descricao": "Salário - rebeka",
+      "categoriaId": "af4a07435a8e",
+      "valor": 20000,
+      "data": "2026-07-05",
+      "criadoEm": "2026-07-24T02:43:08.049Z"
+    },
+    {
+      "id": "5a53e71b4d6b",
+      "tipo": "entrada",
+      "descricao": "teste",
+      "categoriaId": "fc4ff4acd785",
+      "valor": 200000,
+      "data": "2026-07-25",
+      "recorrente": false,
+      "criadoEm": "2026-07-25T02:46:51.177Z"
+    }
+  ],
+  "contas": [],
+  "assinaturas": [],
+  "metas": [],
+  "funcionarios": [
+    {
+      "id": "26443d0432a2",
+      "nome": "bruno",
+      "cargo": "ceo",
+      "salario": 180000,
+      "diaPagamento": 5,
+      "ativo": true,
+      "criadoEm": "2026-07-24T02:42:42.323Z"
+    },
+    {
+      "id": "664a197cc1f0",
+      "nome": "rebeka",
+      "cargo": "financeiro",
+      "salario": 20000,
+      "diaPagamento": 5,
+      "ativo": true,
+      "criadoEm": "2026-07-24T02:42:59.641Z"
+    }
+  ]
+}

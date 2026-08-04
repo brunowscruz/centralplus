@@ -1,0 +1,10 @@
+[
+  {
+    "id": "conta-padrao",
+    "nome": "Conta API (padrão)",
+    "tipo": "api_key",
+    "plano": "Pay-as-you-go — chave de API da Anthropic",
+    "compartilhada": true,
+    "criado_em": "2026-07-23T02:46:31.033Z"
+  }
+]

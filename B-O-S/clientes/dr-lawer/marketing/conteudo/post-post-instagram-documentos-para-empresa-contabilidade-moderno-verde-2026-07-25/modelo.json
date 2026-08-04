@@ -1,0 +1,210 @@
+{
+  "paginas": [
+    {
+      "largura": 1080,
+      "altura": 1350,
+      "camadas": [
+        {
+          "id": "camada-slide1.xml-11",
+          "x": 0,
+          "y": 393,
+          "largura": 1104,
+          "altura": 914,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image1.jpeg",
+          "contorno": [
+            {
+              "tipo": "M",
+              "pontos": [
+                [
+                  0.5411922750169343,
+                  0.3464307020849033
+                ]
+              ]
+            },
+            {
+              "tipo": "L",
+              "pontos": [
+                [
+                  1,
+                  0.6926121734488822
+                ]
+              ]
+            },
+            {
+              "tipo": "C",
+              "pontos": [
+                [
+                  0.8415626375661333,
+                  0.9986674987440342
+                ],
+                [
+                  0.5077717657034533,
+                  1.0918797883697564
+                ],
+                [
+                  0.2544374469025183,
+                  0.9007198254207486
+                ]
+              ]
+            },
+            {
+              "tipo": "C",
+              "pontos": [
+                [
+                  0.0011029656618687389,
+                  0.7095598624717407
+                ],
+                [
+                  -0.07605264996028349,
+                  0.30605532529515195
+                ],
+                [
+                  0.08217825159637629,
+                  0
+                ]
+              ]
+            },
+            {
+              "tipo": "L",
+              "pontos": [
+                [
+                  0.5411922750169343,
+                  0.3464307020849033
+                ]
+              ]
+            },
+            {
+              "tipo": "Z",
+              "pontos": []
+            }
+          ]
+        },
+        {
+          "id": "camada-slide1.xml-0",
+          "x": 218,
+          "y": -251,
+          "largura": 1210,
+          "altura": 594,
+          "visivel": true,
+          "rotacao": -32.18,
+          "tipo": "imagem",
+          "arquivo": "image2.png"
+        },
+        {
+          "id": "camada-slide1.xml-1",
+          "x": 910,
+          "y": 46,
+          "largura": 808,
+          "altura": 612,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image4.png"
+        },
+        {
+          "id": "camada-slide1.xml-2",
+          "x": 93,
+          "y": 393,
+          "largura": 35,
+          "altura": 27,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image5.png"
+        },
+        {
+          "id": "camada-slide1.xml-3",
+          "x": 93,
+          "y": 438,
+          "largura": 35,
+          "altura": 27,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image5.png"
+        },
+        {
+          "id": "camada-slide1.xml-4",
+          "x": 93,
+          "y": 483,
+          "largura": 35,
+          "altura": 27,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image5.png"
+        },
+        {
+          "id": "camada-slide1.xml-5",
+          "x": 93,
+          "y": 528,
+          "largura": 35,
+          "altura": 27,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image5.png"
+        },
+        {
+          "id": "camada-slide1.xml-6",
+          "x": 93,
+          "y": 574,
+          "largura": 35,
+          "altura": 27,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image5.png"
+        },
+        {
+          "id": "camada-slide1.xml-7",
+          "x": 93,
+          "y": 619,
+          "largura": 35,
+          "altura": 27,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image5.png"
+        },
+        {
+          "id": "camada-slide1.xml-8",
+          "x": 87,
+          "y": 102,
+          "largura": 670,
+          "altura": 228,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Documentos para abrir\numa empresa",
+          "tamanhoFonte": 61,
+          "cor": "000000",
+          "fonte": "Garet",
+          "negrito": true
+        },
+        {
+          "id": "camada-slide1.xml-9",
+          "x": 143,
+          "y": 384,
+          "largura": 600,
+          "altura": 313,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Cópia do RG autenticada\nCópia simples do CPF\nCertidão de casamento\nCarteira do órgão regularmentador\nÚltima declaração do IRPF\nCópia simples do comprovante\nde endereço residencial",
+          "tamanhoFonte": 24,
+          "cor": "000000",
+          "fonte": "Garet"
+        },
+        {
+          "id": "camada-slide1.xml-10",
+          "x": 87,
+          "y": 1227,
+          "largura": 343,
+          "altura": 36,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "@grandesite",
+          "tamanhoFonte": 27,
+          "cor": "000000",
+          "fonte": "Garet",
+          "negrito": true
+        }
+      ],
+      "corFundo": "D2E1B8"
+    }
+  ]
+}

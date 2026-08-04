@@ -1,0 +1,80 @@
+{
+  "nomeLegal": "Exacta Labs",
+  "telefone": "11 5217-0657",
+  "enderecoCompleto": "Av. Pres. Kennedy, 6920 - Sl 07 - Cidade Ocian, Praia Grande - SP, 11700-010",
+  "categoriaGmbPrincipal": "Agência de marketing",
+  "servicos": [
+    {
+      "slug": "marketing-digital",
+      "nome": "Marketing Digital",
+      "descricaoCurta": "Estratégias completas de marketing digital para negócios locais"
+    },
+    {
+      "slug": "desenvolvimento-sites",
+      "nome": "Desenvolvimento de Sites",
+      "descricaoCurta": "Sites sob medida com foco em conversão e resultados"
+    },
+    {
+      "slug": "google-ads",
+      "nome": "Google Ads",
+      "descricaoCurta": "Campanhas de anúncios no Google para atrair clientes qualificados"
+    },
+    {
+      "slug": "meta-ads",
+      "nome": "Meta Ads",
+      "descricaoCurta": "Anúncios no Facebook e Instagram com foco em ROI"
+    },
+    {
+      "slug": "gestao-redes-sociais",
+      "nome": "Gestão de Redes Sociais",
+      "descricaoCurta": "Criação de conteúdo e gestão profissional do Instagram e Facebook"
+    },
+    {
+      "slug": "crm",
+      "nome": "CRM",
+      "descricaoCurta": "Sistema de gestão de clientes personalizado para seu negócio"
+    },
+    {
+      "slug": "sistema-financeiro",
+      "nome": "Sistema Financeiro",
+      "descricaoCurta": "Controle financeiro completo e integrado"
+    },
+    {
+      "slug": "consultoria-ia",
+      "nome": "Consultoria em IA",
+      "descricaoCurta": "Automação e otimização de processos com inteligência artificial"
+    },
+    {
+      "slug": "bos",
+      "nome": "B-O-S",
+      "descricaoCurta": "Sistema operacional de marketing com agentes de IA"
+    }
+  ],
+  "areasAtuacao": [
+    {
+      "slug": "praia-grande-sp",
+      "cidade": "Praia Grande",
+      "estado": "SP"
+    },
+    {
+      "slug": "santos-sp",
+      "cidade": "Santos",
+      "estado": "SP"
+    },
+    {
+      "slug": "baixada-santista-sp",
+      "cidade": "Baixada Santista",
+      "estado": "SP"
+    },
+    {
+      "slug": "brasil",
+      "cidade": "Todo Brasil",
+      "estado": "Nacional"
+    }
+  ],
+  "atualizadoEm": "2026-07-29T23:13:22.590Z",
+  "linkGmb": "https://business.google.com/n/7774539561121322652/profile?hl=pt-BR&fid=13026750311744487443",
+  "palavrasChave": [],
+  "diferenciais": [],
+  "placeId": "ChIJD8iZvRQfzpQRE0A9zWNQyLQ"
+}

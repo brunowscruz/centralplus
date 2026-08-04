@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta Comercial — B-O-S | Exacta Labs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #142C4A;
+    --navy-deep: #0D1F35;
+    --emerald-dark: #0B2B2E;
+    --teal: #2CA6A3;
+    --teal-light: #4FC3C0;
+    --teal-glow: #6FE3DF;
+    --teal-deep: #146E6B;
+    --urgent: #F2622E;
+    --urgent-dark: #C4471A;
+    --bg: #FFFFFF;
+    --bg-soft: #F4F9F9;
+    --text: #16233A;
+    --text-muted: #52627A;
+    --border: #E3E9F0;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{ font-family:'Inter',sans-serif; color:var(--text); background:var(--bg-soft); line-height:1.6; }
+  h1,h2,h3{ font-family:'Space Grotesk',sans-serif; font-weight:700; letter-spacing:-.02em; color:var(--navy); }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+  ul{ list-style:none; }
+  .doc{ max-width:880px; margin:0 auto; background:#fff; box-shadow:0 30px 80px rgba(20,44,74,.12); }
+  .page{ padding:64px 72px; }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px; padding:7px 16px; border-radius:999px;
+    border:1.5px solid rgba(44,166,163,.4); font-size:12.5px; font-weight:700; letter-spacing:.04em;
+    color:var(--teal-deep); background:rgba(44,166,163,.06); margin-bottom:16px; text-transform:uppercase;
+  }
+  .eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--teal); }
+
+  /* ===== Capa ===== */
+  .capa{
+    background:linear-gradient(160deg, var(--navy-deep), var(--emerald-dark));
+    color:#fff; padding:64px 72px 56px; position:relative; overflow:hidden;
+  }
+  .capa::before{ content:''; position:absolute; inset:0; background:radial-gradient(ellipse 55% 55% at 90% 0%, rgba(111,227,223,.18), transparent 60%); }
+  .capa-top{ position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; }
+  .logo{ display:flex; align-items:center; gap:11px; }
+  .logo svg{ height:34px; width:auto; }
+  .logo .word{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; color:#fff; line-height:1.05; }
+  .logo .word .labs{ display:block; font-size:9px; font-weight:600; letter-spacing:.4em; color:var(--teal-glow); }
+  .capa-tag{ font-size:12.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:rgba(255,255,255,.6); }
+  .capa-body{ position:relative; z-index:1; margin-top:64px; }
+  .capa-badge{
+    display:inline-flex; align-items:center; gap:8px; padding:7px 16px; border-radius:999px;
+    border:1.5px solid rgba(111,227,223,.4); font-size:12.5px; font-weight:700; letter-spacing:.04em;
+    color:var(--teal-glow); background:rgba(111,227,223,.08); margin-bottom:20px; text-transform:uppercase;
+  }
+  .capa-body h1{ color:#fff; font-size:2.5rem; line-height:1.14; max-width:640px; }
+  .capa-body h1 .accent{ background:linear-gradient(120deg, var(--teal-light), var(--teal-glow)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .capa-sub{ color:rgba(255,255,255,.7); font-size:16.5px; margin-top:16px; max-width:520px; }
+  .capa-meta{ position:relative; z-index:1; display:flex; gap:40px; margin-top:52px; flex-wrap:wrap; }
+  .capa-meta .item .label{ font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:rgba(255,255,255,.45); margin-bottom:4px; }
+  .capa-meta .item .val{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; color:#fff; }
+
+  /* ===== Seções gerais ===== */
+  .section-head{ max-width:620px; margin-bottom:34px; }
+  .section-head h2{ font-size:1.6rem; margin-bottom:10px; line-height:1.24; }
+  .section-head p{ color:var(--text-muted); font-size:15px; }
+
+  .dor-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .dor-card{ display:flex; gap:14px; background:var(--bg-soft); border:1px solid var(--border); border-radius:14px; padding:20px; }
+  .dor-card .num{ font-family:'Space Grotesk',sans-serif; font-weight:800; font-size:20px; color:rgba(44,166,163,.35); flex-shrink:0; }
+  .dor-card h3{ font-size:14.5px; margin-bottom:4px; }
+  .dor-card p{ color:var(--text-muted); font-size:13px; }
+
+  .produto-block{ display:grid; grid-template-columns:1fr .8fr; gap:36px; align-items:center; background:linear-gradient(160deg, var(--navy-deep), var(--emerald-dark)); border-radius:22px; padding:40px; color:#fff; }
+  .produto-block h2{ color:#fff; font-size:1.5rem; margin-bottom:12px; }
+  .produto-block p{ color:rgba(255,255,255,.72); font-size:14.5px; }
+  .produto-block img{ border-radius:16px; }
+
+  .feat-grid{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .feat{ display:flex; align-items:flex-start; gap:12px; padding:16px 18px; border:1px solid var(--border); border-radius:14px; }
+  .feat .ico{ width:34px; height:34px; border-radius:10px; flex-shrink:0; background:rgba(44,166,163,.12); border:1px solid rgba(44,166,163,.3); display:flex; align-items:center; justify-content:center; }
+  .feat .ico svg{ width:17px; height:17px; stroke:var(--teal-deep); fill:none; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+  .feat h3{ font-size:14px; margin-bottom:3px; }
+  .feat p{ color:var(--text-muted); font-size:12.5px; }
+
+  .escopo-list{ display:flex; flex-direction:column; gap:12px; }
+  .escopo-item{ display:flex; align-items:flex-start; gap:14px; padding:16px 20px; background:var(--bg-soft); border-radius:14px; border:1px solid var(--border); }
+  .escopo-item .chk{ width:24px; height:24px; border-radius:50%; background:var(--teal); flex-shrink:0; display:flex; align-items:center; justify-content:center; }
+  .escopo-item .chk svg{ width:13px; height:13px; stroke:#fff; fill:none; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+  .escopo-item .txt strong{ display:block; font-size:14.5px; color:var(--navy); margin-bottom:2px; }
+  .escopo-item .txt span{ font-size:13px; color:var(--text-muted); }
+
+  .infra-note{ margin-top:18px; display:flex; gap:12px; align-items:flex-start; background:rgba(44,166,163,.07); border:1.5px solid rgba(44,166,163,.28); border-radius:14px; padding:16px 20px; }
+  .infra-note .ico{ font-size:18px; flex-shrink:0; }
+  .infra-note p{ font-size:13.5px; color:var(--teal-deep); font-weight:600; line-height:1.5; }
+
+  .suporte-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .suporte-card{ background:var(--bg-soft); border:1px solid var(--border); border-radius:14px; padding:22px 20px; text-align:center; }
+  .suporte-card .big{ font-family:'Space Grotesk',sans-serif; font-weight:800; font-size:1.8rem; color:var(--teal-deep); }
+  .suporte-card .lbl{ font-size:12.5px; color:var(--text-muted); margin-top:6px; line-height:1.4; }
+
+  /* ===== Investimento ===== */
+  .invest-box{
+    background:linear-gradient(160deg, var(--navy-deep), var(--emerald-dark)); border-radius:22px;
+    padding:40px 44px; color:#fff; position:relative; overflow:hidden;
+  }
+  .invest-box::before{ content:''; position:absolute; inset:0; background:radial-gradient(ellipse 55% 60% at 92% 0%, rgba(111,227,223,.18), transparent 60%); }
+  .invest-top{ position:relative; z-index:1; display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:24px; }
+  .invest-label{ font-size:12.5px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--teal-glow); margin-bottom:10px; }
+  .invest-title{ font-size:1.3rem; color:#fff; max-width:360px; line-height:1.3; }
+  .invest-price{ text-align:right; }
+  .invest-de{ font-size:15px; color:rgba(255,255,255,.5); text-decoration:line-through; }
+  .invest-por{ display:flex; align-items:baseline; gap:8px; justify-content:flex-end; margin-top:2px; }
+  .invest-por .cifrao{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:22px; color:var(--teal-glow); }
+  .invest-por .valor{ font-family:'Space Grotesk',sans-serif; font-weight:800; font-size:48px; color:#fff; line-height:1; }
+  .invest-note{ font-size:12.5px; color:rgba(255,255,255,.6); margin-top:4px; }
+  .invest-pix{ position:relative; z-index:1; margin-top:24px; display:flex; align-items:center; gap:12px; background:rgba(111,227,223,.1); border:1.5px solid rgba(111,227,223,.3); border-radius:12px; padding:14px 18px; }
+  .invest-pix .ico{ font-size:18px; flex-shrink:0; }
+  .invest-pix p{ font-size:13.5px; color:rgba(255,255,255,.88); }
+  .invest-pix strong{ color:var(--teal-glow); }
+  .invest-bullets{ position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:10px; margin-top:22px; }
+  .invest-bullet{ font-size:12.5px; font-weight:600; color:rgba(255,255,255,.85); background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); padding:7px 14px; border-radius:999px; }
+
+  /* ===== Diferenciais ===== */
+  .dif-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .dif-card{ text-align:center; padding:20px 14px; }
+  .dif-card .val{ font-family:'Space Grotesk',sans-serif; font-weight:800; font-size:1.7rem; color:var(--navy); }
+  .dif-card .lbl{ font-size:12.5px; color:var(--text-muted); margin-top:6px; line-height:1.4; }
+
+  /* ===== CTA final ===== */
+  .cta-box{
+    background:linear-gradient(135deg, var(--teal), var(--teal-deep)); color:#fff; border-radius:22px;
+    padding:40px 44px; text-align:center;
+  }
+  .cta-box h2{ color:#fff; font-size:1.5rem; margin-bottom:10px; }
+  .cta-box p{ color:rgba(255,255,255,.85); font-size:14.5px; margin-bottom:22px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:10px; background:#fff; color:var(--teal-deep);
+    font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; padding:15px 30px;
+    border-radius:999px; text-decoration:none;
+  }
+  .btn svg{ width:17px; height:17px; }
+
+  /* ===== Rodapé ===== */
+  .rodape{ background:var(--navy-deep); color:rgba(255,255,255,.55); padding:36px 72px; }
+  .rodape-grid{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+  .rodape .logo .word{ color:#fff; }
+  .rodape-val{ font-size:12px; text-align:right; line-height:1.5; }
+
+  hr.div{ border:none; border-top:1px solid var(--border); margin:44px 0; }
+
+  @media print{
+    body{ background:#fff; }
+    .doc{ box-shadow:none; max-width:100%; }
+    .page{ padding:36px 44px; }
+    section{ page-break-inside:avoid; }
+  }
+  @media (max-width:720px){
+    .page, .capa, .rodape{ padding:36px 22px; }
+    .dor-grid, .feat-grid, .suporte-grid, .dif-grid{ grid-template-columns:1fr; }
+    .produto-block{ grid-template-columns:1fr; }
+    .invest-top{ flex-direction:column; }
+    .invest-price{ text-align:left; }
+    .invest-por{ justify-content:flex-start; }
+    .capa-body h1{ font-size:1.9rem; }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <!-- ===== CAPA ===== -->
+  <div class="capa">
+    <div class="capa-top">
+      <div class="logo">
+        <svg viewBox="0 0 66 64" aria-hidden="true">
+          <rect x="4" y="8" width="34" height="10" rx="5" fill="#fff"/>
+          <rect x="4" y="27" width="24" height="10" rx="5" fill="#fff"/>
+          <rect x="4" y="46" width="34" height="10" rx="5" fill="#fff"/>
+          <path d="M38 14 L53 32 L38 50" stroke="#6FE3DF" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="32" r="5.5" fill="#fff"/>
+        </svg>
+        <span class="word">Exacta<span class="labs">LABS</span></span>
+      </div>
+      <span class="capa-tag">Proposta Comercial</span>
+    </div>
+    <div class="capa-body">
+      <span class="capa-badge">✦ Produto próprio Exacta Labs</span>
+      <h1>B-O-S — o sistema operacional de marketing que roda <span class="accent">dentro da sua empresa</span></h1>
+      <p class="capa-sub">Sites, redes sociais, anúncios e atendimento organizados por agentes de IA — instalado na sua própria infraestrutura, sem depender de mensalidade pra continuar funcionando.</p>
+    </div>
+    <div class="capa-meta">
+      <div class="item"><div class="label">Preparada para</div><div class="val">Diogo Carvalho</div></div>
+      <div class="item"><div class="label">Emitida em</div><div class="val">23/07/2026</div></div>
+      <div class="item"><div class="label">Validade da proposta</div><div class="val">30 dias</div></div>
+      <div class="item"><div class="label">Consultor</div><div class="val">Exacta Labs · wa.me/551152170657</div></div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <!-- ===== O PROBLEMA ===== -->
+    <section>
+      <span class="eyebrow"><span class="dot"></span>O problema</span>
+      <div class="section-head">
+        <h2>Você não perde venda por falta de esforço. Perde por falta de sistema.</h2>
+        <p>Marketing sem gestão, atendimento sem organização e tecnologia cara demais pra ser aplicada — é isso que trava negócios bons de crescer.</p>
+      </div>
+      <div class="dor-grid">
+        <div class="dor-card"><div class="num">01</div><div><h3>Redes sociais paradas</h3><p>Perfil bonito, mas sem constância — e sem constância, sem alcance e sem lead novo entrando.</p></div></div>
+        <div class="dor-card"><div class="num">02</div><div><h3>Lead que some no WhatsApp</h3><p>Cliente interessado chega, ninguém responde a tempo, e a venda vai pro concorrente que respondeu primeiro.</p></div></div>
+        <div class="dor-card"><div class="num">03</div><div><h3>Site que não vende (ou nem existe)</h3><p>Sem presença digital de verdade, quem procura no Google simplesmente não te encontra.</p></div></div>
+        <div class="dor-card"><div class="num">04</div><div><h3>Fornecedor pra cada coisa</h3><p>Agência de anúncio, freela de post, sistema à parte — cada um fala uma língua diferente, e ninguém conversa entre si.</p></div></div>
+      </div>
+    </section>
+
+    <hr class="div">
+
+    <!-- ===== A SOLUÇÃO ===== -->
+    <section>
+      <span class="eyebrow"><span class="dot"></span>A solução</span>
+      <div class="produto-block">
+        <div>
+          <h2>B-O-S — o sistema operacional do seu marketing</h2>
+          <p>Um sistema com agentes de IA que roda o marketing do seu negócio: cria conteúdo, publica nas redes, responde lead e mantém tudo em movimento. Instalado direto na sua infraestrutura — não é mais uma ferramenta terceirizada que você aluga por mês, é um sistema seu.</p>
+        </div>
+        <img src="img/bos-glass.png" alt="Painel do B-O-S, sistema operacional de marketing com IA" loading="lazy">
+      </div>
+    </section>
+
+    <hr class="div">
+
+    <!-- ===== RECURSOS ===== -->
+    <section>
+      <span class="eyebrow"><span class="dot"></span>Recursos</span>
+      <div class="section-head">
+        <h2>O que o B-O-S faz pela sua operação</h2>
+        <p>Tudo integrado, falando a mesma língua — sem planilha, sem retrabalho.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></span><div><h3>Agentes de IA de marketing</h3><p>Criam conteúdo, planejam publicações e mantêm sua marca ativa sem parar a operação.</p></div></div>
+        <div class="feat"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span><div><h3>Automação de redes sociais</h3><p>Instagram, Facebook e LinkedIn publicando sozinhos, no tom de voz da sua marca.</p></div></div>
+        <div class="feat"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></span><div><h3>Gerador de anúncios Google Ads</h3><p>Campanhas montadas a partir dos dados reais do seu negócio, prontas pra rodar.</p></div></div>
+        <div class="feat"><span class="ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87"/></svg></span><div><h3>Organização de leads</h3><p>Cada contato registrado e acompanhado — sem informação perdida em conversa antiga.</p></div></div>
+        <div class="feat"><span class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg></span><div><h3>Memória do seu negócio</h3><p>O sistema aprende o contexto da sua empresa e ajusta as respostas conforme sua operação evolui.</p></div></div>
+      </div>
+    </section>
+
+    <hr class="div">
+
+    <!-- ===== ESCOPO / ENTREGA ===== -->
+    <section>
+      <span class="eyebrow"><span class="dot"></span>O que está incluso</span>
+      <div class="section-head">
+        <h2>Entrega completa, não só o sistema</h2>
+        <p>Você recebe o B-O-S já rodando junto com a base digital da sua empresa.</p>
+      </div>
+      <div class="escopo-list">
+        <div class="escopo-item"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div class="txt"><strong>Instalação do B-O-S na sua infraestrutura</strong><span>Configurado direto na máquina/servidor da empresa, com suporte online durante todo o processo.</span></div></div>
+        <div class="escopo-item"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div class="txt"><strong>Landing page da empresa</strong><span>Site profissional pronto pra apresentar seu negócio e captar contato.</span></div></div>
+        <div class="escopo-item"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div class="txt"><strong>Domínio, e-mails profissionais e hospedagem</strong><span>Toda a base técnica configurada e no ar, no nome da sua empresa.</span></div></div>
+        <div class="escopo-item"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div class="txt"><strong>Configuração das redes sociais</strong><span>Perfis organizados e prontos pra operação automatizada do B-O-S.</span></div></div>
+        <div class="escopo-item"><span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg></span><div class="txt"><strong>Gerador de anúncios Google Ads</strong><span>Ferramenta configurada e pronta pra montar campanha quando você decidir investir em mídia paga.</span></div></div>
+      </div>
+      <div class="infra-note">
+        <span class="ico">🔑</span>
+        <p>A infraestrutura é 100% sua. Depois de instalado, você pode fazer o que quiser com ela — sem depender da Exacta Labs pra continuar operando.</p>
+      </div>
+    </section>
+
+    <hr class="div">
+
+    <!-- ===== SUPORTE E PRAZO ===== -->
+    <section>
+      <span class="eyebrow"><span class="dot"></span>Suporte e prazo</span>
+      <div class="suporte-grid">
+        <div class="suporte-card"><div class="big">30 dias</div><div class="lbl">de suporte incluso pra ajustes e uso geral, sem custo</div></div>
+        <div class="suporte-card"><div class="big">Até 5 dias</div><div class="lbl">pra entregar o B-O-S com a landing page, após você enviar os dados da empresa</div></div>
+        <div class="suporte-card"><div class="big">R$ 0</div><div class="lbl">de mensalidade — investimento único, sem taxa recorrente</div></div>
+      </div>
+      <div class="infra-note" style="margin-top:16px;">
+        <span class="ico">ℹ️</span>
+        <p>Depois dos 30 dias, suporte contínuo (se você quiser) vira um serviço à parte, sob consulta. Não existe cobrança automática — só se você decidir continuar.</p>
+      </div>
+    </section>
+
+    <hr class="div">
+
+    <!-- ===== INVESTIMENTO ===== -->
+    <section>
+      <span class="eyebrow"><span class="dot"></span>Investimento</span>
+      <div class="invest-box">
+        <div class="invest-top">
+          <div>
+            <div class="invest-label">Instalação do B-O-S + entrega completa</div>
+            <div class="invest-title">B-O-S, landing page, domínio, e-mails, hospedagem, redes sociais e gerador de anúncios</div>
+          </div>
+          <div class="invest-price">
+            <div class="invest-de">De R$ 3.000</div>
+            <div class="invest-por"><span class="cifrao">R$</span><span class="valor">2.300</span></div>
+            <div class="invest-note">pagamento único, sem mensalidade</div>
+          </div>
+        </div>
+        <div class="invest-pix">
+          <span class="ico">💠</span>
+          <p><strong>Pagando no Pix, tem desconto adicional</strong> — valor final a confirmar com o time comercial no fechamento.</p>
+        </div>
+        <div class="invest-bullets">
+          <span class="invest-bullet">30 dias de suporte incluso</span>
+          <span class="invest-bullet">Entrega em até 5 dias úteis</span>
+          <span class="invest-bullet">Infraestrutura 100% sua</span>
+          <span class="invest-bullet">Sem taxa mensal</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="div">
+
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section>
+      <span class="eyebrow"><span class="dot"></span>Por que a Exacta Labs</span>
+      <div class="dif-grid">
+        <div class="dif-card"><div class="val">10+</div><div class="lbl">anos de tecnologia aplicada a negócios reais</div></div>
+        <div class="dif-card"><div class="val">1</div><div class="lbl">produto próprio — o B-O-S não é ferramenta terceirizada revendida</div></div>
+        <div class="dif-card"><div class="val">100%</div><div class="lbl">infraestrutura sua, do jeito que você quiser usar depois</div></div>
+      </div>
+    </section>
+
+    <hr class="div">
+
+    <!-- ===== PRÓXIMOS PASSOS ===== -->
+    <section>
+      <div class="cta-box">
+        <h2>Bora colocar o B-O-S pra trabalhar pela sua empresa?</h2>
+        <p>Fala com a gente no WhatsApp pra confirmar os dados, alinhar o desconto do Pix e começar — em até 5 dias seu B-O-S e sua landing page estão no ar.</p>
+        <a class="btn" href="https://wa.me/551152170657?text=Oi!%20Recebi%20a%20proposta%20comercial%20do%20B-O-S%20e%20quero%20fechar." target="_blank" rel="noopener">
+          Falar com a Exacta Labs
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="rodape">
+    <div class="rodape-grid">
+      <div class="logo">
+        <svg viewBox="0 0 66 64" aria-hidden="true">
+          <rect x="4" y="8" width="34" height="10" rx="5" fill="#fff"/>
+          <rect x="4" y="27" width="24" height="10" rx="5" fill="#fff"/>
+          <rect x="4" y="46" width="34" height="10" rx="5" fill="#fff"/>
+          <path d="M38 14 L53 32 L38 50" stroke="#6FE3DF" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="32" r="5.5" fill="#fff"/>
+        </svg>
+        <span class="word">Exacta<span class="labs">LABS</span></span>
+      </div>
+      <div class="rodape-val">Proposta válida por 30 dias a partir da emissão.<br>Valores e condições sujeitos a confirmação do time comercial.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

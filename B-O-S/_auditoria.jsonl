@@ -1,0 +1,166 @@
+{"ts":"2026-07-23T01:16:01.301Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"cliente-teste-qa","detalhe":"módulos: site"}
+{"ts":"2026-07-23T01:16:24.137Z","ator":"admin@agencia.com","acao":"modulo.ativado","alvo":"cliente-teste-qa","detalhe":"instagram"}
+{"ts":"2026-07-23T01:16:24.707Z","ator":"admin@agencia.com","acao":"cliente.status_alterado","alvo":"cliente-teste-qa","detalhe":"experimental"}
+{"ts":"2026-07-23T01:16:24.984Z","ator":"admin@agencia.com","acao":"ideia.registrada","alvo":"teste-smoke"}
+{"ts":"2026-07-23T02:49:12.748Z","ator":"admin@agencia.com","acao":"claude.config_alterada","alvo":"escritorio-demo","detalhe":"habilitado: true, conta: padrão"}
+{"ts":"2026-07-23T02:50:12.408Z","ator":"admin@agencia.com","acao":"cliente.status_alterado","alvo":"autoprime-veiculos-sao-jose","detalhe":"ativo"}
+{"ts":"2026-07-23T02:50:14.065Z","ator":"admin@agencia.com","acao":"cliente.status_alterado","alvo":"autoprime-veiculos-sao-jose","detalhe":"em_configuracao"}
+{"ts":"2026-07-23T02:54:40.148Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"cliente-teste-qa-wizard","detalhe":"módulos: site, instagram, financeiro, crm"}
+{"ts":"2026-07-23T03:06:53.706Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"dr-lawer","detalhe":"módulos: site, instagram"}
+{"ts":"2026-07-23T03:07:27.565Z","ator":"admin@agencia.com","acao":"instagram.token_atualizado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T03:47:15.406Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T03:51:42.871Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T03:51:44.690Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"teste-exclusao","detalhe":"módulos: nenhum"}
+{"ts":"2026-07-23T03:51:44.732Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"teste-exclusao","detalhe":"Teste Exclusao"}
+{"ts":"2026-07-23T04:10:45.388Z","ator":"admin@agencia.com","acao":"identidade.alterada","alvo":"dr-lawer"}
+{"ts":"2026-07-23T04:11:18.214Z","ator":"admin@agencia.com","acao":"modulo.ativado","alvo":"dr-lawer","detalhe":"financeiro"}
+{"ts":"2026-07-23T04:11:18.218Z","ator":"admin@agencia.com","acao":"modulo.ativado","alvo":"dr-lawer","detalhe":"crm"}
+{"ts":"2026-07-23T04:23:02.688Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T04:23:17.761Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T04:23:38.030Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T04:24:57.343Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T04:25:04.373Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T12:17:04.741Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T12:22:19.918Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T12:23:44.839Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T13:34:19.531Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T13:43:47.621Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T13:44:03.014Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T13:45:22.016Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T13:55:55.023Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T13:56:20.981Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:05:05.129Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:05:09.157Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:06:27.631Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:10:39.789Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:21:26.973Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:21:27.172Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:24:58.258Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:32:20.700Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:49:50.574Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:50:51.120Z","ator":"admin@agencia.com","acao":"identidade.alterada","alvo":"dr-lawer"}
+{"ts":"2026-07-23T14:51:08.650Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T18:14:15.089Z","ator":"admin@agencia.com","acao":"instagram.token_atualizado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T18:14:15.542Z","ator":"admin@agencia.com","acao":"instagram.token_renovado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T19:21:45.281Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-23T19:46:57.626Z","ator":"admin@agencia.com","acao":"openai.chave_atualizada","alvo":"exacta-labs"}
+{"ts":"2026-07-23T19:47:18.287Z","ator":"admin@agencia.com","acao":"publicacao.config_atualizada","alvo":"exacta-labs"}
+{"ts":"2026-07-23T19:47:18.497Z","ator":"admin@agencia.com","acao":"publicacao.config_atualizada","alvo":"exacta-labs"}
+{"ts":"2026-07-23T19:47:18.580Z","ator":"admin@agencia.com","acao":"publicacao.config_atualizada","alvo":"exacta-labs"}
+{"ts":"2026-07-23T19:53:13.320Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"exacta-labs"}
+{"ts":"2026-07-24T02:53:27.897Z","ator":"admin@agencia.com","acao":"whatsapp.conectar","alvo":"dr-lawer"}
+{"ts":"2026-07-24T03:08:56.407Z","ator":"admin@agencia.com","acao":"whatsapp.conectar","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:11:19.057Z","ator":"admin@agencia.com","acao":"whatsapp.contatos_importados","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:55:44.969Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:55:49.109Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:55:51.451Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:55:53.490Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:56:37.488Z","ator":"admin@agencia.com","acao":"whatsapp.contatos_importados","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:56:42.458Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:56:43.924Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:56:45.040Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:56:45.210Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:57:44.067Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:57:47.759Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:53.630Z","ator":"admin@agencia.com","acao":"whatsapp.contatos_importados","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:56.937Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:57.587Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:57.798Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:58.401Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:58.599Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:58.789Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T03:58:59.289Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:00:47.479Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:00:48.157Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:01:37.287Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:01:38.424Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:01:49.601Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:04:47.912Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:10:01.386Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:12:42.010Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:12:44.802Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:12:45.384Z","ator":"admin@agencia.com","acao":"whatsapp.conversa_importada","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:14:10.799Z","ator":"admin@agencia.com","acao":"whatsapp.desconectar","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:18:01.773Z","ator":"admin@agencia.com","acao":"whatsapp.agente_ia_definido","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:26:28.235Z","ator":"admin@agencia.com","acao":"whatsapp.conectar","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:32:14.764Z","ator":"admin@agencia.com","acao":"whatsapp.conectar","alvo":"exacta-labs"}
+{"ts":"2026-07-24T04:38:45.855Z","ator":"admin@agencia.com","acao":"whatsapp.conectar","alvo":"exacta-labs"}
+{"ts":"2026-07-24T13:50:22.755Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"exacta-labs"}
+{"ts":"2026-07-25T03:53:22.248Z","ator":"admin@agencia.com","acao":"canva.config_salva","alvo":"instalacao"}
+{"ts":"2026-07-25T04:01:55.980Z","ator":"admin@agencia.com","acao":"canva.conectado","alvo":"instalacao"}
+{"ts":"2026-07-25T12:37:15.991Z","ator":"admin@agencia.com","acao":"identidade.alterada","alvo":"dr-lawer"}
+{"ts":"2026-07-25T12:37:44.558Z","ator":"admin@agencia.com","acao":"modulo.desativado","alvo":"dr-lawer","detalhe":"financeiro"}
+{"ts":"2026-07-25T12:37:45.221Z","ator":"admin@agencia.com","acao":"modulo.desativado","alvo":"dr-lawer","detalhe":"crm"}
+{"ts":"2026-07-25T23:01:00.809Z","ator":" admin@agencia.com","acao":"whatsapp.conectar","alvo":"exacta-labs"}
+{"ts":"2026-07-28T00:04:14.749Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-editor","detalhe":"módulos: instagram"}
+{"ts":"2026-07-28T00:15:21.171Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-editor","detalhe":"Scratch Editor Test"}
+{"ts":"2026-07-28T00:19:49.665Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-carrossel","detalhe":"módulos: instagram"}
+{"ts":"2026-07-28T00:22:39.076Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-carrossel","detalhe":"Scratch Carrossel Test"}
+{"ts":"2026-07-28T00:30:27.432Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-publish","detalhe":"módulos: instagram"}
+{"ts":"2026-07-28T00:32:23.671Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-publish","detalhe":"Scratch Publish Test"}
+{"ts":"2026-07-28T21:47:07.901Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-mkt","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-28T21:52:22.141Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-mkt","detalhe":"Scratch MKT Test"}
+{"ts":"2026-07-28T21:52:28.083Z","ator":"admin@agencia.com","acao":"cliente.editado","alvo":"dr-lawer"}
+{"ts":"2026-07-29T01:24:25.218Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-ig","detalhe":"módulos: instagram"}
+{"ts":"2026-07-29T01:35:43.119Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-ig","detalhe":"Scratch Instagram Test"}
+{"ts":"2026-07-29T01:55:17.997Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-chat","detalhe":"módulos: instagram"}
+{"ts":"2026-07-29T02:00:01.981Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-chat","detalhe":"Scratch Chat Test"}
+{"ts":"2026-07-29T12:08:23.161Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-seo-local","detalhe":"módulos: mkt-online, site"}
+{"ts":"2026-07-29T12:12:42.741Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-seo-local","detalhe":"Scratch SEO Local"}
+{"ts":"2026-07-29T12:18:27.820Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-seo-fase2","detalhe":"módulos: mkt-online, site"}
+{"ts":"2026-07-29T12:22:09.008Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-seo-fase2","detalhe":"Scratch SEO Fase 2"}
+{"ts":"2026-07-29T12:27:46.053Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-seo-fase3","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T12:28:11.412Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-seo-fase3","detalhe":"Scratch Fase 3"}
+{"ts":"2026-07-29T12:36:42.436Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-seo-fase4","detalhe":"módulos: mkt-online, site"}
+{"ts":"2026-07-29T12:38:55.121Z","ator":"admin@agencia.com","acao":"wordpress.config_atualizada","alvo":"_scratch-seo-fase4"}
+{"ts":"2026-07-29T12:39:13.439Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-seo-fase4","detalhe":"Scratch Fase 4"}
+{"ts":"2026-07-29T13:49:42.474Z","ator":"admin@agencia.com","acao":"modulo.ativado","alvo":"exacta-labs","detalhe":"mkt-online"}
+{"ts":"2026-07-29T14:11:57.740Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-fix-perfil","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T14:12:46.830Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-fix-perfil","detalhe":"Scratch Fix Perfil"}
+{"ts":"2026-07-29T16:49:51.822Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-fix2","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T16:50:52.981Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-fix2","detalhe":"Scratch Fix 2"}
+{"ts":"2026-07-29T17:03:40.765Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-md","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T17:10:14.791Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-md","detalhe":"Scratch MD"}
+{"ts":"2026-07-29T17:27:17.414Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-design","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T17:31:32.098Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-design","detalhe":"Scratch Design"}
+{"ts":"2026-07-29T18:23:05.991Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-bridge2","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T18:24:25.727Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-bridge2","detalhe":"Scratch Bridge 2"}
+{"ts":"2026-07-29T19:32:45.588Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-modal","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T19:36:37.909Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-modal","detalhe":"Scratch Modal"}
+{"ts":"2026-07-29T22:22:40.199Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-geo","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T22:25:42.101Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-geo","detalhe":"Scratch Geo"}
+{"ts":"2026-07-29T23:02:12.339Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-places","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T23:02:42.009Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-places","detalhe":"Scratch Places"}
+{"ts":"2026-07-29T23:07:00.394Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-search","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-29T23:07:13.777Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-search","detalhe":"Scratch Search"}
+{"ts":"2026-07-29T23:53:26.037Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"daniel-ribeiro-barbearia","detalhe":"módulos: site, instagram, financeiro"}
+{"ts":"2026-07-30T13:50:37.725Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-visaogeral-site","detalhe":"módulos: site, mkt-online, instagram, crm, financeiro"}
+{"ts":"2026-07-30T13:56:23.985Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-visaogeral-site","detalhe":"Scratch VisaoGeral Site"}
+{"ts":"2026-07-30T13:59:30.084Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-zip-download","detalhe":"módulos: site"}
+{"ts":"2026-07-30T14:00:00.113Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-zip-download","detalhe":"Scratch Zip Download"}
+{"ts":"2026-07-30T14:00:13.161Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-toolbar-visual","detalhe":"módulos: site"}
+{"ts":"2026-07-30T14:00:41.464Z","ator":"admin@agencia.com","acao":"cliente.excluido","alvo":"_scratch-toolbar-visual","detalhe":"Scratch Toolbar Visual"}
+{"ts":"2026-07-30T17:23:52.540Z","ator":"admin@agencia.com","acao":"modulo.desativado","alvo":"daniel-ribeiro-barbearia","detalhe":"financeiro"}
+{"ts":"2026-07-30T17:23:52.550Z","ator":"admin@agencia.com","acao":"modulo.ativado","alvo":"daniel-ribeiro-barbearia","detalhe":"mkt-online"}
+{"ts":"2026-07-30T17:23:52.602Z","ator":"admin@agencia.com","acao":"modulo.desativado","alvo":"daniel-ribeiro-barbearia","detalhe":"instagram"}
+{"ts":"2026-07-30T17:24:39.965Z","ator":"admin@agencia.com","acao":"credenciais.alteradas","alvo":"daniel-ribeiro-barbearia","detalhe":"senha"}
+{"ts":"2026-07-30T17:55:57.260Z","ator":"admin@agencia.com","acao":"cliente.criado","alvo":"_scratch-google-ads","detalhe":"módulos: mkt-online"}
+{"ts":"2026-07-30T17:56:10.660Z","ator":"admin@agencia.com","acao":"google_ads.conta_vinculada","alvo":"_scratch-google-ads","detalhe":"1234567890"}
+{"ts":"2026-07-30T18:12:15.801Z","ator":"admin@agencia.com","acao":"identidade.alterada","alvo":"daniel-ribeiro-barbearia"}
+{"ts":"2026-07-30T21:24:41.710Z","ator":"admin@agencia.com","acao":"google_ads.conta_vinculada","alvo":"exacta-labs","detalhe":"3616870405"}
+{"ts":"2026-07-31T01:35:43.713Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: falha ao criar a campanha no Google Ads: undefined"}
+{"ts":"2026-07-31T01:36:14.405Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: falha ao criar a campanha no Google Ads: undefined"}
+{"ts":"2026-07-31T01:53:48.397Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: falha ao criar a campanha no Google Ads: The required field was not present. | Too long. | Too long. | Too long. | Too long. | Too long. | Too long."}
+{"ts":"2026-07-31T01:56:46.128Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: falha ao criar a campanha no Google Ads: The required field was not present."}
+{"ts":"2026-07-31T01:58:12.476Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: falha ao criar a campanha no Google Ads: The required field was not present. (campo: mutate_operations.campaign_operation.create.contains_eu_political_advertising)"}
+{"ts":"2026-07-31T02:27:52.736Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: falha ao criar a campanha no Google Ads: The required field was not present. (campo: mutate_operations.campaign_operation.create.contains_eu_political_advertising)"}
+{"ts":"2026-07-31T08:21:27.808Z","ator":"admin@agencia.com","acao":"google_ads.campanha_aplicada","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: Campanha criada com sucesso (pausada) na conta 3616870405."}
+{"ts":"2026-07-31T15:14:00.893Z","ator":"admin@agencia.com","acao":"whatsapp.conectar","alvo":"exacta-labs"}
+{"ts":"2026-07-31T15:15:26.185Z","ator":"admin@agencia.com","acao":"whatsapp.agente_ia_definido","alvo":"exacta-labs"}
+{"ts":"2026-07-31T15:31:39.125Z","ator":"admin@agencia.com","acao":"google_ads.campanha_ativada","alvo":"exacta-labs","detalhe":"marketing-digital-ia-pme-2026-07-30: Campanha ativada — já está rodando de verdade."}
+{"ts":"2026-07-31T16:48:48.850Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"desenvolvimento-de-sites-em-santos-2026-07-30: a Google Ads API rejeita texto fora do limite — encurte antes de aplicar: descrição \"Sites sob medida com foco em resultado. …\" tem 100 caracteres (máximo 90); descrição \"Agência especializada em sites, sistemas…\" tem 101 caracteres (máximo 90); descrição \"Criamos sites profissionais que vendem. …\" tem 94 caracteres (máximo 90)."}
+{"ts":"2026-07-31T16:49:20.471Z","ator":"admin@agencia.com","acao":"google_ads.campanha_falhou","alvo":"exacta-labs","detalhe":"desenvolvimento-de-sites-em-santos-2026-07-30: não achei essa(s) localização(ões) no Google: Santos, SP, São Vicente, SP, Guarujá, SP, Praia Grande, SP, Cubatão, SP — corrija o nome (ex: \"Santos, SP\") antes de aplicar."}
+{"ts":"2026-07-31T16:52:47.870Z","ator":"admin@agencia.com","acao":"google_ads.campanha_aplicada","alvo":"exacta-labs","detalhe":"desenvolvimento-de-sites-em-santos-2026-07-30: Campanha criada com sucesso (pausada) na conta 3616870405."}
+{"ts":"2026-07-31T20:56:12.453Z","ator":"admin@agencia.com","acao":"google_ads.campanha_aplicada","alvo":"exacta-labs","detalhe":"criacao-sites-2026-07-31: Campanha criada com sucesso (pausada) na conta 3616870405."}
+{"ts":"2026-08-01T02:05:53.695Z","ator":"admin@agencia.com","acao":"google_ads.campanha_aplicada","alvo":"exacta-labs","detalhe":"teste-auditoria-2026-07-31: Campanha criada com sucesso (pausada) na conta 3616870405."}
+{"ts":"2026-08-01T02:06:28.332Z","ator":"admin@agencia.com","acao":"google_ads.campanha_ativada","alvo":"exacta-labs","detalhe":"teste-auditoria-2026-07-31: Campanha ativada — já está rodando de verdade."}

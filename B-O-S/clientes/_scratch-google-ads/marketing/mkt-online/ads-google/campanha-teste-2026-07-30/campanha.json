@@ -1,0 +1,13 @@
+{
+  "plataforma": "google",
+  "titulo": "Campanha Teste",
+  "tipo": "servico",
+  "descricaoNegocio": "Teste de integração",
+  "anuncios": [{"titulo": "Anúncio 1", "descricao": "Descrição do anúncio 1"}],
+  "palavrasChave": ["teste", "integração"],
+  "publico": "Curitiba, PR",
+  "orcamentoSugeridoDia": 50,
+  "status": "rascunho",
+  "criadoEm": "2026-07-30T10:00:00.000Z",
+  "atualizadoEm": "2026-07-30T10:00:00.000Z"
+}

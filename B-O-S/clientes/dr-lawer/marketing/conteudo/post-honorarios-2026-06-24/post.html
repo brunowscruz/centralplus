@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #111; }
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(4,4,18,0.88) 0%,
+      rgba(4,4,18,0.50) 38%,
+      rgba(4,4,18,0.78) 70%,
+      rgba(4,4,18,0.97) 100%
+    ),
+    url('../../imagens-slides/133ed2cc5d1ad869128d7c7b27040db2.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+}
+
+/* Franja vermelha esquerda */
+.slide::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 7px; height: 100%;
+  background: #D42020;
+  z-index: 5;
+}
+
+/* Textura de pontos muito sutil */
+.slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 36px 36px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ── Header ── */
+.hd {
+  position: absolute;
+  top: 64px;
+  left: 88px;
+  right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.logo-pill {
+  background: rgba(255,255,255,0.92);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+.logo-img {
+  width: 148px;
+  height: auto;
+  display: block;
+}
+
+/* ── Content ── */
+.ct {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 88px; right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  padding-bottom: 60px;
+}
+
+.ey {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #F5C518;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ey::before {
+  content: '';
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: #F5C518;
+  flex-shrink: 0;
+}
+
+.rule {
+  width: 68px;
+  height: 4px;
+  background: #D42020;
+  margin-bottom: 44px;
+}
+
+h1 {
+  font-size: 108px;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  margin-bottom: 52px;
+}
+h1 .hl { color: #D42020; }
+
+.bd {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.48;
+  color: rgba(255,255,255,0.68);
+  max-width: 820px;
+}
+
+/* ── Bottom CTA bar ── */
+.cta-bar {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 152px;
+  background: rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 88px;
+  z-index: 10;
+}
+.cta-label {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.90);
+  letter-spacing: -0.01em;
+}
+.cta-url-pill {
+  background: #D42020;
+  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 20px 44px;
+  border-radius: 10px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 28px rgba(212,32,32,0.45);
+}
+</style>
+</head>
+<body>
+
+<div class="slide">
+
+  <!-- Header -->
+  <div class="hd">
+    <div class="logo-pill">
+      <img src="../../../identidade/logo.png" class="logo-img" alt="Dr Lawer">
+    </div>
+  </div>
+
+  <!-- Conteúdo central -->
+  <div class="ct">
+    <div class="ey">Gestão de Honorários</div>
+    <div class="rule"></div>
+    <h1>Você está<br>trabalhando<br><span class="hl">de graça.</span></h1>
+    <p class="bd">Honorários não cobrados, processos sem follow-up e cobranças esquecidas. Todo mês, o dinheiro fica na mesa — e a maioria dos advogados nem percebe.</p>
+  </div>
+
+  <!-- CTA inferior -->
+  <div class="cta-bar">
+    <div class="cta-label">Isso tem solução.</div>
+    <div class="cta-url-pill">www.DRLawer.com.br</div>
+  </div>
+
+</div>
+</body>
+</html>

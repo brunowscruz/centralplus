@@ -1,0 +1,162 @@
+{
+  "execucoes": [
+    {
+      "id": "barbearia-em-praia-grande-praia-grande-sp-2026-07-31",
+      "termoBuscado": "barbearia em praia grande",
+      "localizacaoBuscada": "Praia Grande, SP",
+      "executadoEm": "2026-07-31T00:00:00.000Z",
+      "concorrentes": [
+        {
+          "nome": "Barbearia Daniel Ribeiro no Canto do Forte em Praia Grande.",
+          "categoriaPrincipal": "Barbearia",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": true,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": true,
+          "enderecoVisivel": true,
+          "temDescricao": false,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 4.9,
+          "posicaoNoMapa": 1
+        },
+        {
+          "nome": "Forte Barbearia - Praia Grande",
+          "categoriaPrincipal": "Barbearia",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": true,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": false,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 4.8,
+          "posicaoNoMapa": 2
+        },
+        {
+          "nome": "Barber House PG | Barbearia | Praia grande, boqueirão",
+          "categoriaPrincipal": "Barbearia",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": true,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": false,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 5,
+          "posicaoNoMapa": 3
+        },
+        {
+          "nome": "Studio Cabral Barbearia Praia Grande",
+          "categoriaPrincipal": "Barbearia",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": true,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": false,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 5,
+          "posicaoNoMapa": 4
+        },
+        {
+          "nome": "Nobre Barbearia - Terapia Capilar | Barbbeiro Premium em Praia Grande - Canto do Forte⁠.",
+          "categoriaPrincipal": "Barbearia",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": true,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": true,
+          "enderecoVisivel": true,
+          "temDescricao": false,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 4.9,
+          "posicaoNoMapa": 5
+        }
+      ],
+      "observacoes": "Mercado saturado com 5 barbearias no mapa. TODOS os concorrentes têm a palavra-chave 'barbearia' no nome (fator crítico de ranqueamento). Notas excelentes (4.8 a 5.0). Apenas 2 publicam horário de funcionamento. Apenas 3 têm descrição preenchida. Segundo Booksy e Econodata, existem dezenas de barbearias operando em Praia Grande — mercado local altamente competitivo."
+    },
+    {
+      "id": "agencia-de-marketing-praia-grande-2026-07-29",
+      "termoBuscado": "agencia de marketing",
+      "localizacaoBuscada": "Praia Grande, SP",
+      "executadoEm": "2026-07-29T00:00:00.000Z",
+      "concorrentes": [
+        {
+          "nome": "Vkron - Agência de Marketing Digital",
+          "categoriaPrincipal": "Agência de marketing digital",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": false,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": true,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 4.9,
+          "posicaoNoMapa": 1
+        },
+        {
+          "nome": "Agência de Marketing Digital em Praia Grande │ Renove Digital",
+          "categoriaPrincipal": "Aberto",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": false,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": false,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 4.7,
+          "posicaoNoMapa": 2
+        },
+        {
+          "nome": "MSPub® Digital",
+          "categoriaPrincipal": "Agência de marketing digital",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": false,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": true,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 5,
+          "posicaoNoMapa": 3
+        },
+        {
+          "nome": "Googestão | Especialista em Posicionamento no Google em Praia Grande-SP",
+          "categoriaPrincipal": "Agência de Marketing",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": false,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": true,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 4.9,
+          "posicaoNoMapa": 4
+        },
+        {
+          "nome": "Agência de Marketing Digital na Praia Grande Marketing MR",
+          "categoriaPrincipal": "Agência de marketing digital",
+          "categoriasSecundarias": [],
+          "nomeContemPalavraChave": false,
+          "cidadeCorrespondeAlvo": true,
+          "horarioPublicado": true,
+          "enderecoVisivel": true,
+          "temDescricao": true,
+          "servicosListados": [],
+          "atributos": [],
+          "nota": 5,
+          "posicaoNoMapa": 5
+        }
+      ],
+      "observacoes": "Mercado competitivo com 5 agências posicionadas no mapa. Praia Grande tem mais de 300 mil habitantes segundo fontes web. A maioria dos concorrentes usa categoria 'Agência de marketing digital', tem horário publicado e descrição completa. Notas elevadas (4.7 a 5.0) indicam base de clientes satisfeitos."
+    }
+  ]
+}

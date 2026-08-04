@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site Político Profissional em 5 Dias — Eleições 2026 | Exacta Labs</title>
+<meta name="description" content="Site completo para deputados e candidatos em até 5 dias. Mostre toda sua história, emendas, leis e trabalho realizado. Serviço estabelecido com nota fiscal. Eleições 2026 exigem presença digital profissional.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy: #142C4A;
+    --navy-deep: #0D1F35;
+    --emerald-dark: #0B2B2E;
+    --teal: #2CA6A3;
+    --teal-light: #4FC3C0;
+    --teal-glow: #6FE3DF;
+    --teal-deep: #146E6B;
+    --gold: #D4AF37;
+    --gold-light: #F4D03F;
+    --bg: #FFFFFF;
+    --bg-soft: #F4F9F9;
+    --text: #16233A;
+    --text-muted: #52627A;
+    --border: #E3E9F0;
+    --glass: rgba(255,255,255,.06);
+    --glass-border: rgba(255,255,255,.14);
+    --ease: cubic-bezier(.4,0,.2,1);
+    --ease-out: cubic-bezier(.16,1,.3,1);
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{ font-family:'Space Grotesk', sans-serif; font-weight:700; letter-spacing:-0.02em; color:var(--navy); }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .container{ max-width:1180px; margin:0 auto; padding:0 24px; }
+  section{ position:relative; padding:100px 0; }
+
+  /* ============ Logo ============ */
+  .logo{ display:inline-flex; align-items:center; gap:11px; }
+  .logo svg{ height:34px; width:auto; }
+  .logo .word{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; color:var(--navy); line-height:1.05; }
+  .logo .word .labs{ display:block; font-size:9.5px; font-weight:600; letter-spacing:.42em; color:var(--teal); }
+  .logo.on-dark .word{ color:#fff; }
+  .logo.on-dark .word .labs{ color:var(--teal-glow); }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:8px 18px; border-radius:999px;
+    border:1.5px solid rgba(44,166,163,.45);
+    font-size:13px; font-weight:600; letter-spacing:.04em;
+    color:var(--teal-deep); background:rgba(44,166,163,.06);
+    margin-bottom:26px;
+  }
+  .eyebrow .pulse-dot{ width:7px; height:7px; border-radius:50%; background:var(--teal); animation:pulse-dot 2s var(--ease) infinite; }
+  @keyframes pulse-dot{ 0%,100%{ box-shadow:0 0 0 0 rgba(44,166,163,.5);} 50%{ box-shadow:0 0 0 6px rgba(44,166,163,0);} }
+
+  .eyebrow.urgent{
+    border-color:rgba(212,175,55,.6);
+    background:rgba(212,175,55,.08);
+    color:#8B6F23;
+  }
+  .eyebrow.urgent .pulse-dot{ background:var(--gold); animation:pulse-urgent 1.5s var(--ease) infinite; }
+  @keyframes pulse-urgent{ 0%,100%{ box-shadow:0 0 0 0 rgba(212,175,55,.6);} 50%{ box-shadow:0 0 0 7px rgba(212,175,55,0);} }
+
+  /* ============ Buttons ============ */
+  .btn{
+    position:relative; overflow:hidden;
+    display:inline-flex; align-items:center; gap:10px;
+    padding:18px 38px; border-radius:999px;
+    font-weight:700; font-size:16.5px; cursor:pointer;
+    transition:transform 250ms var(--ease), box-shadow 250ms var(--ease), background 250ms var(--ease);
+    white-space:nowrap; border:none;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg, var(--teal), var(--teal-light));
+    color:var(--navy-deep);
+    box-shadow:0 12px 35px rgba(44,166,163,.45);
+  }
+  .btn-primary::after{
+    content:''; position:absolute; top:0; left:-80%;
+    width:50%; height:100%;
+    background:linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent);
+    transform:skewX(-20deg);
+    transition:left 600ms var(--ease);
+  }
+  .btn-primary:hover{ transform:translateY(-4px) scale(1.02); box-shadow:0 18px 45px rgba(44,166,163,.6); }
+  .btn-primary:hover::after{ left:130%; }
+
+  .btn-cta-urgente{
+    background:linear-gradient(135deg, var(--gold), var(--gold-light));
+    color:#2C2416;
+    box-shadow:0 12px 35px rgba(212,175,55,.5);
+    font-size:17.5px;
+    padding:20px 42px;
+  }
+  .btn-cta-urgente:hover{ transform:translateY(-4px) scale(1.02); box-shadow:0 18px 45px rgba(212,175,55,.65); }
+
+  .btn svg{ width:20px; height:20px; flex-shrink:0; }
+
+  /* ============ Nav ============ */
+  header{
+    position:fixed; top:16px; left:0; right:0; z-index:100;
+    pointer-events:none;
+  }
+  .nav-pill{
+    pointer-events:auto;
+    max-width:1132px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 12px 10px 22px;
+    background:rgba(255,255,255,.88);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.7);
+    border-radius:999px;
+    box-shadow:0 8px 32px rgba(20,44,74,.12);
+    transition:box-shadow 300ms var(--ease), background 300ms var(--ease);
+  }
+  header.scrolled .nav-pill{ box-shadow:0 12px 40px rgba(20,44,74,.18); background:rgba(255,255,255,.95); }
+
+  /* ============ Hero ============ */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex; align-items:center;
+    padding:140px 0 80px;
+    background:
+      radial-gradient(ellipse 50% 40% at 15% 20%, rgba(111,227,223,.22), transparent 65%),
+      radial-gradient(ellipse 45% 45% at 85% 70%, rgba(212,175,55,.15), transparent 65%),
+      linear-gradient(180deg, #FDFEFE 0%, #F2FAFA 100%);
+    overflow:hidden;
+  }
+  .hero-grid{
+    position:relative; z-index:2;
+    display:grid; grid-template-columns:1.1fr .9fr;
+    gap:56px; align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.5rem, 5.5vw, 4.2rem);
+    line-height:1.05;
+    margin-bottom:28px;
+  }
+  .hero h1 .accent{
+    background:linear-gradient(120deg, var(--teal), var(--teal-light));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero h1 .gold{
+    background:linear-gradient(120deg, var(--gold), var(--gold-light));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{ color:var(--text-muted); font-size:19px; max-width:580px; margin-bottom:18px; line-height:1.65; }
+  .hero-actions{ display:flex; gap:18px; flex-wrap:wrap; margin-top:38px; }
+
+  .hero-visual{ position:relative; display:flex; justify-content:center; align-items:center; }
+  .hero-img-wrap{
+    position:relative; width:100%; max-width:520px;
+    border-radius:24px; overflow:hidden;
+    box-shadow:0 40px 90px rgba(20,44,74,.25);
+    animation:floaty 8s ease-in-out infinite;
+  }
+  @keyframes floaty{ 0%,100%{ transform:translateY(0) rotate(-0.5deg);} 50%{ transform:translateY(-18px) rotate(0.5deg);} }
+
+  .hero-mockup{
+    width:100%;
+    border-radius:inherit;
+  }
+  .hero-mockup img{
+    width:100%; height:auto; display:block;
+    border-radius:inherit;
+  }
+
+  /* ============ Urgência banner ============ */
+  .urgencia-strip{
+    padding:18px 0;
+    background:linear-gradient(135deg, var(--gold), var(--gold-light));
+    color:#2C2416;
+    text-align:center;
+    font-weight:700; font-size:15.5px;
+    box-shadow:0 8px 24px rgba(212,175,55,.35);
+    animation:pulse-strip 3s ease-in-out infinite;
+  }
+  @keyframes pulse-strip{ 0%,100%{ box-shadow:0 8px 24px rgba(212,175,55,.35);} 50%{ box-shadow:0 10px 32px rgba(212,175,55,.5);} }
+  .urgencia-strip .flash{ display:inline-block; margin-right:10px; animation:flash 1.5s ease-in-out infinite; }
+  @keyframes flash{ 0%,100%{ opacity:1;} 50%{ opacity:.4;} }
+
+  /* ============ Social proof ============ */
+  .social-proof{
+    padding:70px 0;
+    background:var(--bg);
+    border-bottom:1px solid var(--border);
+  }
+  .proof-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:32px; text-align:center; }
+  .proof-item{
+    padding:28px 20px;
+    border-radius:18px;
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease);
+  }
+  .proof-item:hover{ transform:translateY(-6px); box-shadow:0 20px 40px rgba(20,44,74,.1); }
+  .proof-item .icon{
+    width:56px; height:56px; margin:0 auto 18px;
+    border-radius:50%;
+    background:linear-gradient(135deg, rgba(44,166,163,.14), rgba(111,227,223,.2));
+    border:1.5px solid rgba(44,166,163,.35);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .proof-item .icon svg{ width:26px; height:26px; stroke:var(--teal-deep); fill:none; stroke-width:2; }
+  .proof-item h4{ font-size:16px; margin-bottom:8px; }
+  .proof-item p{ color:var(--text-muted); font-size:13.5px; }
+
+  /* ============ Problema ============ */
+  .problema{
+    background:
+      radial-gradient(ellipse 40% 45% at 88% 15%, rgba(111,227,223,.16), transparent 60%),
+      var(--bg-soft);
+  }
+  .section-head{ max-width:720px; margin-bottom:64px; }
+  .section-head h2{ font-size:clamp(2rem, 3.8vw, 2.8rem); margin-bottom:18px; line-height:1.15; }
+  .section-head h2 .accent{ color:var(--teal); }
+  .section-head p{ color:var(--text-muted); font-size:18px; line-height:1.7; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+
+  .prob-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; }
+  .prob-card{
+    position:relative;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:38px 32px;
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease), border-color 300ms var(--ease);
+    overflow:hidden;
+  }
+  .prob-card::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:4px;
+    background:linear-gradient(90deg, #C44;, #E66);
+    transform:scaleX(0); transform-origin:left;
+    transition:transform 400ms var(--ease);
+  }
+  .prob-card:hover{ transform:translateY(-8px); box-shadow:0 24px 48px rgba(20,44,74,.12); border-color:rgba(196,68,68,.35); }
+  .prob-card:hover::before{ transform:scaleX(1); }
+  .prob-card .num{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px; color:#C44; margin-bottom:20px; }
+  .prob-card h3{ font-size:20px; margin-bottom:12px; }
+  .prob-card p{ color:var(--text-muted); font-size:15.5px; line-height:1.65; }
+
+  /* ============ Solução ============ */
+  .solucao{
+    background:
+      radial-gradient(ellipse 55% 40% at 12% 10%, rgba(212,175,55,.12), transparent 60%),
+      var(--bg);
+  }
+  .sol-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:32px; }
+  .sol-card{
+    position:relative;
+    background:#fff;
+    border:1.5px solid var(--border);
+    border-radius:22px;
+    padding:36px 32px;
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease), border-color 300ms var(--ease);
+    display:flex; align-items:flex-start; gap:22px;
+    overflow:hidden;
+  }
+  .sol-card::after{
+    content:''; position:absolute; width:200px; height:200px; border-radius:50%;
+    background:radial-gradient(circle, rgba(111,227,223,.22), transparent 70%);
+    top:-100px; right:-100px; opacity:0; transition:opacity 400ms var(--ease);
+  }
+  .sol-card:hover{ transform:translateY(-8px); box-shadow:0 26px 50px rgba(20,44,74,.12); border-color:rgba(44,166,163,.5); }
+  .sol-card:hover::after{ opacity:1; }
+  .sol-card .icon{
+    flex-shrink:0; width:54px; height:54px;
+    border-radius:50%;
+    background:linear-gradient(135deg, rgba(44,166,163,.15), rgba(111,227,223,.22));
+    border:1.5px solid rgba(44,166,163,.4);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .sol-card .icon svg{ width:26px; height:26px; stroke:var(--teal-deep); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .sol-card h3{ font-size:19px; margin-bottom:10px; }
+  .sol-card p{ color:var(--text-muted); font-size:15px; line-height:1.65; }
+
+  /* ============ Exemplos visuais ============ */
+  .exemplos{
+    padding:100px 0;
+    background:var(--bg);
+  }
+  .exemplos-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+    margin-top:48px;
+  }
+  .exemplo-item{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(20,44,74,.15);
+    transition:transform 400ms var(--ease), box-shadow 400ms var(--ease);
+  }
+  .exemplo-item:hover{
+    transform:translateY(-10px);
+    box-shadow:0 30px 70px rgba(20,44,74,.25);
+  }
+  .exemplo-item img{
+    width:100%; height:auto; display:block;
+  }
+  .exemplo-caption{
+    position:absolute;
+    bottom:0; left:0; right:0;
+    padding:24px 28px;
+    background:linear-gradient(0deg, rgba(20,44,74,.95) 0%, rgba(20,44,74,.85) 70%, transparent 100%);
+    color:#fff;
+  }
+  .exemplo-caption h4{
+    font-size:17px;
+    color:#fff;
+    margin-bottom:6px;
+  }
+  .exemplo-caption p{
+    font-size:13.5px;
+    color:rgba(255,255,255,.8);
+    line-height:1.5;
+  }
+
+  /* ============ Diferenciais (vs concorrente) ============ */
+  .diferenciais{
+    background:
+      radial-gradient(ellipse 60% 40% at 80% 0%, rgba(44,166,163,.18), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(44,166,163,.12), transparent 60%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--emerald-dark) 100%);
+    color:#fff;
+  }
+  .diferenciais h2, .diferenciais h3{ color:#fff; }
+  .diferenciais .section-head p{ color:rgba(255,255,255,.7); }
+
+  .diff-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:26px; }
+  .diff-card{
+    background:var(--glass);
+    border:1px solid var(--glass-border);
+    border-radius:20px;
+    padding:32px 28px;
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    transition:transform 300ms var(--ease), background 300ms var(--ease), border-color 300ms var(--ease);
+  }
+  .diff-card:hover{ transform:translateY(-8px); background:rgba(255,255,255,.12); border-color:rgba(111,227,223,.5); }
+  .diff-card .badge{
+    display:inline-block; padding:6px 14px; border-radius:999px;
+    background:rgba(111,227,223,.15); color:var(--teal-glow);
+    border:1px solid rgba(111,227,223,.4);
+    font-size:12px; font-weight:600; margin-bottom:18px; letter-spacing:.04em;
+  }
+  .diff-card h3{ font-size:18px; margin-bottom:12px; }
+  .diff-card p{ color:rgba(255,255,255,.68); font-size:14.5px; line-height:1.6; }
+
+  /* ============ Como funciona ============ */
+  .como-funciona{
+    background:var(--bg-soft);
+  }
+  .steps-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:24px; position:relative; }
+  .steps-grid::before{
+    content:''; position:absolute; top:38px; left:12.5%; right:12.5%; height:3px;
+    background:linear-gradient(90deg, var(--teal), var(--teal-light));
+    z-index:0;
+  }
+  .step-item{
+    position:relative; z-index:1;
+    text-align:center; padding:24px 18px;
+  }
+  .step-item .num{
+    width:76px; height:76px; margin:0 auto 22px;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--teal), var(--teal-light));
+    color:var(--navy-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:28px;
+    box-shadow:0 12px 32px rgba(44,166,163,.4);
+    border:4px solid var(--bg-soft);
+  }
+  .step-item h4{ font-size:16.5px; margin-bottom:10px; }
+  .step-item p{ color:var(--text-muted); font-size:14px; line-height:1.6; }
+
+  /* ============ Urgência final ============ */
+  .urgencia-final{
+    padding:90px 0;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(212,175,55,.35), transparent 55%),
+      linear-gradient(160deg, var(--navy-deep), #1A3A28);
+    text-align:center;
+    overflow:hidden;
+  }
+  .urgencia-box{
+    position:relative;
+    max-width:880px; margin:0 auto;
+    padding:64px 32px;
+  }
+  .urgencia-box::before, .urgencia-box::after{
+    content:''; position:absolute; border-radius:50%;
+    border:1.5px solid rgba(212,175,55,.25);
+  }
+  .urgencia-box::before{ width:480px; height:480px; top:-240px; left:50%; transform:translateX(-50%); }
+  .urgencia-box::after{ width:720px; height:720px; top:-360px; left:50%; transform:translateX(-50%); }
+  .urgencia-inner{ position:relative; z-index:1; }
+  .urgencia-inner h2{ color:#fff; font-size:clamp(2rem,4vw,3rem); margin-bottom:22px; line-height:1.12; }
+  .urgencia-inner p{ color:rgba(255,255,255,.75); font-size:18px; margin-bottom:16px; line-height:1.7; }
+  .urgencia-inner .destaque{
+    display:inline-block; padding:12px 24px; margin:20px 0 34px;
+    background:rgba(212,175,55,.15); border:1.5px solid rgba(212,175,55,.5);
+    border-radius:16px; color:var(--gold-light);
+    font-weight:700; font-size:19px;
+  }
+
+  /* ============ Footer ============ */
+  footer{
+    margin-top:0;
+    background:linear-gradient(160deg, var(--teal) 0%, var(--teal-deep) 100%);
+    color:rgba(255,255,255,.85);
+    padding:56px 0 32px;
+  }
+  .footer-grid{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:28px; }
+  .footer-tagline{ letter-spacing:.1em; text-transform:uppercase; font-size:11px; color:rgba(255,255,255,.65); margin-top:10px; }
+  .footer-bottom{
+    margin-top:40px; padding-top:22px;
+    border-top:1px solid rgba(255,255,255,.25);
+    text-align:center;
+    font-size:13px; color:rgba(255,255,255,.7);
+  }
+
+  /* ============ WhatsApp float ============ */
+  .wa-float{
+    position:fixed; bottom:28px; right:28px; z-index:95;
+    width:68px; height:68px; border-radius:50%;
+    background:linear-gradient(135deg, var(--gold), var(--gold-light));
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 12px 36px rgba(212,175,55,.55);
+    transition:transform 250ms var(--ease);
+  }
+  .wa-float::before{
+    content:''; position:absolute; inset:-5px; border-radius:50%;
+    border:2.5px solid rgba(212,175,55,.6);
+    animation:pulse-ring 2s var(--ease) infinite;
+  }
+  @keyframes pulse-ring{ 0%{ transform:scale(.9); opacity:1;} 100%{ transform:scale(1.4); opacity:0;} }
+  .wa-float:hover{ transform:scale(1.12); }
+  .wa-float svg{ width:32px; height:32px; fill:#2C2416; }
+
+  /* ============ Reveal ============ */
+  .reveal{ opacity:0; transform:translateY(40px); transition:opacity 900ms var(--ease-out), transform 900ms var(--ease-out); }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* ============ Responsivo ============ */
+  @media (max-width: 1024px){
+    section{ padding:80px 0; }
+    .hero{ padding:120px 0 70px; min-height:auto; }
+    .hero-grid{ grid-template-columns:1fr; gap:48px; }
+    .sol-grid, .steps-grid{ grid-template-columns:1fr; }
+    .steps-grid::before{ display:none; }
+    .diff-grid{ grid-template-columns:1fr; }
+    .exemplos-grid{ grid-template-columns:1fr; }
+  }
+  @media (max-width: 720px){
+    .prob-grid, .proof-grid{ grid-template-columns:1fr; }
+    .hero-actions{ flex-direction:column; width:100%; }
+    .hero-actions .btn{ width:100%; justify-content:center; }
+  }
+
+  :focus-visible{ outline:2px solid var(--teal); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container" style="padding:0 16px;">
+    <nav class="nav-pill" aria-label="Navegação principal">
+      <a href="#" class="logo" aria-label="Exacta Labs">
+        <svg viewBox="0 0 66 64" aria-hidden="true">
+          <rect x="4" y="8" width="34" height="10" rx="5" fill="#142C4A"/>
+          <rect x="4" y="27" width="24" height="10" rx="5" fill="#142C4A"/>
+          <rect x="4" y="46" width="34" height="10" rx="5" fill="#142C4A"/>
+          <path d="M38 14 L53 32 L38 50" stroke="#2CA6A3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="32" r="5.5" fill="#142C4A"/>
+        </svg>
+        <span class="word">Exacta<span class="labs">LABS</span></span>
+      </a>
+      <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener" style="padding:12px 28px; font-size:14px;">
+        Falar no WhatsApp
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <span class="eyebrow urgent"><span class="pulse-dot"></span>Eleições 2026 · Presença digital obrigatória</span>
+      <h1>Seu site político profissional pronto em <span class="gold">até 5 dias</span>.</h1>
+      <p class="lead"><strong>Deputados, vereadores e candidatos:</strong> mostre toda a sua história, emendas, leis aprovadas e trabalho realizado. Um portfólio digital completo que seus eleitores podem acessar a qualquer hora.</p>
+      <p class="lead">Vai além do Instagram — é o histórico completo da sua atuação política em um site profissional, com nota fiscal e dentro da lei eleitoral.</p>
+      <div class="hero-actions">
+        <a class="btn btn-cta-urgente" href="https://wa.me/551152170657?text=Quero%20meu%20site%20pol%C3%ADtico%20em%205%20dias" target="_blank" rel="noopener">
+          Quero meu site agora
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <div class="hero-mockup">
+          <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; display:block;">
+            <!-- Background -->
+            <defs>
+              <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#142C4A;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#0D1F35;stop-opacity:1" />
+              </linearGradient>
+              <linearGradient id="screen-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#F4F9F9;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#E3E9F0;stop-opacity:1" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                <feMerge>
+                  <feMergeNode in="coloredBlur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- Background -->
+            <rect width="800" height="600" fill="url(#bg-grad)"/>
+
+            <!-- Accent circles -->
+            <circle cx="120" cy="100" r="180" fill="#2CA6A3" opacity="0.15"/>
+            <circle cx="680" cy="480" r="150" fill="#D4AF37" opacity="0.12"/>
+
+            <!-- Desk/workspace -->
+            <rect x="50" y="420" width="700" height="30" fill="#16233A" opacity="0.3" rx="4"/>
+
+            <!-- Main laptop screen -->
+            <g transform="translate(200, 180)">
+              <!-- Laptop base -->
+              <rect x="-20" y="220" width="440" height="15" fill="#16233A" opacity="0.6" rx="2"/>
+              <rect x="0" y="235" width="400" height="8" fill="#0D1F35" rx="4"/>
+
+              <!-- Screen frame -->
+              <rect x="0" y="0" width="400" height="240" fill="#0D1F35" rx="8"/>
+              <rect x="12" y="12" width="376" height="216" fill="url(#screen-grad)" rx="4"/>
+
+              <!-- Website mockup content -->
+              <!-- Header -->
+              <rect x="30" y="30" width="340" height="32" fill="#2CA6A3" opacity="0.9" rx="16"/>
+              <circle cx="50" cy="46" r="8" fill="#fff" opacity="0.8"/>
+              <rect x="70" y="40" width="80" height="12" fill="#fff" opacity="0.7" rx="6"/>
+
+              <!-- Hero section -->
+              <rect x="30" y="75" width="160" height="12" fill="#142C4A" opacity="0.8" rx="6"/>
+              <rect x="30" y="95" width="200" height="8" fill="#52627A" opacity="0.6" rx="4"/>
+              <rect x="30" y="110" width="180" height="8" fill="#52627A" opacity="0.6" rx="4"/>
+              <rect x="30" y="130" width="100" height="24" fill="#D4AF37" opacity="0.9" rx="12"/>
+
+              <!-- Image placeholder -->
+              <rect x="250" y="75" width="120" height="90" fill="#2CA6A3" opacity="0.2" rx="8"/>
+              <circle cx="310" cy="120" r="15" fill="#2CA6A3" opacity="0.4"/>
+
+              <!-- Content blocks -->
+              <rect x="30" y="175" width="100" height="40" fill="#fff" opacity="0.8" rx="6"/>
+              <rect x="145" y="175" width="100" height="40" fill="#fff" opacity="0.8" rx="6"/>
+              <rect x="260" y="175" width="100" height="40" fill="#fff" opacity="0.8" rx="6"/>
+            </g>
+
+            <!-- Floating elements - documents -->
+            <g transform="translate(120, 280)" opacity="0.7">
+              <rect width="90" height="110" fill="#fff" rx="4"/>
+              <rect x="10" y="15" width="70" height="8" fill="#2CA6A3" opacity="0.6" rx="4"/>
+              <rect x="10" y="30" width="60" height="6" fill="#52627A" opacity="0.4" rx="3"/>
+              <rect x="10" y="42" width="65" height="6" fill="#52627A" opacity="0.4" rx="3"/>
+              <rect x="10" y="54" width="55" height="6" fill="#52627A" opacity="0.4" rx="3"/>
+            </g>
+
+            <!-- Floating elements - charts -->
+            <g transform="translate(640, 160)" opacity="0.6">
+              <rect width="100" height="80" fill="#fff" rx="6"/>
+              <path d="M 20 60 L 30 45 L 45 50 L 60 30 L 75 35" stroke="#2CA6A3" stroke-width="3" fill="none"/>
+              <circle cx="20" cy="60" r="4" fill="#2CA6A3"/>
+              <circle cx="30" cy="45" r="4" fill="#2CA6A3"/>
+              <circle cx="45" cy="50" r="4" fill="#2CA6A3"/>
+              <circle cx="60" cy="30" r="4" fill="#D4AF37"/>
+              <circle cx="75" cy="35" r="4" fill="#D4AF37"/>
+            </g>
+
+            <!-- Checkmarks / success indicators -->
+            <g transform="translate(80, 120)" opacity="0.5">
+              <circle r="24" fill="#2CA6A3" filter="url(#glow)"/>
+              <path d="M -8 0 L -3 6 L 10 -8" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <g transform="translate(680, 340)" opacity="0.5">
+              <circle r="20" fill="#D4AF37" filter="url(#glow)"/>
+              <path d="M -6 0 L -2 5 L 8 -6" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="urgencia-strip">
+  <span class="flash">⚡</span>
+  <strong>URGENTE:</strong> Eleições 2026 se aproximam — garanta sua presença digital ANTES da campanha oficial começar
+  <span class="flash">⚡</span>
+</div>
+
+<section class="social-proof">
+  <div class="container">
+    <div class="proof-grid">
+      <div class="proof-item">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h4>Empresa estabelecida</h4>
+        <p>Mais de 10 anos no mercado de tecnologia</p>
+      </div>
+      <div class="proof-item">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+        </div>
+        <h4>Nota fiscal garantida</h4>
+        <p>Operação 100% legal e documentada</p>
+      </div>
+      <div class="proof-item">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+        </div>
+        <h4>Dentro da lei eleitoral</h4>
+        <p>Serviços em conformidade com TSE</p>
+      </div>
+      <div class="proof-item">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h4>Entrega em 5 dias</h4>
+        <p>Site completo e no ar rapidamente</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="problema">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>O problema</span>
+      <h2>Instagram não basta. <span class="accent">Seu eleitor precisa de mais</span>.</h2>
+      <p>Redes sociais mostram o momento. Mas e o histórico completo? E as leis que você aprovou? E as emendas que beneficiaram sua região? Eleitor quer PROVAS do seu trabalho — não só posts bonitos.</p>
+    </div>
+    <div class="prob-grid reveal">
+      <div class="prob-card">
+        <div class="num">01</div>
+        <h3>Sem histórico organizado</h3>
+        <p>No Instagram, seu trabalho de anos some no feed. O eleitor não consegue ver TUDO que você já fez de verdade.</p>
+      </div>
+      <div class="prob-card">
+        <div class="num">02</div>
+        <h3>Concorrente com site sai na frente</h3>
+        <p>Político que aparece no Google com site profissional transmite seriedade — quem não tem, perde credibilidade.</p>
+      </div>
+      <div class="prob-card">
+        <div class="num">03</div>
+        <h3>Eleitor precisa de prova</h3>
+        <p>"Entra no meu site e veja tudo que já fizemos nesses anos" — essa frase fecha voto. Sem site, você não tem onde direcionar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="solucao">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>A solução</span>
+      <h2>Site político que funciona como <span class="accent">portfólio completo</span> da sua carreira</h2>
+      <p>Tudo que você precisa mostrar pro eleitor — organizado, profissional e acessível 24h.</p>
+    </div>
+    <div class="sol-grid reveal">
+      <div class="sol-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15h6"/></svg>
+        </div>
+        <div>
+          <h3>Histórico completo de atuação</h3>
+          <p>Emendas aprovadas, leis apresentadas, verbas conquistadas — tudo documentado e fácil de encontrar.</p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <h3>Biografia e trajetória política</h3>
+          <p>Sua história desde o começo — quem você é, de onde veio, o que te motivou a entrar na política.</p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div>
+          <h3>Pautas e propostas atuais</h3>
+          <p>O que você defende, quais bandeiras levanta, em que projetos está trabalhando agora.</p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div>
+          <h3>Canal direto com o eleitor</h3>
+          <p>Formulário de contato, WhatsApp, redes sociais — tudo integrado pra facilitar a comunicação.</p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div>
+          <h3>Galeria de fotos e vídeos</h3>
+          <p>Registros do seu trabalho em campo — visitas, inaugurações, eventos, reuniões com a comunidade.</p>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/></svg>
+        </div>
+        <div>
+          <h3>Integração com redes sociais</h3>
+          <p>Feed do Instagram direto no site — o melhor dos dois mundos: momento + histórico completo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="exemplos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>Exemplos reais</span>
+      <h2>Veja como ficam os <span class="accent">sites políticos profissionais</span></h2>
+      <p>Design moderno, responsivo e focado em converter eleitor em voto.</p>
+    </div>
+    <div class="exemplos-grid reveal">
+      <div class="exemplo-item">
+        <img src="img/site-politico-exemplo.jpg" alt="Exemplo de site político profissional">
+        <div class="exemplo-caption">
+          <h4>Design profissional e moderno</h4>
+          <p>Layout limpo que destaca a trajetória e conquistas do político</p>
+        </div>
+      </div>
+      <div class="exemplo-item">
+        <img src="img/sites-responsivos.jpg" alt="Sites responsivos em todos os dispositivos">
+        <div class="exemplo-caption">
+          <h4>Funciona em qualquer dispositivo</h4>
+          <p>Desktop, tablet e celular — seu eleitor acessa de onde quiser</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="diferenciais">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>Por que escolher a gente</span>
+      <h2>Vamos <span style="background:linear-gradient(120deg, var(--gold), var(--gold-light)); -webkit-background-clip:text; background-clip:text; color:transparent;">muito além</span> do que a concorrência oferece</h2>
+      <p>Não fazemos site genérico a partir só do Instagram. Criamos um PORTFÓLIO POLÍTICO COMPLETO.</p>
+    </div>
+    <div class="diff-grid reveal">
+      <div class="diff-card">
+        <span class="badge">Diferencial #1</span>
+        <h3>História completa, não só feed</h3>
+        <p>Concorrente faz site baseado em Instagram. Nós criamos site COM SEU HISTÓRICO POLÍTICO REAL: emendas, leis, trabalhos, conquistas — tudo documentado e organizado.</p>
+      </div>
+      <div class="diff-card">
+        <span class="badge">Diferencial #2</span>
+        <h3>Empresa estabelecida há 10+ anos</h3>
+        <p>Não somos "agência de Instagram" que surgiu ontem. Somos empresa de tecnologia com mais de uma década no mercado, com nota fiscal e CNPJ.</p>
+      </div>
+      <div class="diff-card">
+        <span class="badge">Diferencial #3</span>
+        <h3>Dentro da lei eleitoral</h3>
+        <p>Tudo que fazemos está em conformidade com TSE. Você recebe nota fiscal, pode prestar contas, tudo documentado e dentro da lei.</p>
+      </div>
+      <div class="diff-card">
+        <span class="badge">Diferencial #4</span>
+        <h3>SEO e presença no Google</h3>
+        <p>Seu site aparece quando eleitor busca seu nome no Google. Concorrente que só tem Instagram perde essa visibilidade.</p>
+      </div>
+      <div class="diff-card">
+        <span class="badge">Diferencial #5</span>
+        <h3>Design profissional e moderno</h3>
+        <p>Interface limpa, responsiva (funciona em celular/tablet/desktop), rápida e acessível — passa credibilidade de verdade.</p>
+      </div>
+      <div class="diff-card">
+        <span class="badge">Diferencial #6</span>
+        <h3>Suporte técnico incluso</h3>
+        <p>Ajustes, atualizações, dúvidas — temos time técnico pra te atender sempre que precisar, não te deixamos na mão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="como-funciona">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>Processo</span>
+      <h2>Como funciona — do primeiro contato até o site no ar</h2>
+      <p>Simples, rápido e descomplicado. Em 5 dias você tem presença digital completa.</p>
+    </div>
+    <div class="steps-grid reveal">
+      <div class="step-item">
+        <div class="num">1</div>
+        <h4>Você entra em contato</h4>
+        <p>Manda mensagem no WhatsApp, explica o que precisa, tiramos todas as dúvidas.</p>
+      </div>
+      <div class="step-item">
+        <div class="num">2</div>
+        <h4>Enviamos proposta formal</h4>
+        <p>Com valores, prazos, escopo detalhado e nota fiscal garantida.</p>
+      </div>
+      <div class="step-item">
+        <div class="num">3</div>
+        <h4>Você envia os dados</h4>
+        <p>Fotos, textos, histórico, emendas, leis — tudo que precisa estar no site.</p>
+      </div>
+      <div class="step-item">
+        <div class="num">4</div>
+        <h4>Site pronto em até 5 dias</h4>
+        <p>Entregamos site completo, revisado e pronto pra ir pro ar. Você aprova e publicamos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="urgencia-final">
+  <div class="urgencia-box">
+    <div class="urgencia-inner reveal">
+      <h2>Eleições 2026 não esperam. Sua presença digital também não pode.</h2>
+      <p>Quanto mais cedo seu site estiver no ar, mais eleitores vão conhecer seu trabalho ANTES da campanha oficial começar.</p>
+      <p>Político que já tem site profissional quando a corrida eleitoral esquenta sai na frente — porque o eleitor JÁ conhece, JÁ confia, JÁ viu as provas.</p>
+      <div class="destaque">⏱️ Entrega em até 5 dias · Nota fiscal garantida · Dentro da lei</div>
+      <a class="btn btn-cta-urgente" href="https://wa.me/551152170657?text=Quero%20meu%20site%20pol%C3%ADtico%20URGENTE" target="_blank" rel="noopener">
+        Falar agora no WhatsApp
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo on-dark" aria-label="Exacta Labs">
+          <svg viewBox="0 0 66 64" aria-hidden="true">
+            <rect x="4" y="8" width="34" height="10" rx="5" fill="#FFFFFF"/>
+            <rect x="4" y="27" width="24" height="10" rx="5" fill="#FFFFFF"/>
+            <rect x="4" y="46" width="34" height="10" rx="5" fill="#FFFFFF"/>
+            <path d="M38 14 L53 32 L38 50" stroke="#0D1F35" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="60" cy="32" r="5.5" fill="#FFFFFF"/>
+          </svg>
+          <span class="word">Exacta<span class="labs" style="color:rgba(255,255,255,.75);">LABS</span></span>
+        </a>
+        <div class="footer-tagline">Sites Políticos Profissionais · 2026</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Exacta Labs. Todos os direitos reservados. CNPJ ativo, nota fiscal garantida.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/551152170657?text=Quero%20meu%20site%20pol%C3%ADtico" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.646.86 5.096 2.317 7.086L4.7 27.53a.8.8 0 0 0 .98.98l5.594-1.588A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm6.47 16.24c-.27.76-1.34 1.4-2.19 1.58-.58.12-1.34.22-3.9-.84-3.27-1.35-5.39-4.65-5.55-4.87-.16-.22-1.33-1.77-1.33-3.38 0-1.61.84-2.4 1.14-2.73.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.27.65.9 2.26.98 2.42.08.16.13.35.03.57-.1.22-.15.35-.3.53-.15.18-.31.4-.44.54-.15.16-.3.33-.13.63.17.3.75 1.25 1.62 2.03 1.12 1 2.06 1.31 2.37 1.46.3.15.48.13.66-.08.19-.21.79-.9 1-1.21.21-.3.42-.25.7-.15.28.1 1.78.84 2.09 1 .3.15.5.22.58.35.08.12.08.72-.19 1.48z"/></svg>
+</a>
+
+<script>
+  // Header scroll state
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

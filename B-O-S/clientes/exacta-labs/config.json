@@ -1,0 +1,50 @@
+{
+  "slug": "exacta-labs",
+  "nome": "Exacta Labs",
+  "tipo": "Agência/consultoria de tecnologia, marketing e IA — mais de 10 anos de história",
+  "modulos_ativos": [
+    "site",
+    "instagram",
+    "financeiro",
+    "crm",
+    "mkt-online"
+  ],
+  "acesso": {
+    "login": "exacta-labs",
+    "senha_hash": "$2a$10$PN3GIgKKWTkPsV7HX/R0WugVOzhI9QA1.z/D5lBB4Ei8XjvZdXBi."
+  },
+  "status": "ativo",
+  "observacoes_internas": "Importado da pasta B-O-S standalone em ExactaLabs (2026-07-23). .env original tinha: OPENAI_API_KEY, META_PAGE_ACCESS_TOKEN, META_PAGE_ID, META_IG_USER_ID, SITE_URL — nenhum valor copiado pra pasta do cliente (segredo nunca fica no workspace sandboxed). Instagram: não estava conectado nessa instalação (token/IG User ID vazios no .env original) — conectar do zero se for o caso. Nenhum módulo foi ativado — liberar em Editar cliente conforme necessário.",
+  "criado_em": "2026-07-23T19:23:30.104Z",
+  "hub": "agencia",
+  "experimental": false,
+  "tema": "branco",
+  "claude": {
+    "habilitado": true,
+    "modelosLiberados": [
+      "haiku",
+      "sonnet"
+    ],
+    "modeloChat": "sonnet",
+    "modeloGerador": "sonnet",
+    "limiteTokens": 0,
+    "importarArquivos": true,
+    "exportarArquivos": false,
+    "acessoInternet": true
+  },
+  "nomeComercial": "Exacta Labs",
+  "corPrincipal": "#2CA6A3",
+  "responsavel": {
+    "nome": "Bruno",
+    "cargo": "Dono",
+    "email": "brunowscruz@gmail.com",
+    "whatsapp": "+5513997394132"
+  },
+  "presencaDigital": {
+    "dominio": "exactalabs.com.br",
+    "site": "https://exactalabs.com.br"
+  },
+  "healthScore": 100,
+  "tipoCliente": "nao_definido",
+  "crmPreset": null
+}

@@ -1,0 +1,55 @@
+{
+  "plataforma": "google",
+  "titulo": "Marketing Digital IA PME",
+  "tipo": "servico",
+  "descricaoNegocio": "Importada da conta real do Google Ads — conteúdo original, não gerado pelo Hub.",
+  "headlines": [
+    "Marketing Digital com IA",
+    "Google Ads e Redes Sociais",
+    "Automatize seu Marketing"
+  ],
+  "descriptions": [
+    "Site, anúncios Google e Meta, redes sociais. Resultado real com IA. Fale com a gente.",
+    "Presença digital completa: site, Google Meu Negócio e anúncios que convertem.",
+    "Menos tempo gasto, mais resultado. Sites, Google Ads e automação com IA."
+  ],
+  "palavrasChave": [
+    "agência marketing digital sp",
+    "marketing digital resultado",
+    "agência marketing digital pequena empresa",
+    "marketing digital negócio local",
+    "agência marketing ia",
+    "google meu negócio profissional",
+    "presença digital completa",
+    "google ads para pequeno negócio",
+    "site profissional para pme",
+    "anúncios google profissional",
+    "marketing digital com inteligência artificial",
+    "criar site empresa pequena",
+    "site + google ads",
+    "meta ads pequena empresa",
+    "automação redes sociais empresa",
+    "gestão redes sociais automação",
+    "crm marketing pequena empresa",
+    "marketing tecnologia ia",
+    "acelerar vendas marketing digital",
+    "consultoria marketing digital pme"
+  ],
+  "palavrasNegativas": [],
+  "localizacoes": [],
+  "publico": "",
+  "orcamentoSugeridoDia": 80,
+  "tipoOrcamento": "diario",
+  "urlDestino": "https://exactalabs.com.br",
+  "status": "aplicada",
+  "statusGoogleAds": "PAUSED",
+  "aplicacao": {
+    "tentadoEm": "2026-07-31T21:48:35.873Z",
+    "ok": true,
+    "mensagem": "Importada de uma campanha que já existia na conta do Google Ads.",
+    "googleCampaignId": "24084001335",
+    "googleAdGroupId": "200459599844"
+  },
+  "criadoEm": "2026-07-31T21:48:35.873Z",
+  "atualizadoEm": "2026-07-31T21:48:35.873Z"
+}

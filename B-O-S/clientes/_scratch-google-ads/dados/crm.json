@@ -1,0 +1,47 @@
+{
+  "preset": "geral",
+  "token": "becdcc31ff493911b2c10f3e",
+  "fases": [
+    {
+      "nome": "Novo lead",
+      "cor": "#6366f1",
+      "tipo": "normal",
+      "id": "2732418d3386"
+    },
+    {
+      "nome": "Contato feito",
+      "cor": "#0891b2",
+      "tipo": "normal",
+      "id": "3be9666553e2"
+    },
+    {
+      "nome": "Proposta enviada",
+      "cor": "#ca8a04",
+      "tipo": "normal",
+      "id": "e7b27e5ddb44"
+    },
+    {
+      "nome": "Negociação",
+      "cor": "#c026d3",
+      "tipo": "normal",
+      "id": "a8481577db7c"
+    },
+    {
+      "nome": "Ganho",
+      "cor": "#16a34a",
+      "tipo": "ganho",
+      "id": "194245851617"
+    },
+    {
+      "nome": "Perdido",
+      "cor": "#dc2626",
+      "tipo": "perdido",
+      "id": "1c7d8d0f4d0c"
+    }
+  ],
+  "leads": [],
+  "tarefas": [],
+  "anotacoes": [],
+  "ligacoes": [],
+  "linksRastreio": []
+}

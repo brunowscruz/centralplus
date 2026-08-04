@@ -1,0 +1,42 @@
+{
+  "slug": "dr-lawer",
+  "nome": "Dr. Lawer",
+  "tipo": "LegalTech SaaS",
+  "modulos_ativos": [
+    "site",
+    "instagram",
+    "mkt-online"
+  ],
+  "acesso": {
+    "login": "dr-lawer",
+    "senha_hash": "$2a$10$v79sZxlhj0cKslQy1m9Pfuc1z/cyg3VdlJddlolZBOvSrE5z7KXya"
+  },
+  "status": "ativo",
+  "observacoes_internas": "Importado da pasta B-O-S standalone que o cliente já tinha (Dr-Lawer/BOS-main) em 2026-07-23. Token do Instagram (Meta) importado era de curta duração (~1-2h, gerado 2026-07-20) — provavelmente expirado, gerar um novo em Configurações.",
+  "criado_em": "2026-07-23T03:06:53.705Z",
+  "experimental": false,
+  "tema": "preto",
+  "claude": {
+    "habilitado": true,
+    "modelosLiberados": [
+      "haiku",
+      "sonnet"
+    ],
+    "modeloChat": "sonnet",
+    "modeloGerador": "haiku",
+    "limiteTokens": 5000000,
+    "importarArquivos": false,
+    "exportarArquivos": false,
+    "acessoInternet": true
+  },
+  "nomeComercial": "Dr. Lawer",
+  "corPrincipal": "#3089E8",
+  "responsavel": {},
+  "presencaDigital": {
+    "dominio": "drlawer.com.br",
+    "site": "https://www.drlawer.com.br"
+  },
+  "healthScore": 100,
+  "tipoCliente": "recorrente",
+  "crmPreset": null
+}

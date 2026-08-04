@@ -1,0 +1,70 @@
+{
+  "categorias": [
+    {
+      "nome": "Vendas",
+      "tipo": "entrada",
+      "cor": "#16a34a",
+      "id": "d375cde6d2d6"
+    },
+    {
+      "nome": "Serviços",
+      "tipo": "entrada",
+      "cor": "#0891b2",
+      "id": "abbb228c9297"
+    },
+    {
+      "nome": "Assinaturas",
+      "tipo": "entrada",
+      "cor": "#6366f1",
+      "id": "d648b0584392"
+    },
+    {
+      "nome": "Outros recebimentos",
+      "tipo": "entrada",
+      "cor": "#65a30d",
+      "id": "c3d07716e955"
+    },
+    {
+      "nome": "Fornecedores",
+      "tipo": "saida",
+      "cor": "#dc2626",
+      "id": "8560956e3f01"
+    },
+    {
+      "nome": "Folha de pagamento",
+      "tipo": "saida",
+      "cor": "#c026d3",
+      "id": "ce9925658789"
+    },
+    {
+      "nome": "Impostos",
+      "tipo": "saida",
+      "cor": "#ca8a04",
+      "id": "cc7a5c33f105"
+    },
+    {
+      "nome": "Marketing",
+      "tipo": "saida",
+      "cor": "#0ea5e9",
+      "id": "50b1e9b1fe82"
+    },
+    {
+      "nome": "Operacional",
+      "tipo": "saida",
+      "cor": "#f97316",
+      "id": "f1a38dda4146"
+    },
+    {
+      "nome": "Outras despesas",
+      "tipo": "saida",
+      "cor": "#78716c",
+      "id": "bcd1cc502573"
+    }
+  ],
+  "carteiras": [],
+  "lancamentos": [],
+  "contas": [],
+  "assinaturas": [],
+  "metas": [],
+  "funcionarios": []
+}

@@ -1,0 +1,95 @@
+{
+  "preset": "geral",
+  "token": "fcd3569341020b1f69410fcb",
+  "fases": [
+    {
+      "nome": "Novo lead",
+      "cor": "#6366f1",
+      "tipo": "normal",
+      "id": "bebcb60ad94a"
+    },
+    {
+      "nome": "Contato feito",
+      "cor": "#0891b2",
+      "tipo": "normal",
+      "id": "42c0434e01d8",
+      "automacaoWhatsapp": {
+        "ativo": false,
+        "atrasoDias": 1,
+        "mensagem": "Olá {{nome}} , agradecemos o contato"
+      }
+    },
+    {
+      "nome": "Proposta enviada",
+      "cor": "#ca8a04",
+      "tipo": "normal",
+      "id": "275e6063de60"
+    },
+    {
+      "nome": "Negociação",
+      "cor": "#c026d3",
+      "tipo": "normal",
+      "id": "585c14cb5053"
+    },
+    {
+      "nome": "Ganho",
+      "cor": "#16a34a",
+      "tipo": "ganho",
+      "id": "25b46b73e31b"
+    },
+    {
+      "nome": "Perdido",
+      "cor": "#dc2626",
+      "tipo": "perdido",
+      "id": "e9cb8bcfed9f"
+    }
+  ],
+  "leads": [
+    {
+      "id": "00c77023cfd5",
+      "nome": "B Willians",
+      "whatsapp": "5513997394132",
+      "origem": "WhatsApp",
+      "faseId": "bebcb60ad94a",
+      "clienteId": "f42f06d52836",
+      "entrouNaFaseEm": "2026-07-31T15:15:55.427Z",
+      "criadoEm": "2026-07-31T15:15:55.427Z",
+      "atualizadoEm": "2026-07-31T15:15:55.427Z"
+    },
+    {
+      "id": "685db27e302f",
+      "nome": "Rebs Monteiro 🦩",
+      "whatsapp": "5513997750306",
+      "origem": "WhatsApp",
+      "faseId": "42c0434e01d8",
+      "clienteId": "549169fe02c0",
+      "entrouNaFaseEm": "2026-07-31T15:22:02.107Z",
+      "criadoEm": "2026-07-31T15:16:41.860Z",
+      "atualizadoEm": "2026-07-31T15:22:02.107Z",
+      "atendimentoHumano": true
+    },
+    {
+      "id": "24ae41455c6c",
+      "nome": "Barbearia Daniel Ribeiro",
+      "whatsapp": "5513997220116",
+      "origem": "WhatsApp",
+      "faseId": "bebcb60ad94a",
+      "clienteId": "cc342d12efcd",
+      "entrouNaFaseEm": "2026-07-31T22:13:41.501Z",
+      "criadoEm": "2026-07-31T22:13:41.501Z",
+      "atualizadoEm": "2026-07-31T22:13:41.501Z"
+    }
+  ],
+  "tarefas": [
+    {
+      "id": "236f2984bb1f",
+      "titulo": "Lead pediu atendimento humano: Lead quer orçamento para desenvolvimento de site institucional para loja de roupas feminina. Já tem todo material (fotos, identidade visual, etc). Pronto para receber proposta comercial.",
+      "leadId": "685db27e302f",
+      "feita": false,
+      "criadoEm": "2026-07-31T15:22:02.107Z"
+    }
+  ],
+  "anotacoes": [],
+  "ligacoes": [],
+  "linksRastreio": []
+}

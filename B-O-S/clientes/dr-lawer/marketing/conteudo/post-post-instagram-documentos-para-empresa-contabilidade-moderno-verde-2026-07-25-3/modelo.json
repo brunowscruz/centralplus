@@ -1,0 +1,161 @@
+{
+  "paginas": [
+    {
+      "largura": 1080,
+      "altura": 1350,
+      "camadas": [
+        {
+          "id": "fundo-azul",
+          "x": 0,
+          "y": 0,
+          "largura": 1080,
+          "altura": 1350,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "retangulo",
+          "corFundo": "1A2B6E"
+        },
+        {
+          "id": "card-branco",
+          "x": 60,
+          "y": 280,
+          "largura": 960,
+          "altura": 820,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "retangulo",
+          "corFundo": "FFFFFF"
+        },
+        {
+          "id": "regua-vermelha",
+          "x": 60,
+          "y": 200,
+          "largura": 80,
+          "altura": 6,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "retangulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "camada-slide1.xml-8",
+          "x": 60,
+          "y": 80,
+          "largura": 900,
+          "altura": 120,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Documentos para\nabrir uma empresa",
+          "tamanhoFonte": 56,
+          "cor": "FFFFFF",
+          "fonte": "Inter",
+          "negrito": true
+        },
+        {
+          "id": "camada-slide1.xml-2",
+          "x": 110,
+          "y": 350,
+          "largura": 32,
+          "altura": 32,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "camada-slide1.xml-3",
+          "x": 110,
+          "y": 445,
+          "largura": 32,
+          "altura": 32,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "camada-slide1.xml-4",
+          "x": 110,
+          "y": 540,
+          "largura": 32,
+          "altura": 32,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "camada-slide1.xml-5",
+          "x": 110,
+          "y": 635,
+          "largura": 32,
+          "altura": 32,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "camada-slide1.xml-6",
+          "x": 110,
+          "y": 730,
+          "largura": 32,
+          "altura": 32,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "camada-slide1.xml-7",
+          "x": 110,
+          "y": 825,
+          "largura": 32,
+          "altura": 32,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "bullet-extra",
+          "x": 110,
+          "y": 920,
+          "largura": 32,
+          "altura": 32,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "D42020"
+        },
+        {
+          "id": "camada-slide1.xml-9",
+          "x": 160,
+          "y": 340,
+          "largura": 820,
+          "altura": 630,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Cópia do RG autenticada\n\nCópia simples do CPF\n\nCertidão de casamento\n\nCarteira do órgão regulamentador\n\nÚltima declaração do IRPF\n\nCópia simples do comprovante de\nendereço residencial",
+          "tamanhoFonte": 28,
+          "cor": "1A2B6E",
+          "fonte": "Inter"
+        },
+        {
+          "id": "camada-slide1.xml-10",
+          "x": 60,
+          "y": 1200,
+          "largura": 343,
+          "altura": 36,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "@grandesite",
+          "tamanhoFonte": 32,
+          "cor": "FFFFFF",
+          "fonte": "Inter",
+          "negrito": true
+        }
+      ]
+    }
+  ]
+}

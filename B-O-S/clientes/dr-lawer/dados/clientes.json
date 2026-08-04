@@ -1,0 +1,12 @@
+{
+  "clientes": [
+    {
+      "id": "ece54b0f455e",
+      "nome": "Teste Fase1",
+      "whatsapp": "5511988887777",
+      "origem": "WhatsApp",
+      "criadoEm": "2026-07-23T21:24:48.892Z",
+      "atualizadoEm": "2026-07-24T04:00:33.535Z"
+    }
+  ]
+}

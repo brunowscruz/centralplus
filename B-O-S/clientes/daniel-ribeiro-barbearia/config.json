@@ -1,0 +1,48 @@
+{
+  "slug": "daniel-ribeiro-barbearia",
+  "nome": "Daniel Ribeiro Barbearia",
+  "tipo": "Clínica & Estética",
+  "modulos_ativos": [
+    "site",
+    "mkt-online"
+  ],
+  "acesso": {
+    "login": "daniel@danielribeiro.com.br",
+    "senha_hash": "$2a$10$P31zoCvyapbbsWgqYMgDfOy5uAPmhQhwQzIswuVVIupZnDlJYrGb6"
+  },
+  "status": "ativo",
+  "criado_em": "2026-07-29T23:53:26.035Z",
+  "hub": "generico",
+  "experimental": false,
+  "tema": "preto",
+  "claude": {
+    "habilitado": true,
+    "modelosLiberados": [
+      "haiku",
+      "sonnet"
+    ],
+    "modeloChat": "sonnet",
+    "modeloGerador": "sonnet",
+    "limiteTokens": 0,
+    "importarArquivos": false,
+    "exportarArquivos": false,
+    "acessoInternet": false,
+    "contaId": "conta-padrao"
+  },
+  "corPrincipal": "#E0A94A",
+  "responsavel": {
+    "nome": "Daniel Ribeiro",
+    "cargo": "",
+    "email": "",
+    "whatsapp": ""
+  },
+  "presencaDigital": {
+    "dominio": "",
+    "site": "",
+    "instagram": "",
+    "whatsapp": ""
+  },
+  "healthScore": 100,
+  "tipoCliente": "nao_definido",
+  "crmPreset": null
+}

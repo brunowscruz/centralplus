@@ -1,0 +1,148 @@
+{
+  "mensagens": [
+    {
+      "id": "evo-2AFFE89040D2341C8681",
+      "numero": "5513997394132",
+      "direcao": "enviada",
+      "texto": "Olá tudo bem?",
+      "criadoEm": "2026-07-24T03:56:06.000Z"
+    },
+    {
+      "id": "evo-3EB017627410FE038A0362",
+      "numero": "5513997394132",
+      "direcao": "enviada",
+      "texto": "tudo e voce?",
+      "criadoEm": "2026-07-24T04:12:15.000Z",
+      "falhou": true
+    },
+    {
+      "id": "1784866371931-csrap7",
+      "criadoEm": "2026-07-24T04:12:51.931Z",
+      "numero": "5513997394132",
+      "direcao": "enviada",
+      "texto": "enviando agora",
+      "automatica": false,
+      "falhou": true
+    },
+    {
+      "criadoEm": "2026-07-31T15:15:55.427Z",
+      "numero": "5513997394132",
+      "direcao": "recebida",
+      "texto": "Olá tudo bem?",
+      "id": "1785510955427-rv15gq"
+    },
+    {
+      "criadoEm": "2026-07-31T15:15:59.736Z",
+      "id": "evo-3EB0AA352999CF72DD5C0C",
+      "numero": "5513997394132",
+      "direcao": "enviada",
+      "texto": "Oi, B Willians! Tudo ótimo, obrigado! 😊\n\nE você, como vai? Em que posso ajudar hoje?",
+      "automatica": true
+    },
+    {
+      "criadoEm": "2026-07-31T15:16:41.861Z",
+      "numero": "5513997750306",
+      "direcao": "recebida",
+      "texto": "Olá",
+      "id": "1785511001861-wtn1r0"
+    },
+    {
+      "criadoEm": "2026-07-31T15:16:46.321Z",
+      "id": "evo-3EB0F99F5E00F6B07BBC29",
+      "numero": "5513997750306",
+      "direcao": "enviada",
+      "texto": "Oi, Rebs! 😊 Tudo bem?\n\nSou o assistente virtual da Exacta Labs. Como posso te ajudar hoje?",
+      "automatica": true
+    },
+    {
+      "criadoEm": "2026-07-31T15:17:12.446Z",
+      "numero": "5513997750306",
+      "direcao": "recebida",
+      "texto": "Gostaria de um orçamento",
+      "id": "1785511032446-8q9axz"
+    },
+    {
+      "criadoEm": "2026-07-31T15:17:17.548Z",
+      "id": "evo-3EB03B7F0EBDBDB6B0B26E",
+      "numero": "5513997750306",
+      "direcao": "enviada",
+      "texto": "Legal! Vou te ajudar com isso. \n\nPra fazer um orçamento adequado, me conta: qual solução ou serviço você tem interesse? É desenvolvimento de software, automação, integração de sistemas, ou algo específico?",
+      "automatica": true
+    },
+    {
+      "criadoEm": "2026-07-31T15:19:32.933Z",
+      "numero": "5513997750306",
+      "direcao": "recebida",
+      "texto": "Seria desenvolvimento de software",
+      "id": "1785511172933-ot043b"
+    },
+    {
+      "criadoEm": "2026-07-31T15:19:37.728Z",
+      "id": "evo-3EB0B8773D52B77437D1F6",
+      "numero": "5513997750306",
+      "direcao": "enviada",
+      "texto": "Ótimo! Para montar um orçamento mais preciso, preciso entender melhor o seu projeto:\n\n- Qual tipo de software você precisa? (app, sistema web, plataforma, etc.)\n- Qual o objetivo principal do sistema?\n- Você já tem alguma especificação ou é mais uma ideia inicial ainda?",
+      "automatica": true
+    },
+    {
+      "criadoEm": "2026-07-31T15:21:16.933Z",
+      "numero": "5513997750306",
+      "direcao": "recebida",
+      "texto": "Gostaria de um site novo",
+      "id": "1785511276933-d2ql0y"
+    },
+    {
+      "criadoEm": "2026-07-31T15:21:22.442Z",
+      "id": "evo-3EB0455A45634491B3F03F",
+      "numero": "5513997750306",
+      "direcao": "enviada",
+      "texto": "Entendi! Um site novo. \n\nMe ajuda com mais alguns detalhes:\n\n- É um site institucional, e-commerce, portal, landing page...?\n- Já tem identidade visual (logo, cores) ou precisa criar do zero?\n- Precisa de alguma funcionalidade especial? (formulários, integração com sistemas, área restrita, etc.)",
+      "automatica": true
+    },
+    {
+      "criadoEm": "2026-07-31T15:21:55.179Z",
+      "numero": "5513997750306",
+      "direcao": "recebida",
+      "texto": "Tenho todas as infos e fotos etc só falta desenvolver e seria institucional pra uma loja de roupas feminina",
+      "id": "1785511315179-yaniyg"
+    },
+    {
+      "criadoEm": "2026-07-31T15:22:06.426Z",
+      "id": "evo-3EB0176835519F45F8CFDD",
+      "numero": "5513997750306",
+      "direcao": "enviada",
+      "texto": "Pronto! Já escalei pro time comercial. Alguém vai te retornar em breve pra conversar sobre o projeto e passar o orçamento! 😊",
+      "automatica": true
+    },
+    {
+      "criadoEm": "2026-07-31T22:13:41.502Z",
+      "numero": "5513997220116",
+      "direcao": "recebida",
+      "texto": "Boa noite",
+      "id": "1785536021502-x62kuh"
+    },
+    {
+      "criadoEm": "2026-07-31T22:13:45.230Z",
+      "id": "evo-3EB0E09D075B2E90673744",
+      "numero": "5513997220116",
+      "direcao": "enviada",
+      "texto": "Boa noite! 😊\n\nTudo bem? Sou o assistente virtual da Exacta Labs. Como posso ajudar a Barbearia Daniel Ribeiro hoje?",
+      "automatica": true
+    },
+    {
+      "criadoEm": "2026-07-31T22:14:08.424Z",
+      "numero": "5513997220116",
+      "direcao": "recebida",
+      "texto": "Gostaria de um orçamento para um site",
+      "id": "1785536048424-b4bx9l"
+    },
+    {
+      "criadoEm": "2026-07-31T22:14:14.095Z",
+      "id": "evo-3EB030F9C8F361EB18F2F6",
+      "numero": "5513997220116",
+      "direcao": "enviada",
+      "texto": "Ótimo! Vou te ajudar com o orçamento do site. 👍\n\nPra montar uma proposta ideal, me conta:\n\n- O site é pra divulgar a barbearia, fazer agendamentos online, ou ambos?\n- Já tem logo e fotos da barbearia?\n- Tem alguma referência de site que você gostou?",
+      "automatica": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "openai": {
+    "apiKey": "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",
+    "obtidoEm": "2026-07-23T19:46:57.622Z"
+  },
+  "publicacao": {
+    "metodo": "nenhum"
+  },
+  "whatsapp": {
+    "status": "conectado",
+    "instanceName": "exacta-labs",
+    "instanceToken": "D242D7B6-0A6F-499F-8841-7BEA708CAA81",
+    "conectadoEm": "2026-08-04T03:40:54.895Z",
+    "desconectadoEm": "2026-07-24T04:14:10.796Z",
+    "agenteIA": {
+      "ativo": true,
+      "personalidade": "Você é o assistente virtual da Exacta Labs, uma empresa de tecnologia. Seja simpático e direto."
+    }
+  },
+  "googleAds": {
+    "customerId": "3616870405",
+    "vinculadoEm": "2026-07-30T21:24:41.704Z"
+  }
+}

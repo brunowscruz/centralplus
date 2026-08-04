@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #111; }
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #FFFFFF;
+  padding: 0 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kicker {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(26,43,110,0.55);
+  text-transform: uppercase;
+}
+.regua { width: 64px; height: 3px; margin: 18px 0 22px 0; background: #D42020; }
+.headline {
+  font-size: 58px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+  color: #1A2B6E;
+  max-width: 820px;
+}
+
+/* Mock do painel */
+.panel {
+  margin-top: 56px;
+  display: flex;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(13,34,87,0.14);
+  border: 1px solid rgba(26,43,110,0.08);
+}
+.panel-side {
+  width: 260px;
+  background: #1A2B6E;
+  padding: 40px 24px;
+}
+.panel-side .brand {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 21px;
+  letter-spacing: -0.02em;
+  margin-bottom: 48px;
+}
+.panel-side .brand span { color: #D42020; }
+.panel-side .item {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+  padding: 16px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.panel-side .item.active {
+  color: #FFFFFF;
+  background: rgba(255,255,255,0.10);
+}
+.panel-main {
+  flex: 1;
+  background: #F0F0F0;
+  padding: 40px 38px 38px 38px;
+}
+.panel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.panel-top .title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1A2B6E;
+}
+.panel-top .btn {
+  background: #CF2020;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 11px 18px;
+  border-radius: 8px;
+}
+.panel-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.panel-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 26px 26px;
+}
+.panel-card .label {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(26,43,110,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.panel-card .value {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1A2B6E;
+  margin-top: 10px;
+  letter-spacing: -0.02em;
+}
+.panel-card .bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 7px;
+  height: 52px;
+  margin-top: 18px;
+}
+.panel-card .bars div { width: 11px; background: #1A2B6E; border-radius: 2px; opacity: 0.75; }
+
+.panel-list {
+  grid-column: span 2;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 26px 26px;
+}
+.panel-list .label { font-size: 15px; font-weight: 600; color: rgba(26,43,110,0.55); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 18px; }
+.panel-list .row { display: flex; justify-content: space-between; padding: 13px 0; border-top: 1px solid rgba(26,43,110,0.08); font-size: 18px; color: #1A2B6E; }
+.panel-list .row:first-of-type { border-top: none; }
+.panel-list .row .status { font-size: 13px; font-weight: 700; padding: 4px 10px; border-radius: 6px; background: rgba(26,43,110,0.08); color: #1A2B6E; }
+
+.foot {
+  margin-top: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-text { font-size: 25px; font-weight: 700; color: #1A2B6E; }
+.foot-text span { color: #D42020; }
+.logo-pill { background: #F0F0F0; padding: 8px 14px; border-radius: 8px; display: inline-flex; align-items: center; }
+.logo-img { width: 118px; height: auto; display: block; }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="kicker">Ecossistema Dr. Lawer</div>
+  <div class="regua"></div>
+  <div class="headline">O escritório inteiro, num painel só.</div>
+
+  <div class="panel">
+    <div class="panel-side">
+      <div class="brand">Dr<span>.</span> Lawer</div>
+      <div class="item active">Dashboard</div>
+      <div class="item">Processos</div>
+      <div class="item">Financeiro</div>
+      <div class="item">Honorários OAB</div>
+      <div class="item">Clientes</div>
+    </div>
+    <div class="panel-main">
+      <div class="panel-top">
+        <div class="title">Dashboard</div>
+        <div class="btn">Novo processo</div>
+      </div>
+      <div class="panel-cards">
+        <div class="panel-card">
+          <div class="label">Processos ativos</div>
+          <div class="value">124</div>
+          <div class="bars">
+            <div style="height:40%"></div><div style="height:60%"></div><div style="height:35%"></div>
+            <div style="height:75%"></div><div style="height:55%"></div><div style="height:90%"></div>
+          </div>
+        </div>
+        <div class="panel-card">
+          <div class="label">Recebido no mês</div>
+          <div class="value">R$ 450k</div>
+          <div class="bars">
+            <div style="height:50%"></div><div style="height:30%"></div><div style="height:65%"></div>
+            <div style="height:45%"></div><div style="height:80%"></div><div style="height:60%"></div>
+          </div>
+        </div>
+        <div class="panel-list">
+          <div class="label">Clientes recentes</div>
+          <div class="row"><span>Marcos Andrade Silva</span><span class="status">Pendente</span></div>
+          <div class="row"><span>Renata Costa Lima</span><span class="status">Ativo</span></div>
+          <div class="row"><span>Fernando Souza Melo</span><span class="status">Ativo</span></div>
+          <div class="row"><span>Juliana Prado Ferreira</span><span class="status">Ativo</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="foot-text">Teste grátis por <span>7 dias</span>.</div>
+    <div class="logo-pill"><img class="logo-img" src="../../../identidade/logo.png"></div>
+  </div>
+
+</div>
+</body>
+</html>

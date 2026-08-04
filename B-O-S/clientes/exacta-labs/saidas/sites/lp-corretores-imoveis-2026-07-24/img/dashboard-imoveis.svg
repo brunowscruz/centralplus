@@ -1,0 +1,118 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <defs>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1F35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0B2B2E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2CA6A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6FE3DF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="url(#darkGrad)"/>
+
+  <!-- Glow effects -->
+  <circle cx="256" cy="256" r="180" fill="#2CA6A3" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="768" cy="768" r="220" fill="#6FE3DF" opacity="0.06" filter="url(#glow)"/>
+
+  <!-- Main dashboard container -->
+  <g transform="translate(112, 140)">
+    <!-- Header bar -->
+    <rect x="0" y="0" width="800" height="60" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <rect x="20" y="18" width="140" height="24" rx="12" fill="url(#tealGrad)" opacity="0.3"/>
+    <circle cx="740" cy="30" r="15" fill="rgba(255,255,255,0.08)"/>
+    <circle cx="780" cy="30" r="15" fill="rgba(255,255,255,0.08)"/>
+
+    <!-- Stats cards -->
+    <g transform="translate(0, 80)">
+      <!-- Card 1 - Leads -->
+      <rect x="0" y="0" width="240" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(111,227,223,0.3)" stroke-width="1.5"/>
+      <text x="20" y="35" font-family="Inter, sans-serif" font-size="14" fill="rgba(255,255,255,0.6)">Novos Leads</text>
+      <text x="20" y="75" font-family="Space Grotesk, sans-serif" font-size="42" font-weight="700" fill="#6FE3DF">247</text>
+      <rect x="20" y="100" width="60" height="20" rx="10" fill="rgba(44,166,163,0.2)"/>
+      <text x="90" y="113" font-family="Inter, sans-serif" font-size="12" fill="#6FE3DF">+12.5%</text>
+
+      <!-- Card 2 - Visitas -->
+      <rect x="270" y="0" width="240" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="290" y="35" font-family="Inter, sans-serif" font-size="14" fill="rgba(255,255,255,0.6)">Visitas Agendadas</text>
+      <text x="290" y="75" font-family="Space Grotesk, sans-serif" font-size="42" font-weight="700" fill="white">89</text>
+      <rect x="290" y="100" width="50" height="20" rx="10" fill="rgba(44,166,163,0.15)"/>
+
+      <!-- Card 3 - Conversão -->
+      <rect x="540" y="0" width="240" height="140" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="560" y="35" font-family="Inter, sans-serif" font-size="14" fill="rgba(255,255,255,0.6)">Taxa de Conversão</text>
+      <text x="560" y="75" font-family="Space Grotesk, sans-serif" font-size="42" font-weight="700" fill="white">34<tspan font-size="24">%</tspan></text>
+      <rect x="560" y="100" width="55" height="20" rx="10" fill="rgba(44,166,163,0.15)"/>
+    </g>
+
+    <!-- Chart area -->
+    <g transform="translate(0, 250)">
+      <rect x="0" y="0" width="800" height="280" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="20" y="35" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="600" fill="white">Leads por Dia</text>
+
+      <!-- Chart bars -->
+      <g transform="translate(40, 80)">
+        <rect x="0" y="120" width="40" height="60" rx="6" fill="rgba(44,166,163,0.3)"/>
+        <rect x="70" y="80" width="40" height="100" rx="6" fill="rgba(44,166,163,0.4)"/>
+        <rect x="140" y="60" width="40" height="120" rx="6" fill="rgba(44,166,163,0.5)"/>
+        <rect x="210" y="100" width="40" height="80" rx="6" fill="rgba(44,166,163,0.4)"/>
+        <rect x="280" y="40" width="40" height="140" rx="6" fill="url(#tealGrad)" opacity="0.9"/>
+        <rect x="350" y="70" width="40" height="110" rx="6" fill="rgba(44,166,163,0.5)"/>
+        <rect x="420" y="90" width="40" height="90" rx="6" fill="rgba(44,166,163,0.4)"/>
+        <rect x="490" y="50" width="40" height="130" rx="6" fill="rgba(44,166,163,0.6)"/>
+        <rect x="560" y="75" width="40" height="105" rx="6" fill="rgba(44,166,163,0.5)"/>
+        <rect x="630" y="95" width="40" height="85" rx="6" fill="rgba(44,166,163,0.4)"/>
+        <rect x="700" y="65" width="40" height="115" rx="6" fill="rgba(44,166,163,0.5)"/>
+      </g>
+
+      <!-- Y-axis labels -->
+      <text x="15" y="95" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">50</text>
+      <text x="15" y="145" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">25</text>
+      <text x="20" y="195" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">0</text>
+    </g>
+
+    <!-- Recent leads list -->
+    <g transform="translate(0, 560)">
+      <rect x="0" y="0" width="800" height="200" rx="16" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="20" y="35" font-family="Space Grotesk, sans-serif" font-size="16" font-weight="600" fill="white">Últimos Leads</text>
+
+      <!-- Lead items -->
+      <g transform="translate(20, 60)">
+        <circle cx="15" cy="15" r="15" fill="rgba(44,166,163,0.2)"/>
+        <rect x="45" y="8" width="180" height="14" rx="7" fill="rgba(255,255,255,0.15)"/>
+        <rect x="240" y="8" width="100" height="14" rx="7" fill="rgba(255,255,255,0.08)"/>
+        <circle cx="740" cy="15" r="10" fill="#6FE3DF" opacity="0.6"/>
+      </g>
+
+      <g transform="translate(20, 110)">
+        <circle cx="15" cy="15" r="15" fill="rgba(44,166,163,0.2)"/>
+        <rect x="45" y="8" width="160" height="14" rx="7" fill="rgba(255,255,255,0.15)"/>
+        <rect x="240" y="8" width="90" height="14" rx="7" fill="rgba(255,255,255,0.08)"/>
+        <circle cx="740" cy="15" r="10" fill="#6FE3DF" opacity="0.6"/>
+      </g>
+
+      <g transform="translate(20, 160)">
+        <circle cx="15" cy="15" r="15" fill="rgba(44,166,163,0.2)"/>
+        <rect x="45" y="8" width="170" height="14" rx="7" fill="rgba(255,255,255,0.15)"/>
+        <rect x="240" y="8" width="95" height="14" rx="7" fill="rgba(255,255,255,0.08)"/>
+        <circle cx="740" cy="15" r="10" fill="rgba(255,255,255,0.2)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Floating elements -->
+  <g opacity="0.6">
+    <circle cx="890" cy="180" r="8" fill="#6FE3DF"/>
+    <circle cx="920" cy="450" r="6" fill="#2CA6A3"/>
+    <circle cx="100" cy="680" r="10" fill="#4FC3C0"/>
+  </g>
+</svg>

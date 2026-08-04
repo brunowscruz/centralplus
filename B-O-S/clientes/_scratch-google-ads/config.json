@@ -1,0 +1,29 @@
+{
+  "slug": "_scratch-google-ads",
+  "nome": "Scratch Google Ads",
+  "modulos_ativos": [
+    "mkt-online"
+  ],
+  "acesso": {
+    "login": "teste",
+    "senha_hash": "$2a$10$XppI7OF9kYmEZK8hTAgnZebeAVDQKx2oDNFmPJC8e9q8kmDHjN2QK"
+  },
+  "status": "em_configuracao",
+  "criado_em": "2026-07-30T17:55:57.258Z",
+  "hub": "default",
+  "experimental": false,
+  "tema": "preto",
+  "claude": {
+    "habilitado": true,
+    "modelosLiberados": [
+      "haiku",
+      "sonnet"
+    ],
+    "modeloChat": "sonnet",
+    "modeloGerador": "sonnet",
+    "limiteTokens": 0
+  },
+  "healthScore": 100,
+  "tipoCliente": "nao_definido",
+  "crmPreset": null
+}

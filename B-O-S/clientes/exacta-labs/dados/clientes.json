@@ -1,0 +1,100 @@
+{
+  "clientes": [
+    {
+      "id": "015acd68b304",
+      "nome": "Bruno Silva",
+      "whatsapp": "cmryd2zr0003wwlo4mbj3vv6f",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:11:19.051Z",
+      "atualizadoEm": "2026-07-24T04:11:13.743Z"
+    },
+    {
+      "id": "fb3657a2fc0b",
+      "nome": "Alice Guimarães",
+      "whatsapp": "cmryd2zr0003xwlo421a8axqj",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:11:19.053Z",
+      "atualizadoEm": "2026-07-24T04:11:13.766Z"
+    },
+    {
+      "id": "8c339a23cfc4",
+      "nome": "Marcelo Freitas",
+      "whatsapp": "cmryd2zr00041wlo4osnk8t75",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:11:19.054Z",
+      "atualizadoEm": "2026-07-24T04:11:13.787Z"
+    },
+    {
+      "id": "986eec722914",
+      "nome": "Consultório Dra Sabrina Marques",
+      "whatsapp": "cmryd2zr00043wlo4gpgjubg7",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:11:19.055Z",
+      "atualizadoEm": "2026-07-24T04:11:13.810Z"
+    },
+    {
+      "id": "7b516afdcb27",
+      "nome": "Raimundo",
+      "whatsapp": "cmryd2zr00045wlo4jo70qhfy",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:11:19.056Z",
+      "atualizadoEm": "2026-07-24T04:11:13.830Z"
+    },
+    {
+      "id": "4fecdffb67b6",
+      "nome": "Thaísa Nogueira",
+      "whatsapp": "cmryd2zr00048wlo4rwe0jcx9",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:11:19.056Z",
+      "atualizadoEm": "2026-07-24T04:11:13.851Z"
+    },
+    {
+      "id": "09150865068b",
+      "nome": "Richard",
+      "whatsapp": "cmryd2zr00049wlo4iasg4fga",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:11:19.057Z",
+      "atualizadoEm": "2026-07-24T04:11:13.875Z"
+    },
+    {
+      "id": "f58ea1ca5100",
+      "nome": "Bruno",
+      "whatsapp": "cmryd2zrb00nuwlo4fg6w69y4",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:56:37.486Z",
+      "atualizadoEm": "2026-07-24T04:11:13.903Z"
+    },
+    {
+      "id": "820d2b0af073",
+      "nome": "Maiara Favero",
+      "whatsapp": "cmryd2zr10057wlo4rq2ecjo9",
+      "origem": "WhatsApp (importado)",
+      "criadoEm": "2026-07-24T03:58:53.378Z",
+      "atualizadoEm": "2026-07-24T04:11:13.945Z"
+    },
+    {
+      "id": "f42f06d52836",
+      "nome": "B Willians",
+      "whatsapp": "5513997394132",
+      "origem": "WhatsApp",
+      "criadoEm": "2026-07-31T15:15:55.425Z",
+      "atualizadoEm": "2026-07-31T15:15:55.425Z"
+    },
+    {
+      "id": "549169fe02c0",
+      "nome": "Rebs Monteiro 🦩",
+      "whatsapp": "5513997750306",
+      "origem": "WhatsApp",
+      "criadoEm": "2026-07-31T15:16:41.859Z",
+      "atualizadoEm": "2026-07-31T15:16:41.859Z"
+    },
+    {
+      "id": "cc342d12efcd",
+      "nome": "Barbearia Daniel Ribeiro",
+      "whatsapp": "5513997220116",
+      "origem": "WhatsApp",
+      "criadoEm": "2026-07-31T22:13:41.500Z",
+      "atualizadoEm": "2026-07-31T22:13:41.500Z"
+    }
+  ]
+}

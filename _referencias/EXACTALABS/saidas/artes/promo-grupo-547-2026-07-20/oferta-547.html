@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ width:1080px; height:1080px; overflow:hidden; }
+  body{
+    font-family:'Inter',sans-serif;
+    position:relative;
+    background:
+      radial-gradient(ellipse 60% 40% at 12% 6%, rgba(111,227,223,.32), transparent 62%),
+      radial-gradient(ellipse 50% 45% at 96% 96%, rgba(44,166,163,.18), transparent 60%),
+      linear-gradient(180deg, #FDFEFE 0%, #EFFAF9 100%);
+  }
+  .orb{ position:absolute; border-radius:50%; filter:blur(50px); z-index:0; }
+
+  .stage{ position:relative; z-index:1; width:1080px; height:1080px; padding:76px 76px 60px; display:flex; flex-direction:column; }
+
+  .logo{ display:flex; align-items:center; gap:12px; }
+  .logo svg{ height:44px; width:auto; }
+  .logo .word{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:24px; color:#142C4A; line-height:1.05; }
+  .logo .word .labs{ display:block; font-size:10px; font-weight:600; letter-spacing:.4em; color:#2CA6A3; }
+
+  .grupo-badge{
+    align-self:flex-start; display:inline-flex; align-items:center; gap:10px; margin-top:44px;
+    background:linear-gradient(120deg, #FFD36E, #FFB020);
+    color:#5A3600; border-radius:999px; padding:12px 26px;
+    font-size:19px; font-weight:800;
+    box-shadow:0 14px 30px rgba(255,176,32,.4);
+  }
+
+  h1{
+    font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-.015em;
+    font-size:66px; line-height:1.12; color:#142C4A; margin-top:30px; max-width:880px;
+  }
+  h1 .accent{
+    background:linear-gradient(120deg,#2CA6A3,#4FC3C0);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+
+  .sub{ font-size:25px; color:#3D4E68; margin-top:18px; max-width:760px; line-height:1.45; font-weight:600; }
+
+  .spacer{ flex:1; min-height:20px; }
+
+  /* ===== Preço — elemento dominante ===== */
+  .preco-box{
+    background:linear-gradient(160deg, #0D1F35, #0B2B2E);
+    border-radius:26px; padding:38px 44px;
+    box-shadow:0 30px 60px rgba(13,31,53,.32); position:relative; overflow:hidden;
+  }
+  .preco-box::before{ content:''; position:absolute; inset:0; background:radial-gradient(ellipse 55% 70% at 92% 0%, rgba(111,227,223,.2), transparent 60%); }
+  .preco-top{ position:relative; z-index:1; display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; }
+  .preco-de{ font-size:20px; color:rgba(255,255,255,.5); text-decoration:line-through; font-weight:600; }
+  .preco-por{ display:flex; align-items:baseline; gap:12px; }
+  .preco-por .cifrao{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:34px; color:#6FE3DF; }
+  .preco-por .valor{ font-family:'Space Grotesk',sans-serif; font-weight:800; font-size:84px; color:#fff; line-height:1; }
+  .preco-inclui{ position:relative; z-index:1; font-size:18px; color:rgba(255,255,255,.82); margin-top:14px; font-weight:500; }
+  .preco-inclui strong{ color:#6FE3DF; font-weight:700; }
+
+  .condicao{ font-size:16.5px; color:#66748C; margin-top:22px; font-weight:600; }
+  .condicao strong{ color:#C4471A; }
+
+  .ja-tem{
+    display:inline-flex; align-items:center; gap:10px; margin-top:22px;
+    background:rgba(44,166,163,.09); border:1.5px solid rgba(44,166,163,.35);
+    border-radius:14px; padding:12px 20px;
+    font-size:21px; color:#146E6B; font-weight:700; line-height:1.3;
+  }
+  .ja-tem .ico{ font-size:22px; flex-shrink:0; }
+
+  .cta-row{ display:flex; align-items:center; justify-content:space-between; margin-top:26px; }
+  .cta{
+    display:flex; align-items:center; gap:14px;
+    background:linear-gradient(135deg,#2CA6A3,#4FC3C0);
+    color:#0D1F35; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:27px;
+    padding:22px 38px; border-radius:999px;
+    box-shadow:0 20px 44px rgba(44,166,163,.4);
+  }
+  .cta svg{ width:26px; height:26px; stroke:#0D1F35; fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+  .domain{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:20px; color:#146E6B; }
+</style>
+</head>
+<body>
+  <div class="orb" style="width:360px;height:360px;top:-90px;left:-40px;background:radial-gradient(circle, rgba(111,227,223,.5), transparent 70%);"></div>
+
+  <div class="stage">
+    <div class="logo">
+      <svg viewBox="0 0 66 64" aria-hidden="true">
+        <rect x="4" y="8" width="34" height="10" rx="5" fill="#142C4A"/>
+        <rect x="4" y="27" width="24" height="10" rx="5" fill="#142C4A"/>
+        <rect x="4" y="46" width="34" height="10" rx="5" fill="#142C4A"/>
+        <path d="M38 14 L53 32 L38 50" stroke="#2CA6A3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="60" cy="32" r="5.5" fill="#142C4A"/>
+      </svg>
+      <span class="word">Exacta<span class="labs">LABS</span></span>
+    </div>
+
+    <span class="grupo-badge">🎁 Exclusivo pra esse grupo</span>
+
+    <h1>Seu concorrente já aparece no Google <span class="accent">e no ChatGPT.</span></h1>
+    <p class="sub">Site otimizado pra Google e pra IA + relatório do seu Google Meu Negócio.</p>
+    <p class="ja-tem"><span class="ico">🔁</span>Já tem site? A gente troca por um novo, pronto pra Google e ChatGPT.</p>
+
+    <div class="spacer"></div>
+
+    <div class="preco-box">
+      <div class="preco-top">
+        <span class="preco-de">De R$ 1.997</span>
+        <span class="preco-por"><span class="cifrao">R$</span><span class="valor">547</span></span>
+      </div>
+      <p class="preco-inclui"><strong>Site + Relatório GMB</strong> · à vista, sem mensalidade</p>
+      <p class="condicao"><strong>Só avisando que veio desse grupo.</strong></p>
+    </div>
+
+    <div class="cta-row">
+      <div class="cta">
+        Quero garantir
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </div>
+      <div class="domain">wa.me/551152170657</div>
+    </div>
+  </div>
+</body>
+</html>

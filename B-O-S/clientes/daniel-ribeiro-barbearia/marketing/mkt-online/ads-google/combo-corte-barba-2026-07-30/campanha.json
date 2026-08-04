@@ -1,0 +1,48 @@
+{
+  "plataforma": "google",
+  "titulo": "Combo Corte + Barba",
+  "tipo": "produto",
+  "descricaoNegocio": "Barbearia profissional no Canto do Forte, Praia Grande. Especializada em cortes masculinos modernos e barba alinhada com acabamento impecável.",
+  "anuncios": [
+    {
+      "titulo": "Combo Corte + Barba R$ 90 | Canto do Forte",
+      "descricao": "Corte moderno + barba alinhada por R$ 90. Profissionais experientes na Daniel Ribeiro Barbearia. Agende já!"
+    },
+    {
+      "titulo": "Corte + Barba R$ 90 | Praia Grande",
+      "descricao": "Combo completo: corte masculino + barba feita por barbeiro profissional. Acabamento premium. Agende seu horário!"
+    },
+    {
+      "titulo": "Barbearia Canto do Forte | Combo R$ 90",
+      "descricao": "Transforme seu visual! Corte + barba alinhada por apenas R$ 90. Daniel Ribeiro Barbearia. Reserve agora!"
+    }
+  ],
+  "palavrasChave": [
+    "barbearia canto do forte",
+    "barbearia praia grande",
+    "corte masculino canto do forte",
+    "barba alinhada praia grande",
+    "combo corte e barba",
+    "barbeiro canto do forte",
+    "barbeiro praia grande",
+    "corte de cabelo masculino praia grande",
+    "fazer barba canto do forte",
+    "barbearia próxima de mim",
+    "melhor barbearia praia grande",
+    "corte masculino degradê",
+    "aparar barba profissional",
+    "barbearia especializada",
+    "corte social masculino",
+    "barbeiro experiente praia grande",
+    "agendar corte de cabelo",
+    "promoção barbearia",
+    "combo barbearia",
+    "estética masculina praia grande"
+  ],
+  "publico": "Homens entre 20 e 45 anos, moradores ou que trabalham no Canto do Forte e Praia Grande (SP). Interessados em cuidados pessoais, barba e cortes modernos/sociais.",
+  "orcamentoSugeridoDia": 50,
+  "urlDestino": "https://www.barbeariadanielribeiro.com.br/#servicos",
+  "status": "rascunho",
+  "criadoEm": "2026-07-30T15:42:00.000Z",
+  "atualizadoEm": "2026-07-30T15:42:00.000Z"
+}

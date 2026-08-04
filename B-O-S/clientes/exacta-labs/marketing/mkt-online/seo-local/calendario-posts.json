@@ -1,0 +1,108 @@
+{
+  "posts": [
+    {
+      "id": "post-2026-08-01",
+      "dataPrevista": "2026-08-01T10:00:00.000Z",
+      "objetivo": "Demonstrar especialização em marketing digital para negócios locais",
+      "palavraChave": "marketing digital praia grande",
+      "tipo": "chamada-para-acao",
+      "titulo": "Seu negócio local aparece no Google?",
+      "texto": "Se você pesquisar seu serviço + sua cidade no Google agora, seu negócio aparece no mapa? A maioria dos clientes procura assim. Na Exacta Labs, a gente ajuda negócios locais a aparecer onde os clientes estão procurando — Google, Instagram, anúncios que convertem de verdade. Vamos conversar? Liga pra gente: 11 5217-0657",
+      "imagemSugerida": "local-business-google-maps-search.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:30.121Z"
+    },
+    {
+      "id": "post-2026-08-08",
+      "dataPrevista": "2026-08-08T14:00:00.000Z",
+      "objetivo": "Destacar serviço de sites sob medida com foco em conversão",
+      "palavraChave": "desenvolvimento sites praia grande",
+      "tipo": "chamada-para-acao",
+      "titulo": "Site que não vende não serve pra nada",
+      "texto": "Site bonito todo mundo faz. Mas site que traz cliente e converte de verdade? Isso é outra história. A gente desenvolve sites sob medida pensando em resultado: carrega rápido, aparece no Google, converte visita em contato. Quer um site que trabalha pra você? Fala com a gente: 11 5217-0657",
+      "imagemSugerida": "website-conversion-dashboard.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:26.006Z"
+    },
+    {
+      "id": "post-2026-08-15",
+      "dataPrevista": "2026-08-15T11:00:00.000Z",
+      "objetivo": "Promover consultoria em IA e automação de processos",
+      "palavraChave": "automação com IA",
+      "tipo": "chamada-para-acao",
+      "titulo": "IA que trabalha pra você (não é papo futurista)",
+      "texto": "Automatizar resposta de cliente, criar post de rede social, organizar lead, gerar relatório — tudo isso já roda com IA hoje, sem precisar contratar mais gente. A gente ajuda negócios locais a colocar isso pra funcionar de verdade: você economiza tempo, reduz custo, vende mais. Vamos conversar sobre o seu caso? 11 5217-0657",
+      "imagemSugerida": "ai-automation-business-workflow.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:33.725Z"
+    },
+    {
+      "id": "post-2026-08-22",
+      "dataPrevista": "2026-08-22T15:00:00.000Z",
+      "objetivo": "Destacar serviços de Google Ads com foco em ROI",
+      "palavraChave": "google ads praia grande",
+      "tipo": "oferta",
+      "titulo": "Anúncio no Google que dá retorno",
+      "texto": "Gastar com anúncio no Google sem saber se tá dando resultado é jogar dinheiro fora. A gente monta campanha pensando em ROI: palavra-chave certa, público qualificado, orçamento que cabe no bolso. Primeira consultoria sem custo pra avaliar seu caso. Fala com a gente: 11 5217-0657",
+      "imagemSugerida": "google-ads-roi-dashboard.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:35.382Z"
+    },
+    {
+      "id": "post-2026-08-29",
+      "dataPrevista": "2026-08-29T10:00:00.000Z",
+      "objetivo": "Promover gestão de redes sociais com foco em resultados",
+      "palavraChave": "gestão instagram praia grande",
+      "tipo": "chamada-para-acao",
+      "titulo": "Instagram parado não vende",
+      "texto": "Cliente procura serviço no Instagram todo dia. Se o seu tá parado ou só com foto de produto sem engajamento, você tá perdendo venda. A gente cuida do seu Instagram de verdade: conteúdo que engaja, resposta rápida, post pensado pra converter. Quer ver seu Instagram trabalhando pra você? Liga: 11 5217-0657",
+      "imagemSugerida": "instagram-business-engagement.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:38.404Z"
+    },
+    {
+      "id": "post-2026-09-05",
+      "dataPrevista": "2026-09-05T13:00:00.000Z",
+      "objetivo": "Destacar sistema CRM personalizado para negócios locais",
+      "palavraChave": "crm para negócios locais",
+      "tipo": "chamada-para-acao",
+      "titulo": "Perdendo cliente porque não acompanha direito?",
+      "texto": "Aquele cliente que pediu orçamento e você esqueceu de retornar. Aquele que comprou uma vez e sumiu. Isso acontece quando não tem sistema organizado. A gente desenvolve CRM sob medida pro seu negócio: você acompanha cada cliente, não perde follow-up, vende mais. Vamos conversar? 11 5217-0657",
+      "imagemSugerida": "crm-customer-tracking-system.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:39.955Z"
+    },
+    {
+      "id": "post-2026-09-12",
+      "dataPrevista": "2026-09-12T11:00:00.000Z",
+      "objetivo": "Promover serviço de Meta Ads (Facebook/Instagram)",
+      "palavraChave": "anúncio instagram praia grande",
+      "tipo": "chamada-para-acao",
+      "titulo": "Anúncio no Instagram que traz cliente de verdade",
+      "texto": "Já tentou impulsionar post no Instagram e não deu certo? Normal — a maioria impulsiona errado. A gente monta campanha no Facebook e Instagram com público certo, criativo que converte e orçamento pensado no seu bolso. Resultado que você vê no faturamento. Fala com a gente: 11 5217-0657",
+      "imagemSugerida": "meta-ads-instagram-campaign.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:41.483Z"
+    },
+    {
+      "id": "post-2026-09-19",
+      "dataPrevista": "2026-09-19T14:00:00.000Z",
+      "objetivo": "Destacar produto B-O-S e sistema operacional de marketing",
+      "palavraChave": "automação marketing com IA",
+      "tipo": "chamada-para-acao",
+      "titulo": "E se você tivesse um time de IA trabalhando 24h?",
+      "texto": "Nosso sistema B-O-S é exatamente isso: agentes de IA que criam post, respondem cliente, organizam lead, disparam campanha — tudo automatizado. Você foca em vender, a IA cuida do resto. Desenvolvemos e instalamos no seu negócio ou gerenciamos pra você. Vamos conversar? 11 5217-0657",
+      "imagemSugerida": "bos-ai-agents-marketing-system.png",
+      "status": "aprovado",
+      "criadoEm": "2026-07-29T00:00:00.000Z",
+      "atualizadoEm": "2026-07-29T19:44:43.341Z"
+    }
+  ]
+}

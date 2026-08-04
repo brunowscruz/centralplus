@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exacta Labs — Tecnologia, Sistemas e Marketing com IA pra Negócios Locais</title>
+<meta name="description" content="A Exacta Labs cria sites, sistemas, CRM e automação com IA pra negócios locais venderem mais. Mais de 10 anos de tecnologia, hoje 100% focados em resultado.">
+<link rel="canonical" href="https://exactalabs.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Exacta Labs — Tecnologia, Sistemas e Resultados">
+<meta property="og:description" content="Sites, sistemas e IA que trabalham enquanto você atende seu cliente. Mais de 10 anos criando tecnologia pra negócios reais.">
+<meta property="og:image" content="img/hero-orbital.png">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Exacta Labs — Tecnologia, Sistemas e Resultados">
+<meta name="twitter:description" content="Sites, sistemas e IA que trabalham enquanto você atende seu cliente.">
+<meta name="twitter:image" content="img/hero-orbital.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Exacta Labs",
+  "description": "Tecnologia, sistemas e marketing com IA pra negócios locais venderem mais.",
+  "slogan": "Tecnologia · Sistemas · Resultados",
+  "areaServed": "BR",
+  "url": "https://exactalabs.com.br/",
+  "sameAs": [],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Criação de sites e sistemas" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestão de redes sociais e Google Meu Negócio" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads e Meta Ads" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "B-O-S — Sistema Operacional de Marketing com IA" } }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --navy: #142C4A;
+    --navy-deep: #0D1F35;
+    --emerald-dark: #0B2B2E;
+    --teal: #2CA6A3;
+    --teal-light: #4FC3C0;
+    --teal-glow: #6FE3DF;
+    --teal-deep: #146E6B;
+    --bg: #FFFFFF;
+    --bg-soft: #F4F9F9;
+    --text: #16233A;
+    --text-muted: #52627A;
+    --border: #E3E9F0;
+    --glass: rgba(255,255,255,.06);
+    --glass-border: rgba(255,255,255,.14);
+    --ease: cubic-bezier(.4,0,.2,1);
+    --ease-out: cubic-bezier(.16,1,.3,1);
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Inter', sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{ font-family:'Space Grotesk', sans-serif; font-weight:700; letter-spacing:-0.02em; color:var(--navy); }
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; text-decoration:none; }
+  .container{ max-width:1180px; margin:0 auto; padding:0 24px; }
+  section{ position:relative; padding:110px 0; }
+
+  /* ============ Logo ============ */
+  .logo{ display:inline-flex; align-items:center; gap:11px; }
+  .logo svg{ height:34px; width:auto; }
+  .logo .word{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px; color:var(--navy); line-height:1.05; }
+  .logo .word .labs{ display:block; font-size:9.5px; font-weight:600; letter-spacing:.42em; color:var(--teal); }
+  .logo.on-dark .word{ color:#fff; }
+  .logo.on-dark .word .labs{ color:var(--teal-glow); }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:8px 18px; border-radius:999px;
+    border:1.5px solid rgba(44,166,163,.45);
+    font-size:13px; font-weight:600; letter-spacing:.04em;
+    color:var(--teal-deep); background:rgba(44,166,163,.06);
+    margin-bottom:26px;
+  }
+  .eyebrow .pulse-dot{ width:7px; height:7px; border-radius:50%; background:var(--teal); animation:pulse-dot 2s var(--ease) infinite; }
+  @keyframes pulse-dot{ 0%,100%{ box-shadow:0 0 0 0 rgba(44,166,163,.5);} 50%{ box-shadow:0 0 0 6px rgba(44,166,163,0);} }
+
+  /* ============ Buttons ============ */
+  .btn{
+    position:relative; overflow:hidden;
+    display:inline-flex; align-items:center; gap:10px;
+    padding:16px 32px; border-radius:999px;
+    font-weight:600; font-size:15.5px; cursor:pointer;
+    transition:transform 250ms var(--ease), box-shadow 250ms var(--ease), background 250ms var(--ease);
+    white-space:nowrap; border:none;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg, var(--teal), var(--teal-light));
+    color:var(--navy-deep);
+    box-shadow:0 10px 30px rgba(44,166,163,.4);
+  }
+  .btn-primary::after{
+    content:''; position:absolute; top:0; left:-80%;
+    width:50%; height:100%;
+    background:linear-gradient(100deg, transparent, rgba(255,255,255,.5), transparent);
+    transform:skewX(-20deg);
+    transition:left 600ms var(--ease);
+  }
+  .btn-primary:hover{ transform:translateY(-3px); box-shadow:0 16px 40px rgba(44,166,163,.55); }
+  .btn-primary:hover::after{ left:130%; }
+  .btn-ghost{ background:transparent; color:var(--navy); border:1.5px solid var(--border); }
+  .btn-ghost:hover{ border-color:var(--teal); color:var(--teal-deep); transform:translateY(-3px); }
+  .btn svg{ width:18px; height:18px; flex-shrink:0; }
+
+  /* ============ Nav pílula flutuante ============ */
+  header{
+    position:fixed; top:16px; left:0; right:0; z-index:100;
+    pointer-events:none;
+  }
+  .nav-pill{
+    pointer-events:auto;
+    max-width:1132px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 12px 10px 22px;
+    background:rgba(255,255,255,.78);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.6);
+    border-radius:999px;
+    box-shadow:0 8px 32px rgba(20,44,74,.08);
+    transition:box-shadow 300ms var(--ease), background 300ms var(--ease);
+  }
+  header.scrolled .nav-pill{ box-shadow:0 12px 40px rgba(20,44,74,.14); background:rgba(255,255,255,.92); }
+  nav ul{ list-style:none; display:flex; gap:32px; }
+  nav a.navlink{ font-size:14.5px; font-weight:500; color:var(--text-muted); transition:color 200ms; position:relative; }
+  nav a.navlink::after{
+    content:''; position:absolute; left:0; bottom:-4px; width:0; height:2px;
+    background:var(--teal); border-radius:2px; transition:width 250ms var(--ease);
+  }
+  nav a.navlink:hover{ color:var(--navy); }
+  nav a.navlink:hover::after{ width:100%; }
+  .nav-links-wrap{ display:flex; align-items:center; gap:32px; }
+  .menu-toggle{
+    display:none; background:none; border:none; cursor:pointer;
+    width:42px; height:42px; align-items:center; justify-content:center;
+    color:var(--navy); border-radius:50%;
+  }
+  .menu-toggle svg{ width:24px; height:24px; }
+
+  /* ============ Glow orbs decorativos ============ */
+  .orb{
+    position:absolute; border-radius:50%;
+    filter:blur(70px); pointer-events:none; z-index:0;
+  }
+  .orb-teal{ background:radial-gradient(circle, rgba(111,227,223,.45), transparent 70%); }
+  .orb-float{ animation:orb-drift 14s ease-in-out infinite alternate; }
+  @keyframes orb-drift{
+    from{ transform:translate(0,0) scale(1); }
+    to{ transform:translate(40px,-30px) scale(1.15); }
+  }
+
+  /* ============ Hero ============ */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex; align-items:center;
+    padding:150px 0 80px;
+    background:
+      radial-gradient(ellipse 55% 45% at 12% 20%, rgba(111,227,223,.28), transparent 65%),
+      radial-gradient(ellipse 45% 50% at 88% 75%, rgba(111,227,223,.22), transparent 65%),
+      linear-gradient(180deg, #FDFEFE 0%, #F2FAFA 100%);
+    overflow:hidden;
+  }
+  .hero-grid{
+    position:relative; z-index:2;
+    display:grid; grid-template-columns:1.05fr .95fr;
+    gap:48px; align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(2.3rem, 5vw, 3.9rem);
+    line-height:1.07;
+    margin-bottom:26px;
+  }
+  .hero h1 .accent{
+    background:linear-gradient(120deg, var(--teal), var(--teal-light));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{ color:var(--text-muted); font-size:18px; max-width:540px; margin-bottom:40px; }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  .hero-visual{ position:relative; display:flex; justify-content:center; }
+  @keyframes floaty{ 0%,100%{ transform:translateY(0) rotate(-1deg);} 50%{ transform:translateY(-22px) rotate(1.5deg);} }
+
+  /* Palco do logo animado */
+  .logo-stage{
+    position:relative;
+    width:min(480px, 92%);
+    aspect-ratio:1;
+    display:flex; align-items:center; justify-content:center;
+    animation:floaty 8s ease-in-out infinite;
+    will-change:transform;
+  }
+  .logo-stage::before{
+    content:''; position:absolute; inset:14%;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(111,227,223,.45), transparent 65%);
+    filter:blur(34px);
+  }
+  .logo-hero{
+    width:64%; position:relative; z-index:2;
+    filter:drop-shadow(0 30px 50px rgba(20,44,74,.22));
+    overflow:visible;
+  }
+  .logo-hero .bar{
+    transform-origin:4px center;
+    transform-box:view-box;
+    animation:bar-in 900ms var(--ease-out) backwards;
+  }
+  .logo-hero .bar-2{ animation-delay:140ms; }
+  .logo-hero .bar-3{ animation-delay:280ms; }
+  @keyframes bar-in{ from{ transform:scaleX(0); opacity:0; } }
+  .logo-hero .chev{
+    stroke-dasharray:75; stroke-dashoffset:0;
+    animation:chev-draw 1.1s var(--ease-out) 420ms backwards,
+              chev-glow 3.2s ease-in-out 1.8s infinite;
+  }
+  @keyframes chev-draw{ from{ stroke-dashoffset:75; } }
+  @keyframes chev-glow{
+    0%,100%{ filter:none; }
+    50%{ filter:drop-shadow(0 0 10px rgba(44,166,163,.95)); }
+  }
+  .logo-hero .dot{
+    transform-origin:60px 32px; transform-box:view-box;
+    animation:dot-pop 600ms var(--ease-out) 1.1s backwards;
+  }
+  @keyframes dot-pop{ from{ transform:scale(0); } }
+  .logo-hero .ripple{
+    transform-origin:60px 32px; transform-box:view-box;
+    opacity:0;
+    animation:ripple 2.6s ease-out 1.8s infinite;
+  }
+  .logo-hero .ripple-2{ animation-delay:2.9s; }
+  @keyframes ripple{
+    0%{ transform:scale(.4); opacity:.85; }
+    70%{ opacity:0; }
+    100%{ transform:scale(4.2); opacity:0; }
+  }
+
+  /* Anéis orbitando o logo */
+  .logo-stage .ring{
+    position:absolute; border-radius:50%;
+    border:1.5px solid rgba(44,166,163,.28);
+    animation:spin 32s linear infinite;
+  }
+  .ring-1{ width:104%; height:104%; top:-2%; left:-2%; }
+  .ring-2{ width:126%; height:126%; top:-13%; left:-13%; border-style:dashed; animation-duration:55s; animation-direction:reverse; }
+  .ring-1::before, .ring-2::before{
+    content:''; position:absolute; top:8%; left:12%;
+    width:10px; height:10px; border-radius:50%;
+    background:var(--teal); box-shadow:0 0 16px 4px rgba(44,166,163,.6);
+  }
+  @keyframes spin{ to{ transform:rotate(360deg);} }
+
+  /* Chips de serviços flutuando */
+  .chip{
+    position:absolute; z-index:3;
+    display:flex; align-items:center; gap:8px;
+    padding:11px 18px; border-radius:999px;
+    background:rgba(255,255,255,.8);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border:1px solid rgba(44,166,163,.35);
+    box-shadow:0 14px 32px rgba(20,44,74,.14);
+    font-weight:600; font-size:13.5px; color:var(--navy);
+    white-space:nowrap;
+    animation:bob 5.5s ease-in-out infinite, chip-in 700ms var(--ease-out) backwards;
+  }
+  .chip svg{ width:15px; height:15px; stroke:var(--teal-deep); fill:none; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; }
+  .chip-1{ top:7%;   left:0;    animation-delay:0s, 1.3s; }
+  .chip-2{ top:24%;  right:-3%; animation-delay:-1.7s, 1.45s; }
+  .chip-3{ bottom:22%; left:-5%; animation-delay:-3.2s, 1.6s; }
+  .chip-4{ bottom:5%; right:5%;  animation-delay:-4.4s, 1.75s; }
+  @keyframes bob{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-13px);} }
+  @keyframes chip-in{ from{ opacity:0; transform:translateY(18px) scale(.9); } }
+
+  .scroll-cue{
+    position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+    color:var(--teal-deep); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    display:flex; flex-direction:column; align-items:center; gap:8px; z-index:2;
+  }
+  .scroll-cue .line{ width:1.5px; height:34px; background:linear-gradient(180deg, var(--teal), transparent); animation:scrollcue 2s var(--ease) infinite; }
+  @keyframes scrollcue{ 0%{ transform:scaleY(0); transform-origin:top;} 50%{ transform:scaleY(1); transform-origin:top;} 51%{ transform-origin:bottom;} 100%{ transform:scaleY(0); transform-origin:bottom;} }
+
+  /* ============ Marquee ============ */
+  .marquee-strip{
+    padding:26px 0;
+    background:var(--bg);
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+    overflow:hidden;
+    position:relative;
+  }
+  .marquee-track{
+    display:flex; gap:56px; width:max-content;
+    animation:marquee 30s linear infinite;
+  }
+  .marquee-strip:hover .marquee-track{ animation-play-state:paused; }
+  @keyframes marquee{ to{ transform:translateX(-50%);} }
+  .marquee-item{
+    display:flex; align-items:center; gap:14px;
+    font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:16px;
+    color:var(--text-muted); white-space:nowrap;
+  }
+  .marquee-item .diamond{ width:8px; height:8px; background:var(--teal); transform:rotate(45deg); border-radius:2px; flex-shrink:0; }
+
+  /* ============ Reveal ============ */
+  .reveal{ opacity:0; transform:translateY(32px); transition:opacity 800ms var(--ease-out), transform 800ms var(--ease-out); }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+  .reveal-stagger > *{ opacity:0; transform:translateY(28px); transition:opacity 700ms var(--ease-out), transform 700ms var(--ease-out); }
+  .reveal-stagger.in > *{ opacity:1; transform:translateY(0); }
+  .reveal-stagger.in > *:nth-child(1){ transition-delay:0ms; }
+  .reveal-stagger.in > *:nth-child(2){ transition-delay:100ms; }
+  .reveal-stagger.in > *:nth-child(3){ transition-delay:200ms; }
+  .reveal-stagger.in > *:nth-child(4){ transition-delay:300ms; }
+  .reveal-stagger.in > *:nth-child(5){ transition-delay:400ms; }
+  .reveal-stagger.in > *:nth-child(6){ transition-delay:500ms; }
+
+  .section-head{ max-width:680px; margin-bottom:56px; }
+  .section-head h2{ font-size:clamp(1.8rem, 3.4vw, 2.5rem); margin-bottom:16px; line-height:1.18; }
+  .section-head h2 .accent{ color:var(--teal); }
+  .section-head p{ color:var(--text-muted); font-size:17px; }
+  .section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+
+  /* ============ Dor ============ */
+  .dor{
+    background:
+      radial-gradient(ellipse 40% 50% at 90% 10%, rgba(111,227,223,.14), transparent 60%),
+      var(--bg);
+  }
+  .dor-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
+  .dor-card{
+    position:relative;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:36px 30px;
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease), border-color 300ms var(--ease);
+    overflow:hidden;
+  }
+  .dor-card::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:3px;
+    background:linear-gradient(90deg, var(--teal), var(--teal-glow));
+    transform:scaleX(0); transform-origin:left;
+    transition:transform 400ms var(--ease);
+  }
+  .dor-card:hover{ transform:translateY(-8px); box-shadow:0 24px 48px rgba(20,44,74,.1); border-color:rgba(44,166,163,.4); }
+  .dor-card:hover::before{ transform:scaleX(1); }
+  .dor-card .num{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:14px; color:var(--teal-deep); margin-bottom:18px; }
+  .dor-card h3{ font-size:19px; margin-bottom:10px; }
+  .dor-card p{ color:var(--text-muted); font-size:15px; }
+
+  /* ============ Bloco escuro (solução + B-O-S) ============ */
+  .dark-wrap{
+    background:
+      radial-gradient(ellipse 60% 40% at 80% 0%, rgba(44,166,163,.18), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(44,166,163,.12), transparent 60%),
+      linear-gradient(160deg, var(--navy-deep) 0%, var(--emerald-dark) 100%);
+    border-radius:36px;
+    margin:0 16px;
+    overflow:hidden;
+  }
+  .dark-wrap section{ background:transparent; }
+  .dark-wrap h2, .dark-wrap h3{ color:#fff; }
+  .dark-wrap .section-head p{ color:rgba(255,255,255,.68); }
+  .dark-wrap .eyebrow{ color:var(--teal-glow); border-color:rgba(111,227,223,.4); background:rgba(111,227,223,.08); }
+
+  .sol-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .glass-card{
+    background:var(--glass);
+    border:1px solid var(--glass-border);
+    border-radius:20px;
+    padding:26px 26px;
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+    display:flex; align-items:flex-start; gap:18px;
+    transition:transform 300ms var(--ease), background 300ms var(--ease), border-color 300ms var(--ease);
+  }
+  .glass-card:hover{ transform:translateY(-6px); background:rgba(255,255,255,.1); border-color:rgba(111,227,223,.45); }
+  .glass-card .ico{
+    flex-shrink:0; width:46px; height:46px; border-radius:50%;
+    background:rgba(44,166,163,.18); border:1px solid rgba(111,227,223,.4);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 0 20px rgba(44,166,163,.25);
+  }
+  .glass-card .ico svg{ width:21px; height:21px; stroke:var(--teal-glow); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .glass-card h3{ font-size:16.5px; margin-bottom:6px; }
+  .glass-card p{ color:rgba(255,255,255,.62); font-size:14px; line-height:1.55; }
+
+  /* B-O-S */
+  .produto-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
+  .produto-img-wrap{
+    position:relative; border-radius:24px; overflow:hidden;
+    max-width:440px; width:100%;
+    justify-self:center; align-self:center;
+    box-shadow:0 40px 80px rgba(0,0,0,.5), 0 0 60px rgba(44,166,163,.15);
+    animation:floaty 9s ease-in-out infinite;
+  }
+  .produto-img-wrap img{ width:100%; height:auto; }
+  .produto-badge{
+    display:inline-block; padding:7px 16px; border-radius:999px;
+    background:rgba(111,227,223,.12); color:var(--teal-glow);
+    border:1px solid rgba(111,227,223,.35);
+    font-size:13px; font-weight:600; margin-bottom:22px; letter-spacing:.03em;
+  }
+  .produto-copy h2{ font-size:clamp(1.8rem,3.2vw,2.4rem); margin-bottom:20px; }
+  .produto-copy > p{ color:rgba(255,255,255,.68); font-size:16.5px; margin-bottom:30px; }
+  .produto-features{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:34px; }
+  .produto-feature{
+    font-size:14px; color:rgba(255,255,255,.85);
+    display:flex; align-items:center; gap:10px;
+    padding:12px 16px; border-radius:12px;
+    background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+  }
+  .produto-feature svg{ width:15px; height:15px; stroke:var(--teal-glow); flex-shrink:0; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
+
+  /* ============ Números ============ */
+  .numeros{ padding:96px 0; background:var(--bg); }
+  .num-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+  .num-item{
+    text-align:center; padding:36px 20px;
+    border-radius:22px; background:var(--bg-soft);
+    border:1px solid var(--border);
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease);
+  }
+  .num-item:hover{ transform:translateY(-6px); box-shadow:0 20px 40px rgba(20,44,74,.08); }
+  .num-item .value{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(2.1rem,4vw,3rem); color:var(--navy); }
+  .num-item .value .suffix{ color:var(--teal); }
+  .num-item .label{ color:var(--text-muted); font-size:13.5px; margin-top:10px; line-height:1.5; }
+
+  /* ============ Serviços ============ */
+  .servicos{
+    background:
+      radial-gradient(ellipse 45% 40% at 8% 15%, rgba(111,227,223,.15), transparent 60%),
+      var(--bg-soft);
+  }
+  .servicos-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; }
+  .serv-card{
+    position:relative;
+    padding:36px 28px; border-radius:22px;
+    background:#fff; border:1px solid var(--border);
+    transition:transform 300ms var(--ease), box-shadow 300ms var(--ease), border-color 300ms var(--ease);
+    overflow:hidden;
+  }
+  .serv-card::after{
+    content:''; position:absolute; width:180px; height:180px; border-radius:50%;
+    background:radial-gradient(circle, rgba(111,227,223,.25), transparent 70%);
+    top:-90px; right:-90px; opacity:0; transition:opacity 400ms var(--ease);
+  }
+  .serv-card:hover{ transform:translateY(-8px); box-shadow:0 24px 48px rgba(20,44,74,.1); border-color:rgba(44,166,163,.45); }
+  .serv-card:hover::after{ opacity:1; }
+  .serv-card .ico{
+    width:52px; height:52px; border-radius:50%;
+    background:linear-gradient(135deg, rgba(44,166,163,.14), rgba(111,227,223,.2));
+    border:1px solid rgba(44,166,163,.3);
+    display:flex; align-items:center; justify-content:center; margin-bottom:22px;
+  }
+  .serv-card .ico svg{ width:24px; height:24px; stroke:var(--teal-deep); fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .serv-card h3{ font-size:18px; margin-bottom:10px; }
+  .serv-card p{ color:var(--text-muted); font-size:14.5px; }
+
+  /* ============ CTA final ============ */
+  .cta-final{
+    padding:70px 16px;
+    background:var(--bg);
+  }
+  .cta-box{
+    position:relative;
+    max-width:1148px; margin:0 auto;
+    border-radius:36px;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(44,166,163,.4), transparent 55%),
+      linear-gradient(160deg, var(--navy-deep), var(--emerald-dark));
+    text-align:center;
+    padding:96px 24px;
+    overflow:hidden;
+  }
+  .cta-box::before, .cta-box::after{
+    content:''; position:absolute; border-radius:50%;
+    border:1px solid rgba(111,227,223,.18);
+  }
+  .cta-box::before{ width:560px; height:560px; top:-280px; left:50%; transform:translateX(-50%); }
+  .cta-box::after{ width:820px; height:820px; top:-410px; left:50%; transform:translateX(-50%); }
+  .cta-inner{ position:relative; z-index:1; max-width:620px; margin:0 auto; }
+  .cta-inner h2{ color:#fff; font-size:clamp(1.9rem,3.6vw,2.7rem); margin-bottom:20px; }
+  .cta-inner p{ color:rgba(255,255,255,.7); font-size:17px; margin-bottom:38px; }
+
+  /* ============ Footer ============ */
+  footer{
+    margin-top:0;
+    background:linear-gradient(160deg, var(--teal) 0%, var(--teal-deep) 100%);
+    color:rgba(255,255,255,.85);
+    padding:64px 0 36px;
+  }
+  .footer-grid{ display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:32px; }
+  .footer-tagline{ letter-spacing:.1em; text-transform:uppercase; font-size:11px; color:rgba(255,255,255,.65); margin-top:10px; }
+  .footer-bottom{
+    margin-top:48px; padding-top:24px;
+    border-top:1px solid rgba(255,255,255,.25);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+    font-size:13px; color:rgba(255,255,255,.75);
+  }
+  .footer-links{ display:flex; gap:28px; font-size:14px; }
+  .footer-links a{ transition:color 200ms; color:rgba(255,255,255,.85); }
+  .footer-links a:hover{ color:#fff; text-decoration:underline; }
+
+  /* ============ WhatsApp float ============ */
+  .wa-float{
+    position:fixed; bottom:28px; right:28px; z-index:95;
+    width:60px; height:60px; border-radius:50%;
+    background:linear-gradient(135deg, var(--teal-deep), var(--teal));
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 30px rgba(20,110,107,.5);
+    transition:transform 250ms var(--ease);
+  }
+  .wa-float::before{
+    content:''; position:absolute; inset:-4px; border-radius:50%;
+    border:2px solid rgba(44,166,163,.5);
+    animation:pulse-ring 2.2s var(--ease) infinite;
+  }
+  @keyframes pulse-ring{ 0%{ transform:scale(.9); opacity:1;} 100%{ transform:scale(1.35); opacity:0;} }
+  .wa-float:hover{ transform:scale(1.1); }
+  .wa-float svg{ width:29px; height:29px; fill:#fff; }
+
+  /* ============ Responsivo ============ */
+  @media (max-width: 1024px){
+    section{ padding:84px 0; }
+    .hero{ padding:130px 0 70px; min-height:auto; }
+    .hero-grid{ grid-template-columns:1fr; gap:56px; }
+    .logo-stage{ width:min(400px, 88%); }
+    .chip{ font-size:12.5px; padding:9px 14px; }
+    .sol-grid{ grid-template-columns:1fr; }
+    .produto-grid{ grid-template-columns:1fr; gap:44px; }
+    .num-grid{ grid-template-columns:repeat(2,1fr); }
+    nav ul{
+      display:flex; flex-direction:column; gap:0;
+      position:absolute; top:calc(100% + 10px); left:16px; right:16px;
+      background:rgba(255,255,255,.97);
+      backdrop-filter:blur(16px);
+      border:1px solid var(--border); border-radius:24px;
+      box-shadow:0 24px 48px rgba(20,44,74,.14);
+      max-height:0; overflow:hidden; opacity:0;
+      transition:max-height 350ms var(--ease), opacity 280ms var(--ease);
+      padding:0 24px;
+    }
+    nav ul.open{ max-height:340px; opacity:1; padding:14px 24px 18px; }
+    nav ul li{ border-bottom:1px solid var(--border); }
+    nav ul li:last-child{ border-bottom:none; }
+    nav a.navlink{ display:block; padding:14px 0; font-size:16px; }
+    nav a.navlink::after{ display:none; }
+    .menu-toggle{ display:flex; }
+    .nav-links-wrap .btn-primary{ display:none; }
+  }
+  @media (max-width: 720px){
+    .dor-grid, .servicos-grid, .produto-features{ grid-template-columns:1fr; }
+    .hero-actions .btn{ width:100%; justify-content:center; }
+    .dark-wrap{ margin:0 8px; border-radius:24px; }
+    .footer-grid{ flex-direction:column; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+    .marquee-track{ animation:none; }
+  }
+
+  :focus-visible{ outline:2px solid var(--teal); outline-offset:3px; }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container" style="padding:0 16px;">
+    <nav class="nav-pill" aria-label="Navegação principal">
+      <a href="#" class="logo" aria-label="Exacta Labs — início">
+        <svg viewBox="0 0 66 64" aria-hidden="true">
+          <rect x="4" y="8" width="34" height="10" rx="5" fill="#142C4A"/>
+          <rect x="4" y="27" width="24" height="10" rx="5" fill="#142C4A"/>
+          <rect x="4" y="46" width="34" height="10" rx="5" fill="#142C4A"/>
+          <path d="M38 14 L53 32 L38 50" stroke="#2CA6A3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="60" cy="32" r="5.5" fill="#142C4A"/>
+        </svg>
+        <span class="word">Exacta<span class="labs">LABS</span></span>
+      </a>
+      <div class="nav-links-wrap">
+        <ul id="navMenu">
+          <li><a class="navlink" href="#solucao">Soluções</a></li>
+          <li><a class="navlink" href="#bos">B-O-S</a></li>
+          <li><a class="navlink" href="#servicos">Serviços</a></li>
+          <li><a class="navlink" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener" style="padding:12px 26px; font-size:14px;">Falar no WhatsApp</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="orb orb-teal orb-float" style="width:420px;height:420px;top:-120px;left:-140px;"></div>
+  <div class="orb orb-teal orb-float" style="width:360px;height:360px;bottom:-100px;right:-110px;animation-delay:-7s;"></div>
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <span class="eyebrow"><span class="pulse-dot"></span>Tecnologia · Sistemas · Resultados</span>
+      <h1>Seu negócio no ritmo local, com tecnologia de <span class="accent">outro nível</span>.</h1>
+      <p class="lead">Sites, sistemas, redes sociais e IA que trabalham enquanto você atende seu cliente. Mais de 10 anos criando tecnologia — hoje 100% focados em fazer negócios locais venderem mais.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener">
+          Falar no WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#bos">Conhecer o B-O-S</a>
+      </div>
+    </div>
+    <div class="hero-visual" id="heroVisual">
+      <div class="logo-stage" id="logoStage" role="img" aria-label="Símbolo animado da Exacta Labs">
+        <div class="ring ring-1" aria-hidden="true"></div>
+        <div class="ring ring-2" aria-hidden="true"></div>
+        <svg class="logo-hero" viewBox="0 0 66 64" aria-hidden="true">
+          <rect class="bar bar-1" x="4" y="8"  width="34" height="10" rx="5" fill="#142C4A"/>
+          <rect class="bar bar-2" x="4" y="27" width="24" height="10" rx="5" fill="#142C4A"/>
+          <rect class="bar bar-3" x="4" y="46" width="34" height="10" rx="5" fill="#142C4A"/>
+          <path class="chev" d="M38 14 L53 32 L38 50" stroke="#2CA6A3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle class="ripple ripple-1" cx="60" cy="32" r="6" fill="none" stroke="#2CA6A3" stroke-width="1.5"/>
+          <circle class="ripple ripple-2" cx="60" cy="32" r="6" fill="none" stroke="#2CA6A3" stroke-width="1.5"/>
+          <circle class="dot" cx="60" cy="32" r="5.5" fill="#142C4A"/>
+        </svg>
+        <span class="chip chip-1"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/></svg>Sites & Sistemas</span>
+        <span class="chip chip-2"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>IA & Automação</span>
+        <span class="chip chip-3"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg>Google & Meta Ads</span>
+        <span class="chip chip-4"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Leads no WhatsApp</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span class="line"></span>role</div>
+</section>
+
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item"><span class="diamond"></span>Sites & Landing Pages</span>
+    <span class="marquee-item"><span class="diamond"></span>CRM & Captação de Leads</span>
+    <span class="marquee-item"><span class="diamond"></span>Google Ads & Meta Ads</span>
+    <span class="marquee-item"><span class="diamond"></span>Redes Sociais Automatizadas</span>
+    <span class="marquee-item"><span class="diamond"></span>Atendimento com IA</span>
+    <span class="marquee-item"><span class="diamond"></span>B-O-S · Sistema Operacional de Marketing</span>
+    <span class="marquee-item"><span class="diamond"></span>Sites & Landing Pages</span>
+    <span class="marquee-item"><span class="diamond"></span>CRM & Captação de Leads</span>
+    <span class="marquee-item"><span class="diamond"></span>Google Ads & Meta Ads</span>
+    <span class="marquee-item"><span class="diamond"></span>Redes Sociais Automatizadas</span>
+    <span class="marquee-item"><span class="diamond"></span>Atendimento com IA</span>
+    <span class="marquee-item"><span class="diamond"></span>B-O-S · Sistema Operacional de Marketing</span>
+  </div>
+</div>
+
+<section class="dor" id="dor">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>O problema</span>
+      <h2>Você não perde venda por falta de esforço. Perde por falta de <span class="accent">sistema</span>.</h2>
+      <p>Marketing sem gestão, atendimento sem organização e tecnologia cara demais pra ser aplicada — é isso que trava negócios locais bons de crescer.</p>
+    </div>
+    <div class="dor-grid reveal-stagger">
+      <div class="dor-card">
+        <div class="num">01</div>
+        <h3>Redes sociais paradas</h3>
+        <p>Perfil bonito, mas sem constância — e sem constância, sem alcance e sem lead novo entrando.</p>
+      </div>
+      <div class="dor-card">
+        <div class="num">02</div>
+        <h3>Lead que some no WhatsApp</h3>
+        <p>Cliente interessado chega, ninguém responde a tempo, e a venda vai pro concorrente que respondeu primeiro.</p>
+      </div>
+      <div class="dor-card">
+        <div class="num">03</div>
+        <h3>Site que não vende (ou nem existe)</h3>
+        <p>Sem presença digital de verdade, quem procura no Google simplesmente não te encontra.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="dark-wrap">
+  <section class="solucao" id="solucao">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="pulse-dot"></span>A solução</span>
+        <h2>A gente monta o sistema. Você foca em atender.</h2>
+        <p>Tecnologia e marketing trabalhando juntos, com IA acelerando o que antes levava semanas.</p>
+      </div>
+      <div class="sol-grid reveal-stagger">
+        <div class="glass-card">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg></span>
+          <div><h3>Site que vende e aparece no Google</h3><p>Institucional ou landing page com SEO de fábrica, feito pra converter visita em contato.</p></div>
+        </div>
+        <div class="glass-card">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><h3>Google Meu Negócio otimizado</h3><p>Ficha completa e ativa pra quem busca perto de você achar — e escolher — o seu negócio.</p></div>
+        </div>
+        <div class="glass-card">
+          <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></span>
+          <div><h3>Google Ads e Meta Ads</h3><p>Campanhas com investimento controlado, conversão configurada e retorno real medido.</p></div>
+        </div>
+        <div class="glass-card">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>
+          <div><h3>Redes sociais publicando sozinhas</h3><p>Conteúdo constante no seu tom de voz, sem você precisar parar a operação pra postar.</p></div>
+        </div>
+        <div class="glass-card">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87"/></svg></span>
+          <div><h3>CRM simples e organizado</h3><p>Todo lead num só lugar, com histórico e follow-up — pra nenhuma venda se perder de novo.</p></div>
+        </div>
+        <div class="glass-card">
+          <span class="ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <div><h3>Atendimento com IA no WhatsApp</h3><p>Resposta na hora, 24h — porque lead que espera é lead que compra do concorrente.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="produto" id="bos">
+    <div class="container">
+      <div class="produto-grid">
+        <div class="produto-copy reveal">
+          <span class="produto-badge">Produto próprio</span>
+          <h2>B-O-S — o sistema operacional do seu marketing</h2>
+          <p>Um sistema com agentes de IA que roda o marketing do seu negócio: cria conteúdo, publica nas redes, responde lead e mantém tudo em movimento — instalado no seu time ou operado por nós.</p>
+          <div class="produto-features">
+            <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>Agentes de IA integrados</div>
+            <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>Automação de redes sociais</div>
+            <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>Acelera criação de sistemas</div>
+            <div class="produto-feature"><svg viewBox="0 0 24 24"><path d="M4 12l6 6L20 6"/></svg>No seu time ou com o nosso</div>
+          </div>
+          <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener">Quero conhecer o B-O-S</a>
+        </div>
+        <div class="produto-img-wrap reveal">
+          <img src="img/bos-glass.png" alt="Painel de vidro 3D com gráficos teal representando o B-O-S, sistema operacional de marketing com IA" loading="lazy" width="1536" height="1024">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section class="numeros">
+  <div class="container">
+    <div class="num-grid reveal-stagger">
+      <div class="num-item"><div class="value"><span class="count" data-target="10">0</span><span class="suffix">+</span></div><div class="label">Anos de tecnologia aplicada a negócios reais</div></div>
+      <div class="num-item"><div class="value"><span class="count" data-target="3">0</span></div><div class="label">Frentes integradas: tecnologia, marketing e IA</div></div>
+      <div class="num-item"><div class="value"><span class="count" data-target="1">0</span></div><div class="label">Sistema próprio: o B-O-S, do zero ao automático</div></div>
+      <div class="num-item"><div class="value">100<span class="suffix">%</span></div><div class="label">Foco em negócios locais nos últimos 2 anos</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="servicos" id="servicos">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="pulse-dot"></span>O que fazemos</span>
+      <h2>Tecnologia, marketing e IA — <span class="accent">sob o mesmo teto</span></h2>
+      <p>Sem terceirizar em cinco fornecedores diferentes. Tudo falando a mesma língua.</p>
+    </div>
+    <div class="servicos-grid reveal-stagger">
+      <div class="serv-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/></svg></div>
+        <h3>Sites e sistemas</h3>
+        <p>Sites institucionais, landing pages, CRM e sistema financeiro sob medida pro seu negócio.</p>
+      </div>
+      <div class="serv-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></div>
+        <h3>Google & Meta Ads</h3>
+        <p>Campanhas com palavra-chave real, conversão configurada e negativas desde o dia um.</p>
+      </div>
+      <div class="serv-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></div>
+        <h3>Redes sociais & GMB</h3>
+        <p>Publicação automatizada, ficha do Google Meu Negócio otimizada e reviews respondidos.</p>
+      </div>
+      <div class="serv-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+        <h3>B-O-S — IA de marketing</h3>
+        <p>O sistema operacional que acelera conteúdo, automação e atendimento com agentes de IA.</p>
+      </div>
+      <div class="serv-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Atendimento com IA</h3>
+        <p>WhatsApp, e-mail e chatbot respondendo lead na hora certa, sem perder venda por demora.</p>
+      </div>
+      <div class="serv-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h3>CRM & captação de leads</h3>
+        <p>Todo lead organizado num só lugar, com histórico e follow-up automático.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-final" id="contato">
+  <div class="cta-box reveal">
+    <div class="cta-inner">
+      <h2>Bora tirar o marketing do papel e colocar em sistema?</h2>
+      <p>Uma conversa de 15 minutos já mostra onde seu negócio está perdendo venda — e o que dá pra automatizar primeiro.</p>
+      <a class="btn btn-primary" href="https://wa.me/551152170657" target="_blank" rel="noopener">
+        Falar no WhatsApp agora
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo on-dark" aria-label="Exacta Labs">
+          <svg viewBox="0 0 66 64" aria-hidden="true">
+            <rect x="4" y="8" width="34" height="10" rx="5" fill="#FFFFFF"/>
+            <rect x="4" y="27" width="24" height="10" rx="5" fill="#FFFFFF"/>
+            <rect x="4" y="46" width="34" height="10" rx="5" fill="#FFFFFF"/>
+            <path d="M38 14 L53 32 L38 50" stroke="#0D1F35" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="60" cy="32" r="5.5" fill="#FFFFFF"/>
+          </svg>
+          <span class="word">Exacta<span class="labs" style="color:rgba(255,255,255,.75);">LABS</span></span>
+        </a>
+        <div class="footer-tagline">Tecnologia · Sistemas · Resultados</div>
+      </div>
+      <div class="footer-links">
+        <a href="#solucao">Soluções</a>
+        <a href="#bos">B-O-S</a>
+        <a href="#servicos">Serviços</a>
+        <a href="https://wa.me/551152170657" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Exacta Labs. Todos os direitos reservados.</span>
+      <span>Feito com tecnologia própria — B-O-S.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/551152170657" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.646.86 5.096 2.317 7.086L4.7 27.53a.8.8 0 0 0 .98.98l5.594-1.588A11.94 11.94 0 0 0 16.001 27C22.63 27 28 21.627 28 15S22.63 3 16.001 3zm6.47 16.24c-.27.76-1.34 1.4-2.19 1.58-.58.12-1.34.22-3.9-.84-3.27-1.35-5.39-4.65-5.55-4.87-.16-.22-1.33-1.77-1.33-3.38 0-1.61.84-2.4 1.14-2.73.27-.3.6-.37.8-.37.2 0 .4 0 .58.01.19.01.44-.07.68.53.27.65.9 2.26.98 2.42.08.16.13.35.03.57-.1.22-.15.35-.3.53-.15.18-.31.4-.44.54-.15.16-.3.33-.13.63.17.3.75 1.25 1.62 2.03 1.12 1 2.06 1.31 2.37 1.46.3.15.48.13.66-.08.19-.21.79-.9 1-1.21.21-.3.42-.25.7-.15.28.1 1.78.84 2.09 1 .3.15.5.22.58.35.08.12.08.72-.19 1.48z"/></svg>
+</a>
+
+<script>
+  // Header scroll state
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Mobile menu
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .12 });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+  // Counters
+  const cIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = +el.dataset.target;
+      let cur = 0;
+      const step = Math.max(1, target/30);
+      const timer = setInterval(() => {
+        cur += step;
+        if (cur >= target){ cur = target; clearInterval(timer); }
+        el.textContent = Math.floor(cur);
+      }, 30);
+      cIo.unobserve(el);
+    });
+  }, { threshold: .6 });
+  document.querySelectorAll('.count').forEach(c => cIo.observe(c));
+
+  // Tilt 3D no logo animado do hero (segue o mouse)
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const heroVisual = document.getElementById('heroVisual');
+  const logoStage = document.getElementById('logoStage');
+  if (!prefersReduced && window.matchMedia('(pointer: fine)').matches) {
+    heroVisual.addEventListener('mousemove', (e) => {
+      const r = heroVisual.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5;
+      const y = (e.clientY - r.top) / r.height - .5;
+      logoStage.style.transform = `perspective(900px) rotateY(${x*12}deg) rotateX(${-y*12}deg)`;
+      logoStage.style.transition = 'transform 120ms linear';
+      logoStage.style.animationPlayState = 'paused';
+    });
+    heroVisual.addEventListener('mouseleave', () => {
+      logoStage.style.transform = '';
+      logoStage.style.transition = 'transform 600ms cubic-bezier(.16,1,.3,1)';
+      logoStage.style.animationPlayState = 'running';
+    });
+  }
+
+  // Parallax suave dos orbs
+  if (!prefersReduced) {
+    const orbs = document.querySelectorAll('.orb');
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      orbs.forEach((orb, i) => {
+        orb.style.marginTop = `${y * (i % 2 ? 0.04 : -0.04)}px`;
+      });
+    }, { passive: true });
+  }
+</script>
+
+</body>
+</html>

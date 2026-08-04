@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #111; }
+
+.slide {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* ── Metade de cima: ANTES (navy) ── */
+.antes {
+  position: relative;
+  height: 620px;
+  background: #1A2B6E;
+  padding: 72px 88px 0 88px;
+  overflow: hidden;
+}
+.kicker {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+}
+.regua { width: 64px; height: 3px; margin: 18px 0 22px 0; }
+.regua-dark { background: #F5C518; }
+.regua-light { background: #D42020; }
+.headline-dark {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+  color: #FFFFFF;
+  max-width: 780px;
+}
+.headline-dark .accent { color: #F5C518; }
+
+.chips {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 14px 22px;
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 10px;
+  font-size: 21px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.72);
+  background: rgba(255,255,255,0.03);
+}
+.chip .strike {
+  text-decoration: line-through;
+  text-decoration-color: rgba(255,255,255,0.35);
+  text-decoration-thickness: 2px;
+}
+
+/* ── Metade de baixo: DEPOIS (branco) ── */
+.depois {
+  position: relative;
+  height: 730px;
+  background: #FFFFFF;
+  padding: 60px 88px 0 88px;
+}
+.headline-light {
+  font-size: 46px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  color: #1A2B6E;
+  max-width: 720px;
+}
+
+/* Mock do painel */
+.panel {
+  margin-top: 40px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(13,34,87,0.10);
+  border: 1px solid rgba(26,43,110,0.08);
+}
+.panel-side {
+  width: 220px;
+  background: #1A2B6E;
+  padding: 28px 20px;
+}
+.panel-side .item {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.55);
+  padding: 12px 14px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+.panel-side .item.active {
+  color: #FFFFFF;
+  background: rgba(255,255,255,0.10);
+}
+.panel-main {
+  flex: 1;
+  background: #F0F0F0;
+  padding: 28px 32px;
+}
+.panel-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.panel-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+.panel-card .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(26,43,110,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.panel-card .value {
+  font-size: 30px;
+  font-weight: 800;
+  color: #1A2B6E;
+  margin-top: 6px;
+  letter-spacing: -0.02em;
+}
+
+.cta-row {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #CF2020;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 18px 30px;
+  border-radius: 8px;
+}
+.logo-pill {
+  background: #F0F0F0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+.logo-img { width: 118px; height: auto; display: block; }
+</style>
+</head>
+<body>
+<div class="slide">
+
+  <div class="antes">
+    <div class="kicker">Seu dia a dia hoje</div>
+    <div class="regua regua-dark"></div>
+    <div class="headline-dark">5 sistemas. <span class="accent">Nenhum</span> conversa entre si.</div>
+    <div class="chips">
+      <div class="chip"><span class="strike">Planilha de honorários</span></div>
+      <div class="chip"><span class="strike">WhatsApp com cliente</span></div>
+      <div class="chip"><span class="strike">Sistema de processos</span></div>
+      <div class="chip"><span class="strike">Drive de documentos</span></div>
+    </div>
+  </div>
+
+  <div class="depois">
+    <div class="kicker" style="color:rgba(26,43,110,0.55)">Com o Dr. Lawer</div>
+    <div class="regua regua-light"></div>
+    <div class="headline-light">Tudo isso, em um painel só.</div>
+
+    <div class="panel">
+      <div class="panel-side">
+        <div class="item active">Processos</div>
+        <div class="item">Financeiro</div>
+        <div class="item">Honorários OAB</div>
+        <div class="item">Clientes</div>
+      </div>
+      <div class="panel-main">
+        <div class="panel-cards">
+          <div class="panel-card">
+            <div class="label">Processos ativos</div>
+            <div class="value">124</div>
+          </div>
+          <div class="panel-card">
+            <div class="label">Recebido no mês</div>
+            <div class="value">R$ 450k</div>
+          </div>
+          <div class="panel-card">
+            <div class="label">Honorários pendentes</div>
+            <div class="value">R$ 85k</div>
+          </div>
+          <div class="panel-card">
+            <div class="label">Clientes ativos</div>
+            <div class="value">312</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <div class="cta-btn">Teste grátis por 7 dias</div>
+      <div class="logo-pill"><img class="logo-img" src="../../../identidade/logo.png"></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

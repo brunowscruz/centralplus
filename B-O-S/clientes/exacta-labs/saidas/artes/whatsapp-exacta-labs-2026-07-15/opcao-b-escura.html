@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ width:1080px; height:1080px; overflow:hidden; }
+  body{
+    font-family:'Inter',sans-serif;
+    position:relative;
+    background:
+      radial-gradient(ellipse 55% 45% at 85% 8%, rgba(111,227,223,.28), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 5% 95%, rgba(44,166,163,.18), transparent 60%),
+      linear-gradient(160deg, #0D1F35 0%, #0B2B2E 100%);
+  }
+
+  .stage{ position:relative; width:1080px; height:1080px; padding:72px; display:flex; flex-direction:column; z-index:1; }
+
+  .logo{ display:flex; align-items:center; gap:14px; }
+  .logo svg{ height:52px; width:auto; }
+  .logo .word{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:30px; color:#fff; line-height:1.05; }
+  .logo .word .labs{ display:block; font-size:13px; font-weight:600; letter-spacing:.42em; color:#6FE3DF; }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px; align-self:flex-start;
+    padding:12px 26px; border-radius:999px; margin-top:56px;
+    border:2px solid rgba(111,227,223,.4); background:rgba(111,227,223,.1);
+    font-size:20px; font-weight:700; letter-spacing:.04em; color:#6FE3DF;
+  }
+  .eyebrow .dot{ width:11px; height:11px; border-radius:50%; background:#6FE3DF; }
+
+  h1{
+    font-family:'Space Grotesk',sans-serif; font-weight:800; letter-spacing:-.01em;
+    font-size:74px; line-height:1.08; color:#fff; margin-top:34px; max-width:900px;
+  }
+  h1 .accent{
+    background:linear-gradient(120deg,#2CA6A3,#6FE3DF);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+
+  .sub{ font-size:29px; color:rgba(255,255,255,.72); margin-top:26px; max-width:760px; line-height:1.5; }
+
+  .chips{ display:flex; gap:18px; flex-wrap:wrap; margin-top:52px; }
+  .chip{
+    display:flex; align-items:center; gap:14px;
+    background:rgba(255,255,255,.06); border:1.5px solid rgba(255,255,255,.14);
+    border-radius:20px; padding:20px 26px; backdrop-filter:blur(6px);
+  }
+  .chip .ico{
+    width:52px; height:52px; border-radius:50%; flex-shrink:0;
+    background:rgba(111,227,223,.16); border:1.5px solid rgba(111,227,223,.4);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 0 24px rgba(44,166,163,.3);
+  }
+  .chip .ico svg{ width:26px; height:26px; stroke:#6FE3DF; fill:none; stroke-width:2.1; stroke-linecap:round; stroke-linejoin:round; }
+  .chip span.label{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:23px; color:#fff; }
+
+  .spacer{ flex:1; }
+
+  .cta-row{ display:flex; align-items:center; justify-content:space-between; }
+  .cta{
+    display:flex; align-items:center; gap:16px;
+    background:linear-gradient(135deg,#2CA6A3,#4FC3C0);
+    color:#0D1F35; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:30px;
+    padding:24px 40px; border-radius:999px;
+    box-shadow:0 20px 44px rgba(44,166,163,.45);
+  }
+  .cta svg{ width:30px; height:30px; stroke:#0D1F35; fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+  .domain{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:26px; color:#6FE3DF; }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="logo">
+      <svg viewBox="0 0 66 64" aria-hidden="true">
+        <rect x="4" y="8" width="34" height="10" rx="5" fill="#FFFFFF"/>
+        <rect x="4" y="27" width="24" height="10" rx="5" fill="#FFFFFF"/>
+        <rect x="4" y="46" width="34" height="10" rx="5" fill="#FFFFFF"/>
+        <path d="M38 14 L53 32 L38 50" stroke="#2CA6A3" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="60" cy="32" r="5.5" fill="#FFFFFF"/>
+      </svg>
+      <span class="word">Exacta<span class="labs">LABS</span></span>
+    </div>
+
+    <span class="eyebrow"><span class="dot"></span>TECNOLOGIA · MARKETING · IA</span>
+
+    <h1>Seu concorrente aparece no <span class="accent">Google</span>. E a sua empresa?</h1>
+    <p class="sub">A gente coloca sua empresa pra aparecer, ser encontrada e vender mais — todos os dias.</p>
+
+    <div class="chips">
+      <div class="chip"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4"/></svg></span><span class="label">Site profissional</span></div>
+      <div class="chip"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span class="label">Google Meu Negócio</span></div>
+      <div class="chip"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg></span><span class="label">Google Ads</span></div>
+      <div class="chip"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></span><span class="label">Marketing com IA</span></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="cta-row">
+      <div class="cta">
+        Fale com a Exacta Labs
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </div>
+      <div class="domain">exactalabs.com.br</div>
+    </div>
+  </div>
+</body>
+</html>

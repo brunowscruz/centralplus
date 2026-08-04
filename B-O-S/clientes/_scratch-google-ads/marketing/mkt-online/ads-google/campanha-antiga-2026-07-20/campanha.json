@@ -1,0 +1,12 @@
+{
+  "plataforma": "google",
+  "titulo": "Campanha Antiga (pre-existente)",
+  "tipo": "produto",
+  "descricaoNegocio": "Campanha criada antes do campo status existir",
+  "anuncios": [{"titulo": "Anúncio antigo", "descricao": "Descrição antiga"}],
+  "palavrasChave": ["antigo"],
+  "publico": "geral",
+  "orcamentoSugeridoDia": "R$ 80-150",
+  "criadoEm": "2026-07-20T10:00:00.000Z",
+  "atualizadoEm": "2026-07-20T10:00:00.000Z"
+}

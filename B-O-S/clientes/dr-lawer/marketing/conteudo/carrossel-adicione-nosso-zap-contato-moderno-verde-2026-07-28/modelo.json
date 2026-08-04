@@ -1,0 +1,375 @@
+{
+  "paginas": [
+    {
+      "largura": 1080,
+      "altura": 1350,
+      "corFundo": "3EB84F",
+      "camadas": [
+        {
+          "id": "bg-circulo-1",
+          "x": 603,
+          "y": -194,
+          "largura": 580,
+          "altura": 580,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image1.png"
+        },
+        {
+          "id": "bg-circulo-2",
+          "x": 603,
+          "y": 385,
+          "largura": 580,
+          "altura": 580,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image1.png"
+        },
+        {
+          "id": "bg-circulo-3",
+          "x": 603,
+          "y": 965,
+          "largura": 580,
+          "altura": 580,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image1.png"
+        },
+        {
+          "id": "mockup-celular",
+          "x": 708,
+          "y": 519,
+          "largura": 711,
+          "altura": 805,
+          "visivel": true,
+          "rotacao": -73.84,
+          "tipo": "imagem",
+          "arquivo": "image3.png"
+        },
+        {
+          "id": "card-branco-forma",
+          "x": 70,
+          "y": 200,
+          "largura": 480,
+          "altura": 950,
+          "visivel": true,
+          "tipo": "forma",
+          "corFundo": "FFFFFF",
+          "raioBorda": 40,
+          "sombra": {
+            "cor": "00000020",
+            "blur": 30,
+            "x": 0,
+            "y": 10
+          }
+        },
+        {
+          "id": "titulo-slide1",
+          "x": 110,
+          "y": 280,
+          "largura": 400,
+          "altura": 250,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Adicione\no nosso\nWhatsApp!",
+          "tamanhoFonte": 76,
+          "cor": "2D9F3D",
+          "fonte": "Canva Sans",
+          "negrito": true,
+          "entrelinha": 1.1
+        },
+        {
+          "id": "texto-cta-slide1",
+          "x": 110,
+          "y": 580,
+          "largura": 380,
+          "altura": 120,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "E fique por dentro de todas as novidades primeiro!",
+          "tamanhoFonte": 32,
+          "cor": "142C4A",
+          "fonte": "Canva Sans",
+          "entrelinha": 1.3
+        },
+        {
+          "id": "icone-zap-slide1",
+          "x": 110,
+          "y": 780,
+          "largura": 120,
+          "altura": 120,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "2D9F3D"
+        },
+        {
+          "id": "texto-swipe",
+          "x": 110,
+          "y": 1000,
+          "largura": 380,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Deslize para ver →",
+          "tamanhoFonte": 28,
+          "cor": "FFFFFF",
+          "fonte": "Canva Sans"
+        }
+      ]
+    },
+    {
+      "largura": 1080,
+      "altura": 1350,
+      "corFundo": "FFFFFF",
+      "camadas": [
+        {
+          "id": "bg-verde-topo",
+          "x": 0,
+          "y": 0,
+          "largura": 1080,
+          "altura": 450,
+          "visivel": true,
+          "tipo": "forma",
+          "gradiente": {
+            "de": "3EB84F",
+            "para": "2D9F3D",
+            "angulo": 135
+          }
+        },
+        {
+          "id": "titulo-slide2",
+          "x": 80,
+          "y": 100,
+          "largura": 920,
+          "altura": 250,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Por que adicionar nosso WhatsApp?",
+          "tamanhoFonte": 68,
+          "cor": "FFFFFF",
+          "fonte": "Canva Sans",
+          "negrito": true,
+          "alinhamentoTexto": "centro",
+          "entrelinha": 1.1
+        },
+        {
+          "id": "beneficio-1-icone",
+          "x": 100,
+          "y": 520,
+          "largura": 80,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "3EB84F"
+        },
+        {
+          "id": "beneficio-1-texto",
+          "x": 210,
+          "y": 520,
+          "largura": 770,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Receba promoções exclusivas",
+          "tamanhoFonte": 38,
+          "cor": "142C4A",
+          "fonte": "Canva Sans",
+          "negrito": true
+        },
+        {
+          "id": "beneficio-2-icone",
+          "x": 100,
+          "y": 680,
+          "largura": 80,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "3EB84F"
+        },
+        {
+          "id": "beneficio-2-texto",
+          "x": 210,
+          "y": 680,
+          "largura": 770,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Novidades em primeira mão",
+          "tamanhoFonte": 38,
+          "cor": "142C4A",
+          "fonte": "Canva Sans",
+          "negrito": true
+        },
+        {
+          "id": "beneficio-3-icone",
+          "x": 100,
+          "y": 840,
+          "largura": 80,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "3EB84F"
+        },
+        {
+          "id": "beneficio-3-texto",
+          "x": 210,
+          "y": 840,
+          "largura": 770,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Atendimento direto e rápido",
+          "tamanhoFonte": 38,
+          "cor": "142C4A",
+          "fonte": "Canva Sans",
+          "negrito": true
+        },
+        {
+          "id": "beneficio-4-icone",
+          "x": 100,
+          "y": 1000,
+          "largura": 80,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "forma",
+          "formaTipo": "circulo",
+          "corFundo": "3EB84F"
+        },
+        {
+          "id": "beneficio-4-texto",
+          "x": 210,
+          "y": 1000,
+          "largura": 770,
+          "altura": 80,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Dicas e conteúdos especiais",
+          "tamanhoFonte": 38,
+          "cor": "142C4A",
+          "fonte": "Canva Sans",
+          "negrito": true
+        }
+      ]
+    },
+    {
+      "largura": 1080,
+      "altura": 1350,
+      "corFundo": "2D9F3D",
+      "camadas": [
+        {
+          "id": "bg-pattern-1",
+          "x": -100,
+          "y": -150,
+          "largura": 400,
+          "altura": 400,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image1.png",
+          "opacidade": 0.15
+        },
+        {
+          "id": "bg-pattern-2",
+          "x": 780,
+          "y": 300,
+          "largura": 400,
+          "altura": 400,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image1.png",
+          "opacidade": 0.15
+        },
+        {
+          "id": "bg-pattern-3",
+          "x": -50,
+          "y": 900,
+          "largura": 400,
+          "altura": 400,
+          "visivel": true,
+          "tipo": "imagem",
+          "arquivo": "image1.png",
+          "opacidade": 0.15
+        },
+        {
+          "id": "card-cta-final",
+          "x": 90,
+          "y": 300,
+          "largura": 900,
+          "altura": 750,
+          "visivel": true,
+          "tipo": "forma",
+          "corFundo": "FFFFFF",
+          "raioBorda": 50,
+          "sombra": {
+            "cor": "00000030",
+            "blur": 40,
+            "x": 0,
+            "y": 15
+          }
+        },
+        {
+          "id": "titulo-final",
+          "x": 140,
+          "y": 400,
+          "largura": 800,
+          "altura": 180,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Vamos conversar?",
+          "tamanhoFonte": 72,
+          "cor": "2D9F3D",
+          "fonte": "Canva Sans",
+          "negrito": true,
+          "alinhamentoTexto": "centro"
+        },
+        {
+          "id": "subtitulo-final",
+          "x": 140,
+          "y": 600,
+          "largura": 800,
+          "altura": 100,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "Clique no botão e adicione agora!",
+          "tamanhoFonte": 36,
+          "cor": "142C4A",
+          "fonte": "Canva Sans",
+          "alinhamentoTexto": "centro",
+          "entrelinha": 1.3
+        },
+        {
+          "id": "numero-whatsapp",
+          "x": 140,
+          "y": 750,
+          "largura": 800,
+          "altura": 100,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "(12) 3456-7890",
+          "tamanhoFonte": 56,
+          "cor": "2D9F3D",
+          "fonte": "Canva Sans",
+          "negrito": true,
+          "alinhamentoTexto": "centro"
+        },
+        {
+          "id": "handle-instagram",
+          "x": 140,
+          "y": 900,
+          "largura": 800,
+          "altura": 60,
+          "visivel": true,
+          "tipo": "texto",
+          "texto": "@grandesite",
+          "tamanhoFonte": 32,
+          "cor": "142C4ACC",
+          "fonte": "Canva Sans",
+          "alinhamentoTexto": "centro"
+        }
+      ]
+    }
+  ]
+}

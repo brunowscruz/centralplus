@@ -1,0 +1,156 @@
+{
+  "id": "proposta-otimizacao-2026-07-31",
+  "criadoEm": "2026-07-31T01:00:00.000Z",
+  "atualizadoEm": "2026-07-31T01:00:00.000Z",
+  "categoriaPrincipal": {
+    "valor": "Agência de marketing",
+    "status": "proposta"
+  },
+  "categoriasSecundarias": {
+    "valor": [
+      "Agência de marketing digital",
+      "Consultoria em marketing",
+      "Serviço de desenvolvimento de sites",
+      "Consultoria empresarial",
+      "Serviço de publicidade"
+    ],
+    "status": "proposta"
+  },
+  "descricaoGeral": {
+    "valor": "A Exacta Labs é uma agência de tecnologia, marketing e inteligência artificial com mais de 10 anos de experiência. Atendemos negócios locais da Baixada Santista e de todo o Brasil com soluções completas: sites personalizados, campanhas no Google e redes sociais, gestão de Instagram e Facebook, CRM, sistema financeiro e automação com IA. Nosso diferencial é entregar resultado concreto — mais vendas, menos custo operacional e processos mais rápidos com tecnologia que funciona. Também desenvolvemos o B-O-S, um sistema operacional de marketing com agentes de IA que acelera tudo isso. Se você quer crescer com tecnologia de verdade, sem firula e sem solução de prateleira, a gente resolve.",
+    "status": "proposta"
+  },
+  "descricaoPorServico": {
+    "valor": [
+      {
+        "servicoSlug": "marketing-digital",
+        "descricao": "Estratégia completa de marketing digital para negócios locais: Google Meu Negócio otimizado, campanhas de anúncios que convertem e presença nas redes sociais. Trabalhamos com foco em trazer cliente de verdade, não só curtida."
+      },
+      {
+        "servicoSlug": "desenvolvimento-sites",
+        "descricao": "Sites sob medida que vendem. Criamos páginas rápidas, responsivas e otimizadas para aparecer no Google. Cada site é único, pensado pro seu negócio e pro seu cliente ideal — nada de template genérico."
+      },
+      {
+        "servicoSlug": "google-ads",
+        "descricao": "Campanhas de anúncios no Google para quem quer aparecer quando o cliente está procurando. Trabalho focado em palavras-chave específicas, texto que atrai o público certo e orçamento bem aplicado."
+      },
+      {
+        "servicoSlug": "meta-ads",
+        "descricao": "Anúncios no Facebook e Instagram com ROI real. Criamos campanhas segmentadas por região, idade e interesse, com criativos que chamam atenção e levam pra ação — seja um orçamento, uma venda ou um agendamento."
+      },
+      {
+        "servicoSlug": "gestao-redes-sociais",
+        "descricao": "Gestão profissional do Instagram e Facebook: criação de conteúdo, calendário planejado, posts que engajam e vendem. Tudo feito pra mostrar o valor do seu negócio sem parecer forçado."
+      },
+      {
+        "servicoSlug": "crm",
+        "descricao": "Sistema de gestão de clientes feito sob medida. Organize leads, acompanhe o funil de vendas e nunca perca uma oportunidade. Integrado com o resto da sua operação."
+      },
+      {
+        "servicoSlug": "sistema-financeiro",
+        "descricao": "Controle financeiro completo e integrado. Acompanhe receitas, despesas, fluxo de caixa e tenha visão clara da saúde do seu negócio — tudo em um lugar só."
+      },
+      {
+        "servicoSlug": "consultoria-ia",
+        "descricao": "Consultoria em inteligência artificial para automatizar processos, reduzir custo e acelerar entregas. A gente identifica onde a IA pode fazer diferença real no seu negócio e implementa sem enrolação."
+      },
+      {
+        "servicoSlug": "bos",
+        "descricao": "B-O-S é nosso sistema operacional de marketing com agentes de IA. Acelera desenvolvimento de sites, automatiza redes sociais e organiza tudo em um só lugar. Pode ser instalado na sua empresa ou usado pela gente pra entregar mais rápido."
+      }
+    ],
+    "status": "proposta"
+  },
+  "atributos": {
+    "valor": [
+      "Atendimento on-line",
+      "Reuniões on-line",
+      "Atende clientes de todo o Brasil",
+      "Especialista em pequenas empresas",
+      "Aceita novos clientes"
+    ],
+    "status": "proposta"
+  },
+  "faq": {
+    "valor": [
+      {
+        "pergunta": "Quanto custa fazer um site com vocês?",
+        "resposta": "O valor depende do que você precisa — cada negócio é único. Fazemos sites sob medida, então o investimento varia conforme funcionalidades, design e integrações. O melhor é conversar com a gente pelo WhatsApp (13) 99739-4132 ou ligar no (11) 5217-0657 pra entender o seu caso e fazer uma proposta personalizada."
+      },
+      {
+        "pergunta": "Vocês atendem apenas empresas de Praia Grande?",
+        "resposta": "Não. Atendemos toda a Baixada Santista e também clientes de qualquer lugar do Brasil. Nosso escritório fica em Praia Grande, mas trabalhamos 100% remoto quando necessário — reuniões, planejamento e entregas acontecem online sem problema nenhum."
+      },
+      {
+        "pergunta": "Como funciona a gestão de redes sociais? Vocês criam o conteúdo?",
+        "resposta": "Sim. A gente cria o conteúdo, monta o calendário, publica e acompanha os resultados. Tudo pensado pro seu público e pro tipo de negócio que você tem. Você aprova antes de publicar, e a gente cuida do resto."
+      },
+      {
+        "pergunta": "Qual a diferença entre Google Ads e Meta Ads?",
+        "resposta": "Google Ads aparece quando alguém está procurando ativamente (pesquisa no Google). Meta Ads (Facebook e Instagram) aparece enquanto a pessoa está navegando nas redes sociais. Os dois funcionam, mas a escolha depende do seu público e do seu objetivo — podemos usar um, outro ou os dois juntos."
+      },
+      {
+        "pergunta": "Vocês têm suporte depois de entregar o site ou o sistema?",
+        "resposta": "Sim. Tudo que a gente entrega tem suporte. O formato e o prazo dependem do projeto, mas a gente não abandona depois de entregar — se algo quebrar ou se você precisar ajustar, a gente tá aqui."
+      },
+      {
+        "pergunta": "O que é o B-O-S que vocês mencionam?",
+        "resposta": "B-O-S é um sistema operacional de marketing que a gente desenvolveu. Ele tem agentes de IA que aceleram a criação de sites, automatizam redes sociais e organizam tudo em um hub só. Pode ser instalado na sua empresa (se você já tem time de marketing) ou usado internamente pela Exacta Labs pra entregar seus projetos mais rápido."
+      },
+      {
+        "pergunta": "Quanto tempo leva pra ver resultado com marketing digital?",
+        "resposta": "Depende da ação. Anúncios pagos (Google Ads, Meta Ads) podem trazer resultado em dias. SEO e redes sociais orgânicas levam mais tempo — normalmente de 3 a 6 meses pra ver resultado consistente. A gente sempre monta uma estratégia que mistura ações rápidas e de médio prazo."
+      },
+      {
+        "pergunta": "Vocês trabalham com contrato de fidelidade?",
+        "resposta": "Não necessariamente. Cada projeto tem um formato — alguns são pontuais (fazer um site, por exemplo), outros são recorrentes (gestão de redes sociais, anúncios). A gente sempre deixa claro o que é uma vez só e o que precisa de acompanhamento contínuo. Sem pegadinha."
+      }
+    ],
+    "status": "proposta"
+  },
+  "planoFotos": {
+    "valor": [
+      {
+        "nomeArquivoSugerido": "agencia-marketing-praia-grande-exacta-labs-fachada-01.jpg",
+        "descricao": "Foto da fachada do escritório na Av. Pres. Kennedy, 6920, Praia Grande",
+        "categoria": "Exterior"
+      },
+      {
+        "nomeArquivoSugerido": "equipe-exacta-labs-marketing-digital-praia-grande-01.jpg",
+        "descricao": "Foto da equipe trabalhando (quando tiver equipe montada) ou do responsável em ação",
+        "categoria": "Equipe"
+      },
+      {
+        "nomeArquivoSugerido": "site-desenvolvimento-exacta-labs-praia-grande-01.jpg",
+        "descricao": "Print de um site desenvolvido pela Exacta Labs em ação (desktop e mobile)",
+        "categoria": "Trabalho"
+      },
+      {
+        "nomeArquivoSugerido": "campanha-google-ads-resultado-exacta-labs-01.jpg",
+        "descricao": "Print de painel de resultados de uma campanha Google Ads com métricas positivas",
+        "categoria": "Trabalho"
+      },
+      {
+        "nomeArquivoSugerido": "consultoria-marketing-digital-praia-grande-exacta-labs-01.jpg",
+        "descricao": "Foto de reunião de planejamento com cliente (presencial ou online)",
+        "categoria": "Trabalho"
+      },
+      {
+        "nomeArquivoSugerido": "bos-sistema-marketing-ia-exacta-labs-01.jpg",
+        "descricao": "Print do sistema B-O-S em funcionamento mostrando interface e automação",
+        "categoria": "Produto"
+      },
+      {
+        "nomeArquivoSugerido": "agencia-marketing-praia-grande-escritorio-interno-01.jpg",
+        "descricao": "Foto interna do escritório, mostrando ambiente de trabalho profissional",
+        "categoria": "Interior"
+      },
+      {
+        "nomeArquivoSugerido": "gestao-redes-sociais-instagram-resultado-exacta-labs-01.jpg",
+        "descricao": "Print de feed do Instagram de cliente gerenciado pela Exacta Labs com engajamento",
+        "categoria": "Trabalho"
+      }
+    ],
+    "status": "proposta"
+  }
+}
